@@ -16,7 +16,6 @@ starter/storage/
 *.tmp
 *.bak
 
-# Tài liệu và bản trích xuất có quyền chia sẻ chưa được xác nhận.
 starter/data/documents.pdf
 starter/data/parsed_pages.jsonl
 starter/benchmark/questions.json
@@ -27,12 +26,7 @@ starter/results/evaluation/dev_exact_review.jsonl
 starter/results/evaluation/test_exact_review.jsonl
 starter/results/evaluation/traces_test.jsonl
 starter/results/evaluation/coherence_review.jsonl
-# Dữ liệu và minh chứng của bài cảm biến, chờ xác nhận quyền chia sẻ.
-starter/data/sensor_pages.jsonl
-starter/benchmark/sensor_questions.json
-starter/results/sensor_run/
 
-# Tệp phát sinh cục bộ từ pipeline chung.
 starter/data/format-example.json
 starter/data/parsed_pages.log
 starter/results/embeddings_paragraph.report.json
@@ -45,10 +39,3 @@ starter/results/sensor_verification.json
 
 # Review tables contain restricted source text, benchmark and traces.
 /review/*.csv
-
-# Minh chứng cảm biến được học viên xác nhận cho phép công khai.
-!starter/data/documents.pdf
-!starter/data/sensor_pages.jsonl
-!starter/benchmark/sensor_questions.json
-!starter/results/sensor_run/
-!/review/*.csv

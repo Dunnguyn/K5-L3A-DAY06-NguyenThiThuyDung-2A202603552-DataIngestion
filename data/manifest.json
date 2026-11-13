@@ -41,16 +41,7 @@
         46,
         47,
         48
-      ],
-      "valid_page_count": 31,
-      "normalized_char_count": 12142,
-      "page_selection": "Chọn trang có nội dung chữ về định nghĩa, phân loại, đặc trưng, các cảm biến, xử lý tín hiệu và dữ liệu. Loại bìa, mục tiêu/mục lục, trang chủ yếu hình ảnh không trích được, và trang thuật ngữ cuối.",
-      "sha256": "44105d2a54ceb32a9f9b1179f4490e75a0cfca353aa99f300d795f9397a80919",
-      "page_numbering": "physical PDF pages, 1-based",
-      "valid_pages_status": "31 trang được Codex duyệt; trang 19 ngắn, trang 44 đã xem trực tiếp sơ đồ sáu bước",
-      "section_mapping_status": "Codex đối chiếu tiêu đề và ranh giới 2.1–2.5; trang 44 đã xem trực tiếp và gán 2.4 theo vị trí",
-      "sharing_status": "Học viên xác nhận được cấp toàn quyền công khai tài liệu ngày 13/11/2026; PDF và minh chứng được cung cấp trong repo.",
-      "accessed_at_note": "Chưa biết ngày nhận tài liệu; không suy đoán."
+      ]
     }
   ]
 }
