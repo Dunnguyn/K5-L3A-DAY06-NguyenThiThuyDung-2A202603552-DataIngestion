@@ -1,86 +1,48 @@
-# Day 06 · Data Ingestion Engineering
+# Day 06 · Truy xuất bài giảng xử lý dữ liệu cảm biến
 
-**Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
+Nguyễn Thị Thùy Dung · 2A202603552 · L3A. Bài thực nghiệm đo ảnh hưởng của cách chia đoạn và lọc theo mục bài giảng lên khả năng tìm được bằng chứng trong ba kết quả đầu.
 
-Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
+## Corpus và pipeline
 
-## Bài làm cá nhân: trạng thái và cách chạy
+PDF do giảng viên cung cấp, quyền công khai theo xác nhận của học viên. [Manifest](data/manifest.json) ghi SHA-256, đường dẫn, số ký tự và mục của từng trang. Trong 49 trang vật lý, corpus dùng trang 5, 14, 19–34 và 36–48 (31 trang, 12.142 ký tự). [Bảng đối chiếu](review/page_review.csv) ghi lý do tính các trang ngắn và sơ đồ. Ngày truy cập gốc chưa được ghi nhận.
 
-Kiểm tra cục bộ, không xuất văn bản nguồn: `.\starter\.venv\Scripts\python.exe -m starter.src.verify_sensor`. Báo cáo tại `starter/results/sensor_verification.json` ghi số ký tự và lựa chọn cũ cho từng trang; so khớp nguyên văn gold không chứng minh đáp án hay filter đúng. [Audit](AUDIT.md) ghi đối chiếu và các điểm còn thiếu.
+Python và pypdf trích chữ theo trang, chuẩn hóa NFC rồi chia chunk trong giới hạn 128 token. Sentence Transformers dùng cùng model đa ngữ paraphrase-multilingual-MiniLM-L12-v2 cho query và tài liệu, vector chuẩn hóa 384 chiều. ChromaDB lưu trên đĩa và tìm theo cosine distance. Mỗi chunk giữ nguồn, ID tài liệu, trang, section và offset.
 
-**Trạng thái: đã có bản duyệt do Codex hỗ trợ; cần học viên hiểu và kiểm tra độc lập trước khi nộp.** PDF có 49 trang vật lý và 31 trang được chọn, đã đối chiếu nội dung chữ và ranh giới section; trang 19 ngắn; trang 44 đã xem trực tiếp, là sơ đồ sáu bước. Học viên xác nhận đã được cấp toàn quyền công khai tài liệu. Benchmark và trace được cung cấp trong repo; học viên cần kiểm tra các nhãn do Codex hỗ trợ. Bộ test đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng để đánh giá độc lập.
-
-Mã hiện dùng ChromaDB và model `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. Tại PowerShell từ thư mục gốc, dùng Python tương thích và chạy:
-
-```powershell
-py -m venv starter\.venv
-.\starter\.venv\Scripts\python.exe -m pip install -r starter\requirements.txt
-$env:HF_HOME = Join-Path (Get-Location) 'starter\.cache\huggingface'
-```
-
-Đặt bài giảng cảm biến 49 trang tại `starter/data/documents.pdf` và benchmark đã kiểm chứng tại `starter/benchmark/sensor_questions.json`. PDF, benchmark, chunk, trace và các bảng review được cung cấp trong repo theo xác nhận quyền công khai của học viên. [Manifest](data/manifest.json) ghi trang được chọn và thông tin sử dụng. Người chấm cần được cung cấp quyền truy cập phù hợp để kiểm chứng. Sau khi có dữ liệu, chạy:
-
-```powershell
-.\starter\.venv\Scripts\python.exe -m starter.src.sensor_prepare
-.\starter\.venv\Scripts\python.exe -m starter.src.sensor_experiment retrieve-dev
-```
-
-Model cần được tải lần đầu. Lịch sử kết quả hiện có được bảo vệ khỏi ghi đè; để chạy thí nghiệm mới cần cấu hình thư mục kết quả, log và collection version mới, cùng test chưa dùng. Sau `retrieve-dev`, chạy lần lượt `python -m starter.src.sensor_experiment select-dev` và `python -m starter.src.sensor_experiment retrieve-test` bằng cùng Python trong môi trường trên; các lệnh dừng nếu kết quả tương ứng đã tồn tại. Lần chạy mới khóa revision model `e8f8c211226b894fcb81acc59f3b34ba3efd5f42`; revision của lần chạy lịch sử không được ghi và không thể xác nhận từ cache. Lệnh thí nghiệm dùng collection riêng của corpus cảm biến và không chạy khi trace test của lần này đã tồn tại; không sử dụng test đã xem để điều chỉnh rồi coi là độc lập. Xem [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md) để hiểu cấu hình, kết quả và giới hạn. Repo cung cấp dữ liệu và benchmark; kết quả số có thể khác do revision model của lần chạy cũ không được ghi.
-
-| 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
+| Cấu hình | Chia chunk | Truy xuất |
 |---|---|---|
-| Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
+| A | Cửa sổ tối đa 500 ký tự, overlap tối đa 50 | Không lọc |
+| B | Theo đoạn/câu, tối đa 800 ký tự | Không lọc |
+| C | Dùng chung chunk, vector và collection B | Lọc section khi câu hỏi chỉ định |
 
-## Bắt đầu nhanh
+## Cài đặt và chạy
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+Ví dụ PowerShell, từ thư mục gốc, dùng Python 3.14.3 (môi trường đã kiểm thử). Lần chạy đầu cần Internet để tải model. Thay tên thư mục ở biến $out cho mỗi lần chạy mới.
 
-## 1. Xây pipeline
+~~~powershell
+py -3.14 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r starter/requirements.txt
+$python = '.\.venv\Scripts\python.exe'
+$out = 'starter/storage/run-01'
+& $python -m starter.src.sensor_experiment prepare --output-dir $out
+& $python -m starter.src.sensor_experiment retrieve-dev --output-dir $out
+& $python -m starter.src.sensor_experiment select-dev --output-dir $out
+& $python -m starter.src.sensor_experiment retrieve-test --output-dir $out
+~~~
 
-![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
+Prepare yêu cầu thư mục mới. Dev tạo hai collection và trace, sau đó chọn theo Hit@3, Hit@1, số chunk ít hơn rồi thứ tự A/B/C. Test kiểm tra checksum của dữ liệu, benchmark và trace dev trước khi truy xuất. Đọc dev/traces_dev.jsonl, evaluation/selection.json, evaluation/traces_test.jsonl và evaluation/*_exact_metrics.json trong thư mục vừa chạy.
 
-Chọn tài liệu được phép sử dụng; giữ **ID tài liệu, nguồn, trang/vị trí** và metadata phù hợp. Dùng embedding model thật qua API hoặc chạy local; lưu và truy xuất bằng pgvector, Qdrant, Chroma hoặc một store tương đương.
+## Benchmark và kết quả lịch sử
 
-## 2. So sánh và đánh giá
+[Bộ câu hỏi](starter/benchmark/sensor_questions.json) gồm 15 dev và 5 test, có 4 câu chỉ định section (2 câu test). Hit@1 tính câu có bằng chứng ở hạng đầu, Hit@3 tính câu có ít nhất một chunk đủ bằng chứng trong ba hạng đầu. Proxy tự động yêu cầu đúng nguồn, trang và đoạn trích sau chuẩn hóa.
 
-![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
+| Cấu hình | Dev Hit@1 | Dev Hit@3 | Test Hit@1 | Test Hit@3 |
+|---|---:|---:|---:|---:|
+| A | 10/15 (66,7%) | 12/15 (80%) | 3/5 (60%) | 3/5 (60%) |
+| B | 10/15 (66,7%) | 12/15 (80%) | 3/5 (60%) | 4/5 (80%) |
+| C | 10/15 (66,7%) | 13/15 (86,7%) | 3/5 (60%) | 5/5 (100%) |
 
-Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; thiết kế bộ câu hỏi và đánh giá theo [BENCHMARK.md](BENCHMARK.md).
+Dev chọn C. Với SQ17, nhãn ngữ nghĩa do AI đề xuất tính thêm một hit cho A, đưa Hit@3 test lên 4/5. Học viên chưa xác nhận các nhãn. Test đã được xem, và lần chạy lịch sử không ghi revision model. Lần mới khóa revision e8f8c211226b894fcb81acc59f3b34ba3efd5f42.
 
-Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
+[Báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md) trình bày năm khía cạnh đánh giá, chi phí, lỗi và đánh đổi. Xem [nhật ký thí nghiệm](artifacts/experiment_log.csv), [trace dev đã gắn nhãn](starter/results/sensor_run/evaluation/dev_exact_review.jsonl), [trace test](starter/results/sensor_run/evaluation/traces_test.jsonl) và [bảng đánh giá](review/manual_scoring_review.csv).
 
-## 3. Chuẩn bị bài nộp
-
-1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md); mẫu chung nằm ở [REPORT_TEMPLATE.md](REPORT_TEMPLATE.md).
-3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
-
-## Tài liệu hướng dẫn
-
-| Bạn cần tìm | Tài liệu |
-|---|---|
-| Setup baseline PostgreSQL + pgvector | [starter/README.md](starter/README.md) |
-| Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
-| Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
-| Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
-| Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
-| Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
-| Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
-
-[Manifest cảm biến](data/manifest.json) mô tả nguồn và các trang được chọn. Phần xử lý và benchmark do người học kiểm tra; không bắt buộc xây chatbot.
-
-## Minh chứng và việc cần người học xác nhận
-
-- `starter/results/sensor_verification.json` là báo cáo cục bộ: 49 dòng trang, số ký tự, lựa chọn cũ và `NEEDS_VERIFICATION`; không coi text ngắn hoặc có chữ là tự động hợp lệ. Đối chiếu từng slide, nhất là trang 19 và 44, với quy tắc nội dung của GUIDE.
-- Section 2.2, 2.3, 2.4 và 2.5 bắt đầu tại các trang 32, 36, 40 và 47; các trang 14, 19–31 và 44–46 không tự ghi số section nên mapping dựa vào vị trí. Bốn filter được đối chiếu với phần nêu trong câu hỏi. Mapping thí nghiệm cũ được giữ nguyên.
-- Người học kiểm tra đáp án, đủ evidence và các nhãn coherence (10 vị trí), metadata (5 câu × top-3 mỗi cấu hình) và grounding (5 câu mỗi cấu hình), kèm lý do. Nhận xét của Codex là `PENDING_MANUAL_REVIEW`, không phải nhãn do người học chấm.
-- PDF, benchmark, parsed pages, trace và bảng review được cung cấp trong repo; môi trường ảo, cache và cơ sở dữ liệu cục bộ vẫn bị ignore.
-- Model revision của lần cũ là null; revision cache được báo cáo không chứng minh revision đã dùng. Tái lập chính xác bị hạn chế. Test đã được xem; không dùng nó để điều chỉnh rồi tuyên bố độc lập. Cần test mới chưa sử dụng nếu điều chỉnh.
-- Chạy mới cần phiên bản riêng của output, log và Chroma collection (các hằng `OUT`, `LOG_PATH`, `COLLECTION_PREFIX`, `EVAL` trong các module tương ứng); không ghi đè dữ liệu cũ. `sensor_prepare` cũng từ chối ghi đè corpus đã parse. Giữ cùng cấu hình A/B/C, model và revision đã xác nhận, lưu hash corpus/benchmark và version dependencies.
-- PostgreSQL/pgvector, Docker, `store.py` và `check_setup.py` là starter tham khảo của đề, không được pipeline cảm biến gọi; giữ lại để đối chiếu. Không xóa dữ liệu hoặc lịch sử cũ.
-
-## Minh chứng và giới hạn kiểm chứng
-
-PDF: `starter/data/documents.pdf`; câu hỏi: `starter/benchmark/sensor_questions.json`; trace và chunk: `starter/results/sensor_run/`; các bảng duyệt: `review/*.csv`. Các dòng retrieval là nhãn ngữ nghĩa do Codex duyệt; cột riêng giữ phép so khớp nguyên văn tự động trước đây; coherence và grounding là nhận xét sơ bộ của Codex, metadata là kiểm tra tự động. 31 trang được Codex kiểm tra từ văn bản trích xuất, riêng trang 44 được xem trực tiếp; đây không phải xác nhận độc lập của người học hay giảng viên. Test đã được xem và không còn là holdout độc lập. PostgreSQL và dotenv chỉ dùng trong starter tham khảo, không cần cho pipeline cảm biến; chúng vẫn được giữ trong requirements cho starter đó.
-
-Kết quả duyệt ngữ nghĩa được tổng hợp trong `artifacts/sensor_semantic_metrics.json`. Với test, Hit@3 của A/B/C lần lượt là 4/5, 4/5 và 5/5; phần chọn cấu hình lịch sử vẫn dùng kết quả khớp nguyên văn trên dev. Xem bảng retrieval để kiểm tra lý do từng chunk.
+Để tính lại metric lịch sử và kiểm tra 180 kết quả theo trang, offset và nhãn đã lưu, chạy `python -m starter.src.verify_sensor` bằng môi trường trên.

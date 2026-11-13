@@ -1,66 +1,91 @@
-"""Local, non-destructive audit; counts are not human validity labels."""
-import hashlib
+"""Validate the archived traces, PDF offsets and score tables without embedding."""
+import csv
 import json
 from collections import Counter
 from pathlib import Path
-from pypdf import PdfReader
-from .ingestion import normalize_text
-from .evaluation import normalize
+from tempfile import TemporaryDirectory
 
-PDF = Path("starter/data/documents.pdf")
-BENCHMARK = Path("starter/benchmark/sensor_questions.json")
-MANIFEST = Path("data/manifest.json")
+from .evaluation import evaluate_query, evidence_candidate, load_jsonl, normalize, summarize
+from .sensor_prepare import prepare
+
+ARCHIVE = Path("starter/results/sensor_run/evaluation")
+
+
+def read_json(path):
+    return Path(path).read_text(encoding="utf-8")
+
+
+def table(name):
+    with Path("review", name).open(encoding="utf-8-sig", newline="") as stream:
+        return list(csv.DictReader(stream))
 
 
 def main():
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))["documents"][0]
-    if not PDF.exists():
-        raise SystemExit("NEEDS_VERIFICATION: original PDF missing")
-    digest = hashlib.sha256(PDF.read_bytes()).hexdigest()
-    if digest != manifest["sha256"]:
-        raise SystemExit("NEEDS_VERIFICATION: PDF hash differs from manifest")
-    pdf = PdfReader(PDF)
-    selected = set(manifest["valid_pages"])
-    texts, pages = {}, []
-    for number, page in enumerate(pdf.pages, 1):
-        try:
-            text = normalize_text(page.extract_text() or "")
-            error = None
-        except Exception as exc:
-            text, error = "", str(exc)
-        texts[number] = text
-        reason = ("extraction error: " + error if error else
-                  "no extractable text" if not text else
-                  "previously selected; content relevance and sufficiency need human review" if number in selected else
-                  "previously excluded; exclusion needs human review")
-        pages.append({"page": number, "normalized_characters": len(text),
-                      "previously_selected": number in selected,
-                      "validity": "NEEDS_VERIFICATION", "reason": reason})
-    result = {"pdf_sha256": digest, "physical_pages": len(pages), "pages": pages,
-              "selection_status": "NEEDS_VERIFICATION", "section_status": "NEEDS_VERIFICATION"}
-    if BENCHMARK.exists():
-        questions = json.loads(BENCHMARK.read_text(encoding="utf-8"))
-        checks = []
-        for q in questions:
-            page = q.get("gold_page")
-            quote = q.get("evidence_quote", "")
-            checks.append({"id": q.get("id"), "split": q.get("split"),
-                "required_fields_present": all(q.get(k) for k in ("id", "split", "question", "expected_answer", "gold_source_id", "gold_page", "evidence_quote")),
-                "gold_source_matches": q.get("gold_source_id") == manifest["source_id"],
-                "quote_on_page_exact": bool(quote and normalize(quote) in normalize(texts.get(page, ""))),
-                "filter_present": bool(q.get("filter")), "semantic_and_filter_review": "PENDING_MANUAL_REVIEW"})
-        result["benchmark"] = {"count": len(questions), "split_counts": dict(Counter(q.get("split") for q in questions)),
-            "unique_ids": len({q.get("id") for q in questions}) == len(questions), "questions": checks}
-    else:
-        result["benchmark"] = {"status": "NEEDS_VERIFICATION: benchmark missing"}
-    out = Path("starter/results/sensor_verification.json")
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"PDF: {len(pages)} pages; previously selected: {len(selected)}; all validity decisions pending review")
-    if "questions" in result["benchmark"]:
-        b = result["benchmark"]
-        print(f"Benchmark: {b['split_counts']}; exact quotes found: {sum(x['quote_on_page_exact'] for x in b['questions'])}/{b['count']}")
-    print(f"Local report: {out}")
+    with TemporaryDirectory() as tmp:
+        output = Path(tmp) / "pages.jsonl"
+        prepare(output)
+        pages = {p["page"]: p for p in load_jsonl(output)}
+    questions = json.loads(read_json("starter/benchmark/sensor_questions.json"))
+    assert len({q["id"] for q in questions}) == len(questions)
+    counts = Counter(q["split"] for q in questions)
+    assert counts["dev"] >= 15 and counts["test"] >= 5
+    filtered = [q for q in questions if q.get("filter")]
+    assert len(filtered) >= 3 and any(q["split"] == "test" for q in filtered)
+    for q in questions:
+        page = pages[q["gold_page"]]
+        assert q["question"].strip() and q["expected_answer"].strip() and q["evidence_quote"].strip()
+        assert q["gold_source_id"] == page["document_id"]
+        assert normalize(q["evidence_quote"]) in normalize(page["text"])
+        if q.get("filter"):
+            assert q["filter"] == {"section": page["metadata"]["section"]}
+    questions = {q["id"]: q for q in questions}
+    reviewed = {(r["id"], r["cau_hinh"], int(r["rank"])): r for r in table("retrieval_review.csv")}
+    semantic = []
+    for split in ("dev", "test"):
+        traces = load_jsonl(ARCHIVE / f"{split}_exact_review.jsonl")
+        expected = {(q["id"], s) for q in questions.values() if q["split"] == split for s in "ABC"}
+        assert len(traces) == len(expected) and {(t["question_id"], t["strategy"]) for t in traces} == expected
+        exact = []
+        for trace in traces:
+            q = questions[trace["question_id"]]
+            strategy = trace["strategy"]
+            hits = trace["results"]
+            assert trace["split"] == q["split"] and trace["question"] == q["question"]
+            assert len(hits) == 3 and trace["filter_applied"] == (q.get("filter") if strategy == "C" else None)
+            labels = []
+            for rank, hit in enumerate(hits, 1):
+                meta = hit["metadata"]
+                page = pages[meta["page"]]
+                assert hit.get("rank", rank) == rank and isinstance(hit["cosine_distance"], (float, int))
+                assert all(meta[k] == page[k] for k in ("document_id", "source"))
+                assert meta["section"] == page["metadata"]["section"]
+                assert hit["text"] == page["text"][meta["start_char"]:meta["end_char"]]
+                if trace["filter_applied"]:
+                    assert meta["section"] == q["filter"]["section"]
+                row = reviewed.pop((q["id"], strategy, rank))
+                assert hit["chunk_id"] == row["chunk_id"]
+                labels.append(row["nhan_evidence_du"] == "Có")
+            exact.append({**trace, **evaluate_query(q, hits, [evidence_candidate(q, h) for h in hits])})
+            semantic.append({**trace, **evaluate_query(q, hits, labels)})
+        assert summarize(exact) == json.loads(read_json(ARCHIVE / f"{split}_exact_metrics.json"))
+    assert not reviewed
+    assert summarize(semantic) == json.loads(read_json("artifacts/sensor_semantic_metrics.json"))["metrics"]
+    scores = table("manual_scoring_review.csv")
+    summary = json.loads(read_json("artifacts/sensor_review_summary_semantic.json"))
+    for strategy, stats in summary.items():
+        group = [r for r in scores if r["cau_hinh"] == strategy]
+        for kind, n in (("coherence", 10), ("grounding", 5)):
+            rows = [r for r in group if r["nhom"] == kind]
+            assert len(rows) == n and all(r["ly_do"] for r in rows)
+            values = [int(r["diem_0_1_2"]) for r in rows]
+            assert sum(values) / n == stats[kind + "_mean"]
+            if kind == "grounding":
+                assert [values.count(i) for i in range(3)] == stats["grounding_0_1_2"]
+            else:
+                assert {int(r["trang_pdf"]) for r in rows} == set(sorted(pages)[:10])
+        assert sum(r["nhom"] == "metadata" and r["metadata_du_va_dung"] == "Khớp kiểm tra tự động" for r in group) == stats["metadata_correct"] == 15
+    print("Verified corpus, benchmark, 180 ranked hits, exact/semantic metrics and review tables.")
+
 
 if __name__ == "__main__":
     main()

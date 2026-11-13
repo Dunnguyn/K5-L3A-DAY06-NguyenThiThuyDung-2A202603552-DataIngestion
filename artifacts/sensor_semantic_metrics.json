@@ -1,5 +1,5 @@
 {
-  "method": "Codex review; single chunk sufficient; semantic equivalence accepted; test previously viewed",
+  "method": "single chunk sufficient; semantic equivalence accepted; test previously viewed",
   "review_date": "2026-11-13",
   "metrics": {
     "A_dev": {

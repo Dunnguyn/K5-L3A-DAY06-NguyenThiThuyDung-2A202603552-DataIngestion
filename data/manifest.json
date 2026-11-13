@@ -1,5 +1,4 @@
 {
-  "status": "REVIEWED_BY_CODEX: 31 relevant pages assessed from extracted text; visual details and independent human verification remain limitations",
   "documents": [
     {
       "source_id": "SENSOR001",
@@ -41,6 +40,164 @@
         46,
         47,
         48
+      ],
+      "sha256": "44105d2a54ceb32a9f9b1179f4490e75a0cfca353aa99f300d795f9397a80919",
+      "pages": [
+        {
+          "page": 5,
+          "characters": 410,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 14,
+          "characters": 213,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 19,
+          "characters": 104,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 20,
+          "characters": 297,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 21,
+          "characters": 386,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 22,
+          "characters": 224,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 23,
+          "characters": 191,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 24,
+          "characters": 553,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 25,
+          "characters": 414,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 26,
+          "characters": 266,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 27,
+          "characters": 179,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 28,
+          "characters": 273,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 29,
+          "characters": 527,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 30,
+          "characters": 405,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 31,
+          "characters": 336,
+          "section": "2.1 Cảm biến và cơ cấu chấp hành"
+        },
+        {
+          "page": 32,
+          "characters": 529,
+          "section": "2.2 Khuếch đại, lọc và xử lý tín hiệu"
+        },
+        {
+          "page": 33,
+          "characters": 422,
+          "section": "2.2 Khuếch đại, lọc và xử lý tín hiệu"
+        },
+        {
+          "page": 34,
+          "characters": 345,
+          "section": "2.2 Khuếch đại, lọc và xử lý tín hiệu"
+        },
+        {
+          "page": 36,
+          "characters": 504,
+          "section": "2.3 Chuyển đổi ADC, DAC"
+        },
+        {
+          "page": 37,
+          "characters": 308,
+          "section": "2.3 Chuyển đổi ADC, DAC"
+        },
+        {
+          "page": 38,
+          "characters": 537,
+          "section": "2.3 Chuyển đổi ADC, DAC"
+        },
+        {
+          "page": 39,
+          "characters": 272,
+          "section": "2.3 Chuyển đổi ADC, DAC"
+        },
+        {
+          "page": 40,
+          "characters": 330,
+          "section": "2.4 Thu thập và xử lý dữ liệu cảm biến"
+        },
+        {
+          "page": 41,
+          "characters": 635,
+          "section": "2.4 Thu thập và xử lý dữ liệu cảm biến"
+        },
+        {
+          "page": 42,
+          "characters": 547,
+          "section": "2.4 Thu thập và xử lý dữ liệu cảm biến"
+        },
+        {
+          "page": 43,
+          "characters": 389,
+          "section": "2.4 Thu thập và xử lý dữ liệu cảm biến"
+        },
+        {
+          "page": 44,
+          "characters": 146,
+          "section": "2.4 Thu thập và xử lý dữ liệu cảm biến"
+        },
+        {
+          "page": 45,
+          "characters": 469,
+          "section": "2.4 Thu thập và xử lý dữ liệu cảm biến"
+        },
+        {
+          "page": 46,
+          "characters": 671,
+          "section": "2.4 Thu thập và xử lý dữ liệu cảm biến"
+        },
+        {
+          "page": 47,
+          "characters": 598,
+          "section": "2.5 Các giải thuật xử lý dữ liệu"
+        },
+        {
+          "page": 48,
+          "characters": 662,
+          "section": "2.5 Các giải thuật xử lý dữ liệu"
+        }
       ]
     }
   ]

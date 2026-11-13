@@ -1,15 +1,15 @@
-{"question_id": "SQ16", "strategy": "A", "score": 2, "reason": "Có đoạn giải thích mục đích lọc nhiễu.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ16", "strategy": "B", "score": 2, "reason": "Có đoạn giải thích mục đích lọc nhiễu.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ16", "strategy": "C", "score": 2, "reason": "Có đoạn giải thích mục đích lọc nhiễu.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ17", "strategy": "A", "score": 1, "reason": "ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ17", "strategy": "B", "score": 2, "reason": "ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ17", "strategy": "C", "score": 2, "reason": "ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ18", "strategy": "A", "score": 2, "reason": "Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ18", "strategy": "B", "score": 2, "reason": "Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ18", "strategy": "C", "score": 2, "reason": "Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ19", "strategy": "A", "score": 2, "reason": "Có các loại dữ liệu cần loại bỏ khi lọc.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ19", "strategy": "B", "score": 2, "reason": "Có các loại dữ liệu cần loại bỏ khi lọc.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ19", "strategy": "C", "score": 2, "reason": "Có các loại dữ liệu cần loại bỏ khi lọc.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ20", "strategy": "A", "score": 0, "reason": "A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ20", "strategy": "B", "score": 0, "reason": "A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3.", "reviewer": "Codex; cần học viên kiểm tra lại"}
-{"question_id": "SQ20", "strategy": "C", "score": 2, "reason": "A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3.", "reviewer": "Codex; cần học viên kiểm tra lại"}
+{"question_id": "SQ16", "strategy": "A", "score": 2, "reason": "Có đoạn giải thích mục đích lọc nhiễu."}
+{"question_id": "SQ16", "strategy": "B", "score": 2, "reason": "Có đoạn giải thích mục đích lọc nhiễu."}
+{"question_id": "SQ16", "strategy": "C", "score": 2, "reason": "Có đoạn giải thích mục đích lọc nhiễu."}
+{"question_id": "SQ17", "strategy": "A", "score": 1, "reason": "ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk."}
+{"question_id": "SQ17", "strategy": "B", "score": 2, "reason": "ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk."}
+{"question_id": "SQ17", "strategy": "C", "score": 2, "reason": "ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk."}
+{"question_id": "SQ18", "strategy": "A", "score": 2, "reason": "Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa."}
+{"question_id": "SQ18", "strategy": "B", "score": 2, "reason": "Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa."}
+{"question_id": "SQ18", "strategy": "C", "score": 2, "reason": "Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa."}
+{"question_id": "SQ19", "strategy": "A", "score": 2, "reason": "Có các loại dữ liệu cần loại bỏ khi lọc."}
+{"question_id": "SQ19", "strategy": "B", "score": 2, "reason": "Có các loại dữ liệu cần loại bỏ khi lọc."}
+{"question_id": "SQ19", "strategy": "C", "score": 2, "reason": "Có các loại dữ liệu cần loại bỏ khi lọc."}
+{"question_id": "SQ20", "strategy": "A", "score": 0, "reason": "A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3."}
+{"question_id": "SQ20", "strategy": "B", "score": 0, "reason": "A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3."}
+{"question_id": "SQ20", "strategy": "C", "score": 2, "reason": "A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3."}
