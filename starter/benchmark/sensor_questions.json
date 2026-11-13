@@ -1,0 +1,210 @@
+[
+  {
+    "id": "SQ01",
+    "split": "dev",
+    "question": "Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?",
+    "expected_answer": "Thành thông tin.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 5,
+    "evidence_quote": "chuyển đổi các thuộc tính đó thành thông tin",
+    "filter": null
+  },
+  {
+    "id": "SQ02",
+    "split": "dev",
+    "question": "Tài liệu phân loại cảm biến theo những tiêu chí nào?",
+    "expected_answer": "Theo nguyên lý chuyển đổi, dạng kích thích, tính năng, phạm vi sử dụng và thông số mạch thay thế.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 14,
+    "evidence_quote": "Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế",
+    "filter": null
+  },
+  {
+    "id": "SQ03",
+    "split": "dev",
+    "question": "Theo thông số mạch thay thế, có hai loại cảm biến nào?",
+    "expected_answer": "Cảm biến tích cực và cảm biến thụ động.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 19,
+    "evidence_quote": "Cảm biến tích cực  Cảm biến thụ động",
+    "filter": null
+  },
+  {
+    "id": "SQ04",
+    "split": "dev",
+    "question": "Hàm truyền cho biết mối quan hệ nào của cảm biến?",
+    "expected_answer": "Quan hệ giữa đáp ứng và kích thích.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 20,
+    "evidence_quote": "Cho biết quan hệ giữa đáp ứng và kích thích",
+    "filter": null
+  },
+  {
+    "id": "SQ05",
+    "split": "dev",
+    "question": "Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?",
+    "expected_answer": "Đại lượng đầu ra S và đại lượng đo đầu vào M.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 21,
+    "evidence_quote": "sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào",
+    "filter": null
+  },
+  {
+    "id": "SQ06",
+    "split": "dev",
+    "question": "Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",
+    "expected_answer": "Sự thay đổi của nhiệt độ.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 24,
+    "evidence_quote": "phát hiện sự thay đổi của nhiệt độ",
+    "filter": {
+      "section": "2.1 Cảm biến và cơ cấu chấp hành"
+    }
+  },
+  {
+    "id": "SQ07",
+    "split": "dev",
+    "question": "Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?",
+    "expected_answer": "Phát ra hoặc phát hiện bức xạ hồng ngoại.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 25,
+    "evidence_quote": "phát ra hoặc phát hiện bức xạ hồng ngoại",
+    "filter": null
+  },
+  {
+    "id": "SQ08",
+    "split": "dev",
+    "question": "Cảm biến độ ẩm đo thành phần nào trong không khí?",
+    "expected_answer": "Thành phần hơi nước.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 26,
+    "evidence_quote": "đo thành phần hơi nước trong không khí",
+    "filter": null
+  },
+  {
+    "id": "SQ09",
+    "split": "dev",
+    "question": "Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",
+    "expected_answer": "Sử dụng vi sóng để phát hiện sự thay đổi trong môi trường.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 27,
+    "evidence_quote": "sử dụng các vi sóng để phát hiện sự thay đổi",
+    "filter": null
+  },
+  {
+    "id": "SQ10",
+    "split": "dev",
+    "question": "Cảm biến khí giúp theo dõi điều gì?",
+    "expected_answer": "Sự thay đổi chất lượng không khí và khí độc hại.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 28,
+    "evidence_quote": "theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại",
+    "filter": null
+  },
+  {
+    "id": "SQ11",
+    "split": "dev",
+    "question": "Cảm biến khói phát hiện những thông tin nào trong môi trường?",
+    "expected_answer": "Có khói và nồng độ khói.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 29,
+    "evidence_quote": "phát hiện có khói và nồng độ khói trong môi trường",
+    "filter": null
+  },
+  {
+    "id": "SQ12",
+    "split": "dev",
+    "question": "Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?",
+    "expected_answer": "Trong chất khí và chất lỏng.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 30,
+    "evidence_quote": "Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng",
+    "filter": null
+  },
+  {
+    "id": "SQ13",
+    "split": "dev",
+    "question": "Cảm biến gia tốc là thiết bị đo đại lượng gì?",
+    "expected_answer": "Gia tốc.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 31,
+    "evidence_quote": "thiết bị có thể đo gia tốc",
+    "filter": null
+  },
+  {
+    "id": "SQ14",
+    "split": "dev",
+    "question": "Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",
+    "expected_answer": "Để tín hiệu đầu ra phù hợp với bộ xử lý tín hiệu.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 32,
+    "evidence_quote": "cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu",
+    "filter": {
+      "section": "2.2 Khuếch đại, lọc và xử lý tín hiệu"
+    }
+  },
+  {
+    "id": "SQ15",
+    "split": "dev",
+    "question": "Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?",
+    "expected_answer": "Khuếch đại tín hiệu cảm biến.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 33,
+    "evidence_quote": "khuếch đại tín hiệu từ các cảm biến",
+    "filter": null
+  },
+  {
+    "id": "SQ16",
+    "split": "test",
+    "question": "Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?",
+    "expected_answer": "Ổn định và chính xác.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 34,
+    "evidence_quote": "giúp hệ thống chạy ổn định, chính xác",
+    "filter": null
+  },
+  {
+    "id": "SQ17",
+    "split": "test",
+    "question": "Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",
+    "expected_answer": "Từ tín hiệu tương tự sang tín hiệu số.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 36,
+    "evidence_quote": "chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",
+    "filter": {
+      "section": "2.3 Chuyển đổi ADC, DAC"
+    }
+  },
+  {
+    "id": "SQ18",
+    "split": "test",
+    "question": "Ba bước chính của quá trình ADC là gì?",
+    "expected_answer": "Lấy mẫu, lượng tử hóa và mã hóa.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 37,
+    "evidence_quote": "lấy mẫu, lượng tử hóa, mã hóa",
+    "filter": null
+  },
+  {
+    "id": "SQ19",
+    "split": "test",
+    "question": "Lọc dữ liệu loại bỏ những dữ liệu nào?",
+    "expected_answer": "Dữ liệu không chính xác, không cần thiết hoặc lặp lại.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 45,
+    "evidence_quote": "Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",
+    "filter": null
+  },
+  {
+    "id": "SQ20",
+    "split": "test",
+    "question": "Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",
+    "expected_answer": "Đưa dữ liệu về cùng một thang đo để dễ phân tích.",
+    "gold_source_id": "SENSOR001",
+    "gold_page": 47,
+    "evidence_quote": "Đưa dữ liệu về cùng một thang đo để dễ phân tích",
+    "filter": {
+      "section": "2.5 Các giải thuật xử lý dữ liệu"
+    }
+  }
+]

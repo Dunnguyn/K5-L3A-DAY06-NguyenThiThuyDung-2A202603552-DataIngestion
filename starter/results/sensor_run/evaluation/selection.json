@@ -1,0 +1,38 @@
+{
+  "status": "provisional; exact-quote scores; near misses need human review; corpus not validated",
+  "rule": "highest dev exact-quote Hit@3, then Hit@1, then fewest chunks, then alphabetical",
+  "selected": "C",
+  "dev_metrics": {
+    "A_dev": {
+      "questions": 15,
+      "hit1_count": 10,
+      "hit1": 0.6666666666666666,
+      "hit3_count": 12,
+      "hit3": 0.8
+    },
+    "B_dev": {
+      "questions": 15,
+      "hit1_count": 10,
+      "hit1": 0.6666666666666666,
+      "hit3_count": 12,
+      "hit3": 0.8
+    },
+    "C_dev": {
+      "questions": 15,
+      "hit1_count": 10,
+      "hit1": 0.6666666666666666,
+      "hit3_count": 13,
+      "hit3": 0.8666666666666667
+    }
+  },
+  "chunks": {
+    "A": 43,
+    "B": 43,
+    "C": 43
+  },
+  "data_sha256": "a5cdee1bc8d458cc3a832520c6557a6b8458b87171a58227c921200f2fb4db71",
+  "dev_trace_sha256": "7b1e25b78a7a197a2335cc337833b3bf874d11884a3fc28aae5dbcce8e17c763",
+  "benchmark_sha256": "f50b981b45d759695b9865989547dae574fefb965f6ef701aa75be02132b3927",
+  "selected_at_utc": "2026-11-13T12:25:11.351976+00:00",
+  "test_traces_examined_at_selection": false
+}

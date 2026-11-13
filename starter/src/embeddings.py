@@ -11,6 +11,8 @@ from pathlib import Path
 from typing import Protocol
 
 DEFAULT_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+# Candidate observed in the local cache; the historical run did not record its revision.
+DEFAULT_REVISION = "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
 
 
 class Embedder(Protocol):
@@ -33,7 +35,8 @@ class MyEmbedder:
             raise RuntimeError("Install sentence-transformers in the active environment first") from exc
         self.model_name = model_name
         self.batch_size = batch_size
-        self.model = SentenceTransformer(model_name)
+        self.revision = DEFAULT_REVISION if model_name == DEFAULT_MODEL else None
+        self.model = SentenceTransformer(model_name, revision=self.revision)
         self.dimensions = self.model.get_sentence_embedding_dimension()
         if not self.dimensions:
             raise ValueError("The selected model did not report an embedding dimension")
@@ -81,7 +84,7 @@ def main() -> None:
     with args.output.open("w", encoding="utf-8") as output:
         for chunk, vector in zip(chunks, vectors):
             output.write(json.dumps({**chunk, "embedding": vector}, ensure_ascii=False) + "\n")
-    report = {"model": args.model, "sentence_transformers_version": version("sentence-transformers"),
+    report = {"model": args.model, "model_revision": embedder.revision, "sentence_transformers_version": version("sentence-transformers"),
               "dimensions": embedder.dimensions, "normalized": True, "batch_size": args.batch_size,
               "chunks": len(chunks), "max_sequence_tokens": limit,
               "chunks_exceeding_token_limit": truncated,

@@ -1,12 +1,12 @@
 {
-  "status": "NEEDS_VERIFICATION: page validity, section mapping and sharing permissions require learner review",
+  "status": "REVIEWED_BY_CODEX: 31 relevant pages assessed from extracted text; visual details and independent human verification remain limitations",
   "documents": [
     {
       "source_id": "SENSOR001",
       "title": "Chương II: Xử lý dữ liệu cảm biến",
       "source_path_or_url": "starter/data/documents.pdf",
       "source_origin": "Học viên cho biết tài liệu do giảng viên cung cấp (13/11/2026).",
-      "license_or_permission": "Học viên xác nhận được phép sử dụng trong bài học; chưa xác nhận được phép chia sẻ công khai hoặc tái phân phối.",
+      "license_or_permission": "Học viên xác nhận ngày 13/11/2026 đã được cấp toàn quyền công khai tài liệu.",
       "accessed_at": null,
       "physical_pages": 49,
       "valid_pages": [
@@ -47,8 +47,10 @@
       "page_selection": "Chọn trang có nội dung chữ về định nghĩa, phân loại, đặc trưng, các cảm biến, xử lý tín hiệu và dữ liệu. Loại bìa, mục tiêu/mục lục, trang chủ yếu hình ảnh không trích được, và trang thuật ngữ cuối.",
       "sha256": "44105d2a54ceb32a9f9b1179f4490e75a0cfca353aa99f300d795f9397a80919",
       "page_numbering": "physical PDF pages, 1-based",
-      "valid_pages_status": "NEEDS_VERIFICATION: historical selection, not confirmed valid pages",
-      "section_mapping_status": "NEEDS_VERIFICATION"
+      "valid_pages_status": "31 trang được Codex duyệt dựa trên văn bản trích xuất; trang 19 ngắn, trang 44 là sơ đồ",
+      "section_mapping_status": "Codex đối chiếu tiêu đề và ranh giới 2.1–2.5; trang không có tiêu đề dựa vào vị trí",
+      "sharing_status": "Học viên xác nhận được cấp toàn quyền công khai tài liệu ngày 13/11/2026; PDF và minh chứng được cung cấp trong repo.",
+      "accessed_at_note": "Chưa biết ngày nhận tài liệu; không suy đoán."
     }
   ]
 }

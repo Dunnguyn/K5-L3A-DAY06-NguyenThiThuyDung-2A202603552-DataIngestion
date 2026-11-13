@@ -73,7 +73,7 @@ def main():
     embedder = MyEmbedder(DEFAULT_MODEL)
     model_load_seconds = time.perf_counter() - model_started
     tokenizer, limit = embedder.model.tokenizer, embedder.model.max_seq_length
-    model_revision = getattr(embedder.model[0].auto_model.config, "_commit_hash", None)
+    model_revision = embedder.revision or getattr(embedder.model[0].auto_model.config, "_commit_hash", None)
     if any(len(tokenizer.encode(q['question'], add_special_tokens=True, truncation=False)) > limit for q in questions):
         raise SystemExit("A dev question exceeds the model token limit")
 

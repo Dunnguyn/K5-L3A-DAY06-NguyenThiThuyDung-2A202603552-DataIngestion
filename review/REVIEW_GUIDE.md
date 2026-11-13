@@ -1,8 +1,8 @@
 # Hướng dẫn học viên kiểm chứng — Day 06
 
-Các bảng CSV lưu bằng UTF-8 có BOM để mở bằng Excel. Chọn Data → From Text/CSV nếu tiếng Việt hiển thị sai. Bật Wrap Text để đọc chunk nhiều dòng. Trang được đánh số theo **trang vật lý PDF, bắt đầu từ 1**. Các cột xác nhận, điểm, lý do, người và ngày duyệt để trống; chỉ học viên điền sau khi đối chiếu. `NEEDS_VERIFICATION` và `PENDING_MANUAL_REVIEW` không phải kết luận đạt. Lưu bản sao trước khi chỉnh sửa.
+Các bảng CSV lưu bằng UTF-8 có BOM để mở bằng Excel. Chọn Data → From Text/CSV nếu tiếng Việt hiển thị sai. Bật Wrap Text để đọc chunk nhiều dòng. Trang được đánh số theo **trang vật lý PDF, bắt đầu từ 1**. Các bảng đã được điền bởi Codex hoặc phép kiểm tra tự động, với người duyệt và phương pháp được ghi trong từng dòng; không phải xác nhận của học viên. `NEEDS_VERIFICATION` và `PENDING_MANUAL_REVIEW` không phải kết luận đạt. Lưu bản sao trước khi chỉnh sửa.
 
-Các CSV chứa văn bản tài liệu, đáp án và trace; chúng được Git bỏ qua vì quyền chia sẻ công khai chưa xác nhận. Thống nhất với giảng viên cách cung cấp riêng; không tự đăng công khai. PDF nguồn: `starter/data/documents.pdf`; benchmark: `starter/benchmark/sensor_questions.json`; trace: `starter/results/sensor_run/dev/traces_dev.jsonl` và `starter/results/sensor_run/evaluation/traces_test.jsonl`. Nếu thiếu một file, trạng thái **BLOCKED**: xin đúng file từ học viên, không thay PDF hoặc tự tạo evidence. PDF được đối chiếu với SHA-256 trong `data/manifest.json` khi lập bảng.
+Các CSV chứa văn bản tài liệu, đáp án và trace và được cung cấp trong repo theo xác nhận của học viên về quyền công khai tài liệu. PDF nguồn: `starter/data/documents.pdf`; benchmark: `starter/benchmark/sensor_questions.json`; trace: `starter/results/sensor_run/dev/traces_dev.jsonl` và `starter/results/sensor_run/evaluation/traces_test.jsonl`. Nếu thiếu một file, trạng thái **BLOCKED**: xin đúng file từ học viên, không thay PDF hoặc tự tạo evidence. PDF được đối chiếu với SHA-256 trong `data/manifest.json` khi lập bảng.
 
 ## 1. Trang và section — page_review.csv
 
@@ -32,4 +32,4 @@ Sau khi duyệt, so sánh A–B về chunking và B–C về filter, cùng số 
 
 ## 5. Trước khi nộp
 
-Kiểm tra mọi hàng đã có quyết định và lý do phù hợp, kể cả các dòng không áp dụng. Đối chiếu lại các tổng và báo cáo năm khía cạnh theo GUIDE/BENCHMARK. Xác nhận quyền dùng và cách giảng viên truy cập các bảng, benchmark, PDF và trace. Nếu thiếu xác nhận hoặc minh chứng bắt buộc, giữ trạng thái **NOT_READY**; không sửa artifacts hoặc báo cáo số chưa được chứng minh.
+Kiểm tra mọi hàng đã có quyết định và lý do phù hợp, kể cả các dòng không áp dụng. Đối chiếu lại các tổng và báo cáo năm khía cạnh theo GUIDE/BENCHMARK. Xác nhận quyền dùng và cách giảng viên truy cập các bảng, benchmark, PDF và trace. Không sửa artifacts hoặc báo cáo số chưa được chứng minh; học viên cần tự hiểu và kiểm tra kết quả trước khi nộp.

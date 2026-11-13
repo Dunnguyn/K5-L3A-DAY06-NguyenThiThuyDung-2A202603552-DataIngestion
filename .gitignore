@@ -47,3 +47,10 @@ starter/results/sensor_verification.json
 
 # Review tables contain restricted source text, benchmark and traces.
 /review/*.csv
+
+# Minh chứng cảm biến được học viên xác nhận cho phép công khai.
+!starter/data/documents.pdf
+!starter/data/sensor_pages.jsonl
+!starter/benchmark/sensor_questions.json
+!starter/results/sensor_run/
+!/review/*.csv

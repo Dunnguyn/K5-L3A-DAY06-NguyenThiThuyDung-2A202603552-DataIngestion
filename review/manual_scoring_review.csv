@@ -1,0 +1,1104 @@
+﻿nhom,cau_hinh,id_cau_hoi,cau_hoi,trang_pdf,vi_tri_offset,rank,chunk_id,nguon,section,filter_ap_dung,noi_dung_de_duyet,trang_thai,diem_0_1_2,metadata_du_va_dung,filter_tuan_thu,ly_do,nguoi_duyet,ngay_duyet
+coherence,A,,,5,0,,SENSOR001_p5_fixed_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"5
+2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
+ Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
+thuộc tính của một thực thể vật lý và chuyển đổi các thuộc
+tính đó thành thông tin.
+ Đầu ra của cảm biến có thể là tín hiệu tương tự hoặc là tín
+hiệu số
+ Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
+thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
+để đáp ứng với thông tin nhận được.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,5,0,,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"5
+2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
+ Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
+thuộc tính của một thực thể vật lý và chuyển đổi các thuộc
+tính đó thành thông tin.
+ Đầu ra của cảm biến có thể là tín hiệu tương tự hoặc là tín
+hiệu số
+ Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
+thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
+để đáp ứng với thông tin nhận được.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,5,0,,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"5
+2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
+ Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
+thuộc tính của một thực thể vật lý và chuyển đổi các thuộc
+tính đó thành thông tin.
+ Đầu ra của cảm biến có thể là tín hiệu tương tự hoặc là tín
+hiệu số
+ Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
+thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
+để đáp ứng với thông tin nhận được.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,14,0,,SENSOR001_p14_fixed_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"PHÂN LOẠI CẢM BIẾN
+ Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
+ Theo dạng kích thích
+ Theo tính năng các bộ cảm biến
+ Theo phạm vi sử dụng các bộ cảm biến
+ Theo thông số của mô hình mạch thay thế
+14",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,14,0,,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"PHÂN LOẠI CẢM BIẾN
+ Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
+ Theo dạng kích thích
+ Theo tính năng các bộ cảm biến
+ Theo phạm vi sử dụng các bộ cảm biến
+ Theo thông số của mô hình mạch thay thế
+14",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,14,0,,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"PHÂN LOẠI CẢM BIẾN
+ Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
+ Theo dạng kích thích
+ Theo tính năng các bộ cảm biến
+ Theo phạm vi sử dụng các bộ cảm biến
+ Theo thông số của mô hình mạch thay thế
+14",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,19,0,,SENSOR001_p19_fixed_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"PHÂN LOẠI CẢM BIẾN
+ Theo thông số của mô hình mạch thay thế:
+ Cảm biến tích cực
+ Cảm biến thụ động
+19",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,19,0,,SENSOR001_p19_paragraph_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"PHÂN LOẠI CẢM BIẾN
+ Theo thông số của mô hình mạch thay thế:
+ Cảm biến tích cực
+ Cảm biến thụ động
+19",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,19,0,,SENSOR001_p19_paragraph_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"PHÂN LOẠI CẢM BIẾN
+ Theo thông số của mô hình mạch thay thế:
+ Cảm biến tích cực
+ Cảm biến thụ động
+19",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,20,0,,SENSOR001_p20_fixed_tokens_bdafb7baa0a80aeb_0_297,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Hàm truyền
+ Cho biết quan hệ giữa đáp ứng và kích thích
+ Quan hệ tuyến tính: y = a + bx
+ Logarit, dạng mũ, …
+ Độ lớn của tín hiệu vào
+ Là giá trị lớn nhất của tín hiệu đặt vào bộ cảm biến mà sai
+số không vượt quá ngưỡng cho phép
+ Sai số và độ chính xác
+20",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,20,0,,SENSOR001_p20_paragraph_tokens_bdafb7baa0a80aeb_0_297,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Hàm truyền
+ Cho biết quan hệ giữa đáp ứng và kích thích
+ Quan hệ tuyến tính: y = a + bx
+ Logarit, dạng mũ, …
+ Độ lớn của tín hiệu vào
+ Là giá trị lớn nhất của tín hiệu đặt vào bộ cảm biến mà sai
+số không vượt quá ngưỡng cho phép
+ Sai số và độ chính xác
+20",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,20,0,,SENSOR001_p20_paragraph_tokens_bdafb7baa0a80aeb_0_297,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Hàm truyền
+ Cho biết quan hệ giữa đáp ứng và kích thích
+ Quan hệ tuyến tính: y = a + bx
+ Logarit, dạng mũ, …
+ Độ lớn của tín hiệu vào
+ Là giá trị lớn nhất của tín hiệu đặt vào bộ cảm biến mà sai
+số không vượt quá ngưỡng cho phép
+ Sai số và độ chính xác
+20",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,21,0,,SENSOR001_p21_fixed_tokens_44887168b97df5af_0_386,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Đường cong chuẩn cảm biến
+ Là đường cong biểu diễu sự phụ thuộc của đại lượng (S) ở đầu ra của
+cảm biến vào giá trị của đại lượng đo (M) ở đầu vào.
+ Có thể biểu diễn bằng biểu thức đại số dạng S =F(M), hoặc biểu diễn
+bằng đồ thị.
+ Dựa vào đường cong chuẩn cảm biến, có thể xác định giá trị Mi chưa
+biết của M thông qua giá trị đo được Si của S.
+21",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,21,0,,SENSOR001_p21_paragraph_tokens_44887168b97df5af_0_386,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Đường cong chuẩn cảm biến
+ Là đường cong biểu diễu sự phụ thuộc của đại lượng (S) ở đầu ra của
+cảm biến vào giá trị của đại lượng đo (M) ở đầu vào.
+ Có thể biểu diễn bằng biểu thức đại số dạng S =F(M), hoặc biểu diễn
+bằng đồ thị.
+ Dựa vào đường cong chuẩn cảm biến, có thể xác định giá trị Mi chưa
+biết của M thông qua giá trị đo được Si của S.
+21",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,21,0,,SENSOR001_p21_paragraph_tokens_44887168b97df5af_0_386,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Đường cong chuẩn cảm biến
+ Là đường cong biểu diễu sự phụ thuộc của đại lượng (S) ở đầu ra của
+cảm biến vào giá trị của đại lượng đo (M) ở đầu vào.
+ Có thể biểu diễn bằng biểu thức đại số dạng S =F(M), hoặc biểu diễn
+bằng đồ thị.
+ Dựa vào đường cong chuẩn cảm biến, có thể xác định giá trị Mi chưa
+biết của M thông qua giá trị đo được Si của S.
+21",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,22,0,,SENSOR001_p22_fixed_tokens_3d9e79be4172c674_0_224,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Độ nhạy của cảm biến
+ Sai số và độ chính xác
+ Độ nhanh và thời gian hồi đáp
+ Giới hạn sử dụng của cảm biến
+ Vùng làm việc danh định
+ Vùng không gây nên hư hỏng
+ Vùng không phá hủy
+22",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,22,0,,SENSOR001_p22_paragraph_tokens_3d9e79be4172c674_0_224,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Độ nhạy của cảm biến
+ Sai số và độ chính xác
+ Độ nhanh và thời gian hồi đáp
+ Giới hạn sử dụng của cảm biến
+ Vùng làm việc danh định
+ Vùng không gây nên hư hỏng
+ Vùng không phá hủy
+22",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,22,0,,SENSOR001_p22_paragraph_tokens_3d9e79be4172c674_0_224,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
+ Độ nhạy của cảm biến
+ Sai số và độ chính xác
+ Độ nhanh và thời gian hồi đáp
+ Giới hạn sử dụng của cảm biến
+ Vùng làm việc danh định
+ Vùng không gây nên hư hỏng
+ Vùng không phá hủy
+22",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,23,0,,SENSOR001_p23_fixed_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
+ Cảm biến đo nhiệt độ
+ Cảm biến hồng ngoại
+ Cảm biến đo độ ẩm
+ Cảm biến đo chuyển động
+ Cảm biến khí
+ Cảm biến khói
+ Cảm biến áp suất
+ Cảm biến gia tốc
+23",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,23,0,,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
+ Cảm biến đo nhiệt độ
+ Cảm biến hồng ngoại
+ Cảm biến đo độ ẩm
+ Cảm biến đo chuyển động
+ Cảm biến khí
+ Cảm biến khói
+ Cảm biến áp suất
+ Cảm biến gia tốc
+23",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,23,0,,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
+ Cảm biến đo nhiệt độ
+ Cảm biến hồng ngoại
+ Cảm biến đo độ ẩm
+ Cảm biến đo chuyển động
+ Cảm biến khí
+ Cảm biến khói
+ Cảm biến áp suất
+ Cảm biến gia tốc
+23",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,24,0,,SENSOR001_p24_fixed_tokens_ef44a94c4843f56b_0_493,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN NHIỆT ĐỘ
+24
+- Cảm biến nhiệt độ được sử dụng để
+phát hiện sự thay đổi của nhiệt độ.
+Chúng được sử dụng trong các thiết bị
+gia dụng như tủ lạnh, Máy điều hòa và
+bộ điều nhiệt cũng như trong các ngành
+công nghiệp như sản xuất, nơi máy móc
+được yêu cầu hoạt động ở nhiệt độ nhất
+định.
+- Cảm biến nhiệt độ có thể cung cấp số
+liệu nhiệt độ tại thời điểm đo của máy
+móc và môi trường tự nhiên, giúp máy
+móc thực hiện các hoạt động ở nhiệt độ
+tối ưu của chúng. Các cảm biến nhiệt độ
+được sử ",NHẬN XÉT CODEX SƠ BỘ,1,N/A,N/A,Kết thúc giữa câu cuối,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,24,0,,SENSOR001_p24_paragraph_tokens_ef44a94c4843f56b_0_463,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN NHIỆT ĐỘ
+24
+- Cảm biến nhiệt độ được sử dụng để
+phát hiện sự thay đổi của nhiệt độ.
+Chúng được sử dụng trong các thiết bị
+gia dụng như tủ lạnh, Máy điều hòa và
+bộ điều nhiệt cũng như trong các ngành
+công nghiệp như sản xuất, nơi máy móc
+được yêu cầu hoạt động ở nhiệt độ nhất
+định.
+- Cảm biến nhiệt độ có thể cung cấp số
+liệu nhiệt độ tại thời điểm đo của máy
+móc và môi trường tự nhiên, giúp máy
+móc thực hiện các hoạt động ở nhiệt độ
+tối ưu của chúng. ",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,24,0,,SENSOR001_p24_paragraph_tokens_ef44a94c4843f56b_0_463,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN NHIỆT ĐỘ
+24
+- Cảm biến nhiệt độ được sử dụng để
+phát hiện sự thay đổi của nhiệt độ.
+Chúng được sử dụng trong các thiết bị
+gia dụng như tủ lạnh, Máy điều hòa và
+bộ điều nhiệt cũng như trong các ngành
+công nghiệp như sản xuất, nơi máy móc
+được yêu cầu hoạt động ở nhiệt độ nhất
+định.
+- Cảm biến nhiệt độ có thể cung cấp số
+liệu nhiệt độ tại thời điểm đo của máy
+móc và môi trường tự nhiên, giúp máy
+móc thực hiện các hoạt động ở nhiệt độ
+tối ưu của chúng. ",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,25,0,,SENSOR001_p25_fixed_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN HỒNG NGOẠI
+25
+- Cảm nhận các đặc điểm của môi trường
+xung quanh bằng cách phát ra hoặc phát
+hiện bức xạ hồng ngoại. Chúng cũng có
+thể đo nhiệt do các vật thể tỏa ra.
+- Cảm biến hồng ngoại được sử dụng
+trong các dự án IoT khác nhau bao gồm
+chăm sóc sức khỏe vì chúng đơn giản hóa
+việc theo dõi lưu lượng máu và huyết áp.
+TV sử dụng cảm biến hồng ngoại để giải
+mã các tín hiệu được gửi bởi điều khiển từ
+xa.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,25,0,,SENSOR001_p25_paragraph_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN HỒNG NGOẠI
+25
+- Cảm nhận các đặc điểm của môi trường
+xung quanh bằng cách phát ra hoặc phát
+hiện bức xạ hồng ngoại. Chúng cũng có
+thể đo nhiệt do các vật thể tỏa ra.
+- Cảm biến hồng ngoại được sử dụng
+trong các dự án IoT khác nhau bao gồm
+chăm sóc sức khỏe vì chúng đơn giản hóa
+việc theo dõi lưu lượng máu và huyết áp.
+TV sử dụng cảm biến hồng ngoại để giải
+mã các tín hiệu được gửi bởi điều khiển từ
+xa.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,25,0,,SENSOR001_p25_paragraph_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN HỒNG NGOẠI
+25
+- Cảm nhận các đặc điểm của môi trường
+xung quanh bằng cách phát ra hoặc phát
+hiện bức xạ hồng ngoại. Chúng cũng có
+thể đo nhiệt do các vật thể tỏa ra.
+- Cảm biến hồng ngoại được sử dụng
+trong các dự án IoT khác nhau bao gồm
+chăm sóc sức khỏe vì chúng đơn giản hóa
+việc theo dõi lưu lượng máu và huyết áp.
+TV sử dụng cảm biến hồng ngoại để giải
+mã các tín hiệu được gửi bởi điều khiển từ
+xa.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,A,,,26,0,,SENSOR001_p26_fixed_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN ĐỘ ẨM
+26
+- Cảm biến độ ẩm có thể đo thành phần
+hơi nước trong không khí hoặc các chất
+khí khác.
+- Cảm biến độ ẩm thường dùng trong các
+hệ thống sưởi ấm, thông gió và điều hòa
+không khí trong các lĩnh vực công nghiệp
+và dân dụng; dung trong dự báo thời tiết.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,B,,,26,0,,SENSOR001_p26_paragraph_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN ĐỘ ẨM
+26
+- Cảm biến độ ẩm có thể đo thành phần
+hơi nước trong không khí hoặc các chất
+khí khác.
+- Cảm biến độ ẩm thường dùng trong các
+hệ thống sưởi ấm, thông gió và điều hòa
+không khí trong các lĩnh vực công nghiệp
+và dân dụng; dung trong dự báo thời tiết.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+coherence,C,,,26,0,,SENSOR001_p26_paragraph_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,2.1 Cảm biến và cơ cấu chấp hành,,"CẢM BIẾN ĐỘ ẨM
+26
+- Cảm biến độ ẩm có thể đo thành phần
+hơi nước trong không khí hoặc các chất
+khí khác.
+- Cảm biến độ ẩm thường dùng trong các
+hệ thống sưởi ấm, thông gió và điều hòa
+không khí trong các lĩnh vực công nghiệp
+và dân dụng; dung trong dự báo thời tiết.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Giữ được tiêu đề và các ý của phần được lấy,Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,34,0,1,SENSOR001_p34_fixed_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,"2.2 Khuếch đại, lọc và xử lý tín hiệu",,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
+34
+ Lọc nhiễu cho tín hiệu cảm biến
+ Khi tín hiệu bị nhiễu gây khó khăn trong việc điều khiển và
+giám sát.
+ Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
+hiệu analog, giúp hệ thống chạy ổn định, chính xác.
+ Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
+chủ yếu là dùng tín hiệu 4-20mA.",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,36,0,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_0_445,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,36,395,3,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"hiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,A,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,,,,,,,,"Rank 1 | SENSOR001_p34_fixed_tokens_88af4db95038d4b2_0_345 | trang 34 | starter/data/documents.pdf
+2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
+34
+ Lọc nhiễu cho tín hiệu cảm biến
+ Khi tín hiệu bị nhiễu gây khó khăn trong việc điều khiển và
+giám sát.
+ Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
+hiệu analog, giúp hệ thống chạy ổn định, chính xác.
+ Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
+chủ yếu là dùng tín hiệu 4-20mA.
+
+Rank 2 | SENSOR001_p36_fixed_tokens_3d2493897d766e7a_0_445 | trang 36 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín
+
+Rank 3 | SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504 | trang 36 | starter/data/documents.pdf
+hiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Có đoạn giải thích mục đích lọc nhiễu.,Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,34,0,1,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,"2.2 Khuếch đại, lọc và xử lý tín hiệu",,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
+34
+ Lọc nhiễu cho tín hiệu cảm biến
+ Khi tín hiệu bị nhiễu gây khó khăn trong việc điều khiển và
+giám sát.
+ Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
+hiệu analog, giúp hệ thống chạy ổn định, chính xác.
+ Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
+chủ yếu là dùng tín hiệu 4-20mA.",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,36,0,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,36,342,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,B,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,,,,,,,,"Rank 1 | SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345 | trang 34 | starter/data/documents.pdf
+2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
+34
+ Lọc nhiễu cho tín hiệu cảm biến
+ Khi tín hiệu bị nhiễu gây khó khăn trong việc điều khiển và
+giám sát.
+ Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
+hiệu analog, giúp hệ thống chạy ổn định, chính xác.
+ Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
+chủ yếu là dùng tín hiệu 4-20mA.
+
+Rank 2 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342 | trang 36 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số.
+
+Rank 3 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504 | trang 36 | starter/data/documents.pdf
+ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Có đoạn giải thích mục đích lọc nhiễu.,Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,34,0,1,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,"2.2 Khuếch đại, lọc và xử lý tín hiệu",,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
+34
+ Lọc nhiễu cho tín hiệu cảm biến
+ Khi tín hiệu bị nhiễu gây khó khăn trong việc điều khiển và
+giám sát.
+ Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
+hiệu analog, giúp hệ thống chạy ổn định, chính xác.
+ Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
+chủ yếu là dùng tín hiệu 4-20mA.",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,36,0,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,36,342,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,C,SQ16,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,,,,,,,,"Rank 1 | SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345 | trang 34 | starter/data/documents.pdf
+2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
+34
+ Lọc nhiễu cho tín hiệu cảm biến
+ Khi tín hiệu bị nhiễu gây khó khăn trong việc điều khiển và
+giám sát.
+ Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
+hiệu analog, giúp hệ thống chạy ổn định, chính xác.
+ Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
+chủ yếu là dùng tín hiệu 4-20mA.
+
+Rank 2 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342 | trang 36 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số.
+
+Rank 3 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504 | trang 36 | starter/data/documents.pdf
+ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Có đoạn giải thích mục đích lọc nhiễu.,Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",39,0,1,SENSOR001_p39_fixed_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",32,336,2,SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_336_529,starter/data/documents.pdf,"2.2 Khuếch đại, lọc và xử lý tín hiệu",," số (ADC), bộ điều chế
+tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
+có độ lớn khá lớn.
+ Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
+để phù hợp với bộ xử lý tín hiệu.",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",36,0,3,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_0_445,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,A,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",,,,,,,,"Rank 1 | SENSOR001_p39_fixed_tokens_1393ec75cf0b4ee8_0_272 | trang 39 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591
+
+Rank 2 | SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_336_529 | trang 32 | starter/data/documents.pdf
+ số (ADC), bộ điều chế
+tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
+có độ lớn khá lớn.
+ Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
+để phù hợp với bộ xử lý tín hiệu.
+
+Rank 3 | SENSOR001_p36_fixed_tokens_3d2493897d766e7a_0_445 | trang 36 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín ",NHẬN XÉT CODEX SƠ BỘ,1,N/A,N/A,"ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk.",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",39,0,1,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",36,342,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",36,0,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,B,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",,,,,,,,"Rank 1 | SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272 | trang 39 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591
+
+Rank 2 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504 | trang 36 | starter/data/documents.pdf
+ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36
+
+Rank 3 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342 | trang 36 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,"ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk.",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",39,0,1,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC","{""section"": ""2.3 Chuyển đổi ADC, DAC""}","2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,Có,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",36,342,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC","{""section"": ""2.3 Chuyển đổi ADC, DAC""}","ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,Có,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",36,0,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC","{""section"": ""2.3 Chuyển đổi ADC, DAC""}","2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,Có,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,C,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",,,,,,,"{""section"": ""2.3 Chuyển đổi ADC, DAC""}","Rank 1 | SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272 | trang 39 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591
+
+Rank 2 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504 | trang 36 | starter/data/documents.pdf
+ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36
+
+Rank 3 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342 | trang 36 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
+dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
+vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
+tích được, tín hiệu này cần được chuyển đổi sang dạng
+số.
+ Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
+nối thế giới vật lý với thế giới số. ",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,"ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk.",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ18,Ba bước chính của quá trình ADC là gì?,37,0,1,SENSOR001_p37_fixed_tokens_3d3e70d04289bb51_0_308,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
+hóa, mã hóa.
+ ADC được ứng dụng rộng rãi trong các thiết bị IoT như: cảm biến
+nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
+giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
+...
+37",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ18,Ba bước chính của quá trình ADC là gì?,39,0,2,SENSOR001_p39_fixed_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ18,Ba bước chính của quá trình ADC là gì?,32,336,3,SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_336_529,starter/data/documents.pdf,"2.2 Khuếch đại, lọc và xử lý tín hiệu",," số (ADC), bộ điều chế
+tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
+có độ lớn khá lớn.
+ Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
+để phù hợp với bộ xử lý tín hiệu.",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,A,SQ18,Ba bước chính của quá trình ADC là gì?,,,,,,,,"Rank 1 | SENSOR001_p37_fixed_tokens_3d3e70d04289bb51_0_308 | trang 37 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
+hóa, mã hóa.
+ ADC được ứng dụng rộng rãi trong các thiết bị IoT như: cảm biến
+nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
+giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
+...
+37
+
+Rank 2 | SENSOR001_p39_fixed_tokens_1393ec75cf0b4ee8_0_272 | trang 39 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591
+
+Rank 3 | SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_336_529 | trang 32 | starter/data/documents.pdf
+ số (ADC), bộ điều chế
+tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
+có độ lớn khá lớn.
+ Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
+để phù hợp với bộ xử lý tín hiệu.",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,"Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa.",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ18,Ba bước chính của quá trình ADC là gì?,37,0,1,SENSOR001_p37_paragraph_tokens_3d3e70d04289bb51_0_308,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
+hóa, mã hóa.
+ ADC được ứng dụng rộng rãi trong các thiết bị IoT như: cảm biến
+nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
+giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
+...
+37",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ18,Ba bước chính của quá trình ADC là gì?,39,0,2,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ18,Ba bước chính của quá trình ADC là gì?,36,342,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,B,SQ18,Ba bước chính của quá trình ADC là gì?,,,,,,,,"Rank 1 | SENSOR001_p37_paragraph_tokens_3d3e70d04289bb51_0_308 | trang 37 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
+hóa, mã hóa.
+ ADC được ứng dụng rộng rãi trong các thiết bị IoT như: cảm biến
+nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
+giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
+...
+37
+
+Rank 2 | SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272 | trang 39 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591
+
+Rank 3 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504 | trang 36 | starter/data/documents.pdf
+ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,"Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa.",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ18,Ba bước chính của quá trình ADC là gì?,37,0,1,SENSOR001_p37_paragraph_tokens_3d3e70d04289bb51_0_308,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
+hóa, mã hóa.
+ ADC được ứng dụng rộng rãi trong các thiết bị IoT như: cảm biến
+nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
+giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
+...
+37",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ18,Ba bước chính của quá trình ADC là gì?,39,0,2,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ18,Ba bước chính của quá trình ADC là gì?,36,342,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,C,SQ18,Ba bước chính của quá trình ADC là gì?,,,,,,,,"Rank 1 | SENSOR001_p37_paragraph_tokens_3d3e70d04289bb51_0_308 | trang 37 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
+hóa, mã hóa.
+ ADC được ứng dụng rộng rãi trong các thiết bị IoT như: cảm biến
+nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
+giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
+...
+37
+
+Rank 2 | SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272 | trang 39 | starter/data/documents.pdf
+2.3. CHUYỂN ĐỔI ADC, DAC
+ Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
+ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
+lý để điều khiển cơ cấu chấp hành trong hệ thống tự
+động thông qua module của bộ điều khiển tương ứng.
+39
+Module Chuyển Đổi ADC DAC PCF8591
+
+Rank 3 | SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504 | trang 36 | starter/data/documents.pdf
+ADC có chức năng
+chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
+âm thanh, áp suất… – thành tín hiệu số để các vi điều
+khiển hoặc máy tính có thể xử lý.
+36",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,"Có đủ ba bước lấy mẫu, lượng tử hóa và mã hóa.",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,45,0,1,SENSOR001_p45_fixed_tokens_20738e278468fd5c_0_452,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo,
+mã hóa dữ liệu, hoặc làm phẳng ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,44,0,2,SENSOR001_p44_fixed_tokens_9d14322380b1164e_0_146,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+44
+1. Thu thập
+dữ liệu
+2. Lọc dữ
+liệu:
+3. Biến đổi
+dữ liệu
+4. Tổ chức
+và lưu trữ
+5. Phân tích
+dữ liệu
+6. Trình bày
+kết quả",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,41,0,3,SENSOR001_p41_fixed_tokens_461a6689b5076010_0_427,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
+dưới dạng không cấu trúc và không thể hiện thông tin hữu
+ích. Dữ liệu không xử lý có thể gây ra các vấn đề và hậu
+quả sau:
+1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
+được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
+thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
+2. Khó khăn ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,A,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,,,,,,,,"Rank 1 | SENSOR001_p45_fixed_tokens_20738e278468fd5c_0_452 | trang 45 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo,
+mã hóa dữ liệu, hoặc làm phẳng
+
+Rank 2 | SENSOR001_p44_fixed_tokens_9d14322380b1164e_0_146 | trang 44 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+44
+1. Thu thập
+dữ liệu
+2. Lọc dữ
+liệu:
+3. Biến đổi
+dữ liệu
+4. Tổ chức
+và lưu trữ
+5. Phân tích
+dữ liệu
+6. Trình bày
+kết quả
+
+Rank 3 | SENSOR001_p41_fixed_tokens_461a6689b5076010_0_427 | trang 41 | starter/data/documents.pdf
+2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
+dưới dạng không cấu trúc và không thể hiện thông tin hữu
+ích. Dữ liệu không xử lý có thể gây ra các vấn đề và hậu
+quả sau:
+1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
+được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
+thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
+2. Khó khăn ",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Có các loại dữ liệu cần loại bỏ khi lọc.,Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,45,0,1,SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,41,0,2,SENSOR001_p41_paragraph_tokens_461a6689b5076010_0_418,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
+dưới dạng không cấu trúc và không thể hiện thông tin hữu
+ích. Dữ liệu không xử lý có thể gây ra các vấn đề và hậu
+quả sau:
+1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
+được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
+thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
+2. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,44,0,3,SENSOR001_p44_paragraph_tokens_9d14322380b1164e_0_146,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+44
+1. Thu thập
+dữ liệu
+2. Lọc dữ
+liệu:
+3. Biến đổi
+dữ liệu
+4. Tổ chức
+và lưu trữ
+5. Phân tích
+dữ liệu
+6. Trình bày
+kết quả",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,B,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,,,,,,,,"Rank 1 | SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366 | trang 45 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích.
+
+Rank 2 | SENSOR001_p41_paragraph_tokens_461a6689b5076010_0_418 | trang 41 | starter/data/documents.pdf
+2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
+dưới dạng không cấu trúc và không thể hiện thông tin hữu
+ích. Dữ liệu không xử lý có thể gây ra các vấn đề và hậu
+quả sau:
+1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
+được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
+thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
+2.
+
+Rank 3 | SENSOR001_p44_paragraph_tokens_9d14322380b1164e_0_146 | trang 44 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+44
+1. Thu thập
+dữ liệu
+2. Lọc dữ
+liệu:
+3. Biến đổi
+dữ liệu
+4. Tổ chức
+và lưu trữ
+5. Phân tích
+dữ liệu
+6. Trình bày
+kết quả",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Có các loại dữ liệu cần loại bỏ khi lọc.,Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,45,0,1,SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,41,0,2,SENSOR001_p41_paragraph_tokens_461a6689b5076010_0_418,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
+dưới dạng không cấu trúc và không thể hiện thông tin hữu
+ích. Dữ liệu không xử lý có thể gây ra các vấn đề và hậu
+quả sau:
+1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
+được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
+thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
+2. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,44,0,3,SENSOR001_p44_paragraph_tokens_9d14322380b1164e_0_146,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+44
+1. Thu thập
+dữ liệu
+2. Lọc dữ
+liệu:
+3. Biến đổi
+dữ liệu
+4. Tổ chức
+và lưu trữ
+5. Phân tích
+dữ liệu
+6. Trình bày
+kết quả",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,C,SQ19,Lọc dữ liệu loại bỏ những dữ liệu nào?,,,,,,,,"Rank 1 | SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366 | trang 45 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích.
+
+Rank 2 | SENSOR001_p41_paragraph_tokens_461a6689b5076010_0_418 | trang 41 | starter/data/documents.pdf
+2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
+dưới dạng không cấu trúc và không thể hiện thông tin hữu
+ích. Dữ liệu không xử lý có thể gây ra các vấn đề và hậu
+quả sau:
+1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
+được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
+thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
+2.
+
+Rank 3 | SENSOR001_p44_paragraph_tokens_9d14322380b1164e_0_146 | trang 44 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+44
+1. Thu thập
+dữ liệu
+2. Lọc dữ
+liệu:
+3. Biến đổi
+dữ liệu
+4. Tổ chức
+và lưu trữ
+5. Phân tích
+dữ liệu
+6. Trình bày
+kết quả",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,Có các loại dữ liệu cần loại bỏ khi lọc.,Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",40,0,1,SENSOR001_p40_fixed_tokens_48ab432c8ce49b25_0_330,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+ Xử lý dữ liệu (data processing) là quá trình tiếp nhận,
+biến đổi và tổ chức dữ liệu thành thông tin hữu ích để
+thực hiện các tác vụ hoặc ra quyết định.
+ Quá trình này có thể bao gồm một loạt các bước và
+phương pháp để làm cho dữ liệu trở nên có ý nghĩa và
+hữu ích cho mục đích cụ thể.
+40",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",45,402,2,SENSOR001_p45_fixed_tokens_20738e278468fd5c_402_469,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"yển đổi đơn vị đo,
+mã hóa dữ liệu, hoặc làm phẳng cấu trúc dữ liệu.",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,A,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",45,0,3,SENSOR001_p45_fixed_tokens_20738e278468fd5c_0_452,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo,
+mã hóa dữ liệu, hoặc làm phẳng ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,A,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",,,,,,,,"Rank 1 | SENSOR001_p40_fixed_tokens_48ab432c8ce49b25_0_330 | trang 40 | starter/data/documents.pdf
+2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+ Xử lý dữ liệu (data processing) là quá trình tiếp nhận,
+biến đổi và tổ chức dữ liệu thành thông tin hữu ích để
+thực hiện các tác vụ hoặc ra quyết định.
+ Quá trình này có thể bao gồm một loạt các bước và
+phương pháp để làm cho dữ liệu trở nên có ý nghĩa và
+hữu ích cho mục đích cụ thể.
+40
+
+Rank 2 | SENSOR001_p45_fixed_tokens_20738e278468fd5c_402_469 | trang 45 | starter/data/documents.pdf
+yển đổi đơn vị đo,
+mã hóa dữ liệu, hoặc làm phẳng cấu trúc dữ liệu.
+
+Rank 3 | SENSOR001_p45_fixed_tokens_20738e278468fd5c_0_452 | trang 45 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo,
+mã hóa dữ liệu, hoặc làm phẳng ",NHẬN XÉT CODEX SƠ BỘ,0,N/A,N/A,A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3.,Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",40,0,1,SENSOR001_p40_paragraph_tokens_48ab432c8ce49b25_0_330,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+ Xử lý dữ liệu (data processing) là quá trình tiếp nhận,
+biến đổi và tổ chức dữ liệu thành thông tin hữu ích để
+thực hiện các tác vụ hoặc ra quyết định.
+ Quá trình này có thể bao gồm một loạt các bước và
+phương pháp để làm cho dữ liệu trở nên có ý nghĩa và
+hữu ích cho mục đích cụ thể.
+40",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",45,0,2,SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,B,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",46,0,3,SENSOR001_p46_paragraph_tokens_402b8910e8bd4779_0_421,starter/data/documents.pdf,2.4 Thu thập và xử lý dữ liệu cảm biến,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+46
+4. Tổ chức và lưu trữ:
+Sắp xếp và lưu trữ dữ liệu theo một cách có tổ chức để dễ dàng truy
+cập và tìm kiếm. Dữ liệu có thể được lưu trữ trong cơ sở dữ liệu, hệ
+thống tập tin hoặc lưu trữ đám mây.
+5. Phân tích dữ liệu:
+Áp dụng các kỹ thuật và công cụ phân tích để tìm kiếm mẫu, xu
+hướng và thông tin hữu ích từ dữ liệu. Phân tích dữ liệu có thể bao
+gồm thống kê, khai phá dữ liệu, học máy...
+6. ",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,N/A,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,B,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",,,,,,,,"Rank 1 | SENSOR001_p40_paragraph_tokens_48ab432c8ce49b25_0_330 | trang 40 | starter/data/documents.pdf
+2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
+ Xử lý dữ liệu (data processing) là quá trình tiếp nhận,
+biến đổi và tổ chức dữ liệu thành thông tin hữu ích để
+thực hiện các tác vụ hoặc ra quyết định.
+ Quá trình này có thể bao gồm một loạt các bước và
+phương pháp để làm cho dữ liệu trở nên có ý nghĩa và
+hữu ích cho mục đích cụ thể.
+40
+
+Rank 2 | SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366 | trang 45 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+45
+1. Thu thập dữ liệu:
+Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến,
+hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều
+nguồn dữ liệu khác.
+2. Lọc dữ liệu:
+Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
+3. Biến đổi dữ liệu:
+Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
+phân tích.
+
+Rank 3 | SENSOR001_p46_paragraph_tokens_402b8910e8bd4779_0_421 | trang 46 | starter/data/documents.pdf
+QUÁ TRÌNH XỬ LÝ DỮ LIỆU
+46
+4. Tổ chức và lưu trữ:
+Sắp xếp và lưu trữ dữ liệu theo một cách có tổ chức để dễ dàng truy
+cập và tìm kiếm. Dữ liệu có thể được lưu trữ trong cơ sở dữ liệu, hệ
+thống tập tin hoặc lưu trữ đám mây.
+5. Phân tích dữ liệu:
+Áp dụng các kỹ thuật và công cụ phân tích để tìm kiếm mẫu, xu
+hướng và thông tin hữu ích từ dữ liệu. Phân tích dữ liệu có thể bao
+gồm thống kê, khai phá dữ liệu, học máy...
+6. ",NHẬN XÉT CODEX SƠ BỘ,0,N/A,N/A,A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3.,Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",48,0,1,SENSOR001_p48_paragraph_tokens_d83fe23d3c1c4e08_0_410,starter/data/documents.pdf,2.5 Các giải thuật xử lý dữ liệu,"{""section"": ""2.5 Các giải thuật xử lý dữ liệu""}","2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
+ Phân tích dữ liệu cảm biến
+ Các giải thuật phân tích dữ liệu giúp hệ thống IoT hiểu, dự
+đoán và phản ứng với dữ liệu từ cảm biến. Bao gồm học
+máy, học sâu, thống kê, chuỗi thời gian và xử lý tại biên.
+ Học máy: Sử dụng các thuật toán như Decision Tree,
+Random Forest,… phân loại trạng thái thiết bị hoặc dự đoán
+sự cố. Ví dụ: dự đoán lỗi động cơ từ dữ liệu cảm biến rung.
+",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,Có,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",47,0,2,SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_0_241,starter/data/documents.pdf,2.5 Các giải thuật xử lý dữ liệu,"{""section"": ""2.5 Các giải thuật xử lý dữ liệu""}","2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
+ Tiền xử lý dữ liệu cảm biến
+ Lọc nhiễu (Noise Filtering): Sử dụng các bộ lọc để loại bỏ
+nhiễu khỏi dữ liệu cảm biến.
+ Chuẩn hóa dữ liệu (Normalization): Đưa dữ liệu về cùng
+một thang đo để dễ phân tích.
+",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,Có,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+metadata,C,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",47,241,3,SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_241_598,starter/data/documents.pdf,2.5 Các giải thuật xử lý dữ liệu,"{""section"": ""2.5 Các giải thuật xử lý dữ liệu""}"," Phát hiện và xử lý dữ liệu thiếu (Missing Data Handling):
+Dùng kỹ thuật nội suy hoặc thay thế bằng giá trị trung bình
+hoặc Nhân tố ma trận xác suất (PMF) để xử lý dữ liệu
+khuyết thiếu.
+ Xử lý dữ liệu ngoại lệ (Data Outlier Detection): Phát hiện
+và xử lý các giá trị cảm biến bất thường – những giá trị
+khác biệt rõ rệt so với phần lớn dữ liệu còn lại.
+47",NHẬN XÉT CODEX SƠ BỘ,N/A,Khớp kiểm tra tự động,Có,"so sánh văn bản, offset, trang với PDF và section được gán theo phạm vi trang; cần người học xác nhận",Codex / kiểm tra tự động,2026-11-13
+grounding,C,SQ20,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",,,,,,,"{""section"": ""2.5 Các giải thuật xử lý dữ liệu""}","Rank 1 | SENSOR001_p48_paragraph_tokens_d83fe23d3c1c4e08_0_410 | trang 48 | starter/data/documents.pdf
+2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
+ Phân tích dữ liệu cảm biến
+ Các giải thuật phân tích dữ liệu giúp hệ thống IoT hiểu, dự
+đoán và phản ứng với dữ liệu từ cảm biến. Bao gồm học
+máy, học sâu, thống kê, chuỗi thời gian và xử lý tại biên.
+ Học máy: Sử dụng các thuật toán như Decision Tree,
+Random Forest,… phân loại trạng thái thiết bị hoặc dự đoán
+sự cố. Ví dụ: dự đoán lỗi động cơ từ dữ liệu cảm biến rung.
+
+
+Rank 2 | SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_0_241 | trang 47 | starter/data/documents.pdf
+2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
+ Tiền xử lý dữ liệu cảm biến
+ Lọc nhiễu (Noise Filtering): Sử dụng các bộ lọc để loại bỏ
+nhiễu khỏi dữ liệu cảm biến.
+ Chuẩn hóa dữ liệu (Normalization): Đưa dữ liệu về cùng
+một thang đo để dễ phân tích.
+
+
+Rank 3 | SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_241_598 | trang 47 | starter/data/documents.pdf
+ Phát hiện và xử lý dữ liệu thiếu (Missing Data Handling):
+Dùng kỹ thuật nội suy hoặc thay thế bằng giá trị trung bình
+hoặc Nhân tố ma trận xác suất (PMF) để xử lý dữ liệu
+khuyết thiếu.
+ Xử lý dữ liệu ngoại lệ (Data Outlier Detection): Phát hiện
+và xử lý các giá trị cảm biến bất thường – những giá trị
+khác biệt rõ rệt so với phần lớn dữ liệu còn lại.
+47",NHẬN XÉT CODEX SƠ BỘ,2,N/A,N/A,A/B không truy xuất được định nghĩa chuẩn hóa ở trang 47; C tìm thấy trong top 3.,Codex / kiểm tra tự động,2026-11-13

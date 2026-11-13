@@ -1,0 +1,44 @@
+{
+  "A": {
+    "coherence_mean": 1.9,
+    "coherence_n": 10,
+    "grounding_mean": 1.4,
+    "grounding_0_1_2": [
+      1,
+      1,
+      3
+    ],
+    "metadata_correct": 15,
+    "metadata_n": 15,
+    "filter_questions_ok": 0,
+    "filter_questions_n": 0
+  },
+  "B": {
+    "coherence_mean": 2.0,
+    "coherence_n": 10,
+    "grounding_mean": 1.6,
+    "grounding_0_1_2": [
+      1,
+      0,
+      4
+    ],
+    "metadata_correct": 15,
+    "metadata_n": 15,
+    "filter_questions_ok": 0,
+    "filter_questions_n": 0
+  },
+  "C": {
+    "coherence_mean": 2.0,
+    "coherence_n": 10,
+    "grounding_mean": 2.0,
+    "grounding_0_1_2": [
+      0,
+      0,
+      5
+    ],
+    "metadata_correct": 15,
+    "metadata_n": 15,
+    "filter_questions_ok": 2,
+    "filter_questions_n": 2
+  }
+}

@@ -2,15 +2,15 @@
 
 **Học viên:** Nguyễn Thị Thùy Dung · **MSSV:** 2A202603552 · **Lớp:** L3A
 
-**Trạng thái:** Bản báo cáo theo chủ đề dữ liệu cảm biến, dựa trên lần chạy ngày 13/11/2026. Học viên cần kiểm tra các trang, bằng chứng và nhãn do Codex hỗ trợ; quyền chia sẻ công khai tài liệu và minh chứng chưa được xác nhận.
+**Trạng thái:** Bản báo cáo theo chủ đề dữ liệu cảm biến, dựa trên lần chạy ngày 13/11/2026. Học viên cần kiểm tra các trang, bằng chứng và nhãn do Codex hỗ trợ; học viên xác nhận được phép công khai tài liệu; cách cung cấp minh chứng cần được chốt.
 
 ## 1. Dữ liệu và pipeline
 
 ### Corpus và quyền sử dụng
 
-Nguồn `SENSOR001` là bài giảng **Chương II: Xử lý dữ liệu cảm biến**, trên trang đầu ghi Đại học Kinh tế Quốc dân, Khoa Công nghệ thông tin. Theo xác nhận của học viên, tài liệu do giảng viên cung cấp và được phép sử dụng cho bài học. Chưa có xác nhận cho phép đăng công khai hoặc tái phân phối; vì vậy PDF, benchmark và trace có trích văn bản được giữ trên máy. Chưa xác định URL tải gốc hay ngày nhận tài liệu; không tự suy đoán. Manifest: `data/manifest.json`.
+Nguồn `SENSOR001` là bài giảng **Chương II: Xử lý dữ liệu cảm biến**, trên trang đầu ghi Đại học Kinh tế Quốc dân, Khoa Công nghệ thông tin. Theo xác nhận của học viên, tài liệu do giảng viên cung cấp và được phép sử dụng cho bài học. Ngày 13/11/2026, học viên xác nhận đã được cấp toàn quyền công khai tài liệu. PDF, benchmark, trace và bảng review được cung cấp cùng repo để người chấm đối chiếu. Chưa xác định URL tải gốc hay ngày nhận tài liệu; không tự suy đoán. Manifest: `data/manifest.json`.
 
-PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn; số trang chỉ là lựa chọn ban đầu, chưa đủ căn cứ kết luận đạt yêu cầu nhưng độ sâu nội dung hạn chế.
+PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn; Codex đã đối chiếu nội dung chữ của 31 trang; độ sâu nội dung hạn chế và trang 44 cần xem thêm phần hình.
 
 ### Parse, clean và metadata
 
@@ -20,7 +20,7 @@ Mỗi chunk giữ `document_id`, `source`, `page`, offset ký tự trong trang v
 
 ### Embedding và lưu trữ
 
-- Model local: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, Sentence Transformers **6.3.0**, 384 chiều, chuẩn hóa vector. Lần chạy ghi model nhưng revision trong report là `null`; cache hiện tại trỏ tới `e8f8c211226b894fcb81acc59f3b34ba3efd5f42`. Cần khóa revision khi tái lập chính thức.
+- Model local: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, Sentence Transformers **6.3.0**, 384 chiều, chuẩn hóa vector. Lần chạy ghi model nhưng revision trong report là `null`; cache hiện tại trỏ tới `e8f8c211226b894fcb81acc59f3b34ba3efd5f42`. Mã cho lần chạy mới khóa revision cache này; không thể khẳng định đó là revision đã dùng trong lần chạy lịch sử.
 - ChromaDB **1.5.9** với cosine distance, lưu bền vững tại `starter/storage/chroma/`; A có collection riêng, B/C chung collection. Index HNSW là tìm kiếm xấp xỉ; cấu hình thực tế cần giữ khi chạy lại.
 - Giới hạn **128 token** bao gồm token đặc biệt; trong lần chạy này A và B không có chunk vượt giới hạn.
 - Chi phí dịch vụ embedding: **0**, chạy local; tiền điện và tài nguyên máy chưa đo.
@@ -60,6 +60,8 @@ A có độ dài 67–493 ký tự, trung bình 296,33; B có 90–463 ký tự,
 
 ### Coherence, metadata và grounding
 
+Các số dưới đây là nhận xét sơ bộ của Codex và kiểm tra tự động, **chưa phải nhãn đã được học viên duyệt**.
+
 | Cấu hình | Coherence trung bình /2 | Metadata khớp PDF và section được gán | Filter test tuân thủ | Grounding 0/1/2; trung bình /2 |
 |---|---:|---:|---:|---|
 | A | 1,9 (10 vị trí) | 15/15 | N/A | 1/1/3; 1,4 |
@@ -70,7 +72,7 @@ Mẫu coherence chọn 10 trang nội dung đầu tiên theo thứ tự vật l�
 
 Audit metadata đối chiếu 5 câu test × Top 3 cho từng cấu hình với văn bản trích xuất trực tiếp từ PDF, số trang, offset và section được gán theo nhóm trang. 15/15 là số bản ghi khớp trong phép kiểm tra này, không chứng minh tuyệt đối section luôn đúng ngữ nghĩa. Với C, cả 2 câu test có filter đều trả các chunk đúng giá trị section. Grounding do Codex nhận xét 0–2 cho từng câu theo độ đủ bằng chứng trong Top 3; không phải đánh giá độ chính xác câu trả lời LLM và cần học viên xác nhận.
 
-Minh chứng local: `starter/results/sensor_run/dev/traces_dev.jsonl`, `evaluation/traces_test.jsonl`, `dev_exact_review.jsonl`, `test_exact_review.jsonl`, `coherence_review.jsonl`, `metadata_audit.jsonl`, `grounding_review.jsonl` và `review_summary.json` dưới `starter/results/sensor_run/`. Các nhãn `*_exact_review` là so khớp tự động; coherence/grounding là nhận xét của Codex. Do chưa rõ quyền tái phân phối, các file có nội dung trích dẫn chưa được đưa lên Git; cần thống nhất cách người chấm được phép truy cập.
+Minh chứng local: `starter/results/sensor_run/dev/traces_dev.jsonl`, `evaluation/traces_test.jsonl`, `dev_exact_review.jsonl`, `test_exact_review.jsonl`, `coherence_review.jsonl`, `metadata_audit.jsonl`, `grounding_review.jsonl` và `review_summary.json` dưới `starter/results/sensor_run/`. Các nhãn `*_exact_review` là so khớp tự động; coherence/grounding là nhận xét của Codex. Các file minh chứng được cung cấp trong repo theo xác nhận quyền công khai của học viên.
 
 ## 4. Phân tích và kết luận
 
@@ -94,3 +96,11 @@ $env:HF_HUB_OFFLINE = '1'
 ```
 
 Model cần tải trước nếu cache chưa có. Bộ test của lần chạy này đã được xem; không dùng lại để điều chỉnh rồi coi là đánh giá độc lập. Muốn chạy thử nghiệm mới sau điều chỉnh, tạo tập test mới chưa dùng và một thư mục kết quả mới. Chương trình có cơ chế ngăn ghi đè lựa chọn dev khi trace test đã tồn tại.
+
+## 6. Kết quả đối chiếu ngày 13/11/2026
+
+Codex đã đọc văn bản trích xuất của 31 trang và đối chiếu các tiêu đề, thứ tự mục 2.1–2.5 cùng 20 câu hỏi, đáp án, trang gold và bốn filter. Trang 19 là danh sách ngắn; trang 44 là sơ đồ sáu bước và việc kiểm tra dựa vào chữ trích xuất, chưa xác minh độc lập toàn bộ hình. Bảng `review/page_review.csv` và `review/gold_review.csv` ghi cơ sở từng dòng. Đây là kiểm tra do AI hỗ trợ, không phải xác nhận của học viên hay giảng viên.
+
+`review/retrieval_review.csv` chứa 180 nhãn so khớp nguyên văn tự động kèm lý do; không khẳng định các trường hợp không khớp là sai về ngữ nghĩa. `review/manual_scoring_review.csv` chứa 30 nhận xét coherence và 15 grounding sơ bộ của Codex cùng 45 kiểm tra metadata tự động, khớp với bảng tổng hợp ở mục 3. Các điểm này không phải nhãn của học viên hay đánh giá độc lập. Vì test đã được xem, không dùng kết quả này làm bằng chứng holdout độc lập sau tinh chỉnh.
+
+AI: Codex hỗ trợ kiểm tra văn bản, viết mã và ghi nhận nhận xét; học viên cần hiểu và tự kiểm tra các kết luận trước khi nộp.
