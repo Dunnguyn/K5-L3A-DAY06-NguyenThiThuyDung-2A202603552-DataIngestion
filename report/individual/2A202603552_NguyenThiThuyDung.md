@@ -94,5 +94,3 @@ $env:HF_HUB_OFFLINE = '1'
 ```
 
 Model cần tải trước nếu cache chưa có. Bộ test của lần chạy này đã được xem; không dùng lại để điều chỉnh rồi coi là đánh giá độc lập. Muốn chạy thử nghiệm mới sau điều chỉnh, tạo tập test mới chưa dùng và một thư mục kết quả mới. Chương trình có cơ chế ngăn ghi đè lựa chọn dev khi trace test đã tồn tại.
-
-Codex hỗ trợ kiểm tra PDF, viết code, tạo câu hỏi, chạy thí nghiệm, chấm mẫu và soạn báo cáo. Học viên xác nhận tài liệu do giảng viên cung cấp và được phép sử dụng; học viên cần tự hiểu và kiểm chứng dữ liệu, quyền chia sẻ, câu hỏi và các nhãn trước khi nộp. Các số liệu trên lấy từ file kết quả đã chạy, không phải số liệu giả định.
