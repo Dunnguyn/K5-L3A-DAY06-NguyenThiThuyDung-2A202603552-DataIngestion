@@ -488,7 +488,7 @@ số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
 nối thế giới vật lý với thế giới số. ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
-âm thanh, áp suất… – thành tín ",NHẬN XÉT CODEX SƠ BỘ,1,N/A,N/A,"ADC được mô tả; riêng A cắt giữa câu định nghĩa, B/C có đầy đủ trong một chunk.",Codex / kiểm tra tự động,2026-11-13
+âm thanh, áp suất… – thành tín ",ĐÃ DUYỆT LẠI THEO NGỮ NGHĨA CODEX,2,N/A,N/A,Top 3 trang 36 nêu chuyển tín hiệu analog sang số và mở rộng ADC là Analog-to-Digital Converter; đủ suy ra chiều chuyển đổi dù câu gold bị cắt.,Codex / kiểm tra tự động,2026-11-13
 metadata,B,SQ17,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",39,0,1,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,"2.3 Chuyển đổi ADC, DAC",,"2.3. CHUYỂN ĐỔI ADC, DAC
  Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
 ngược lại dùng ADC và DAC. Hai tín hiệu này được xử

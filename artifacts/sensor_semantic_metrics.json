@@ -1,0 +1,48 @@
+{
+  "method": "Codex review; single chunk sufficient; semantic equivalence accepted; test previously viewed",
+  "review_date": "2026-11-13",
+  "metrics": {
+    "A_dev": {
+      "questions": 15,
+      "hit1_count": 10,
+      "hit3_count": 12,
+      "hit1": 0.6666666666666666,
+      "hit3": 0.8
+    },
+    "A_test": {
+      "questions": 5,
+      "hit1_count": 3,
+      "hit3_count": 4,
+      "hit1": 0.6,
+      "hit3": 0.8
+    },
+    "B_dev": {
+      "questions": 15,
+      "hit1_count": 10,
+      "hit3_count": 12,
+      "hit1": 0.6666666666666666,
+      "hit3": 0.8
+    },
+    "B_test": {
+      "questions": 5,
+      "hit1_count": 3,
+      "hit3_count": 4,
+      "hit1": 0.6,
+      "hit3": 0.8
+    },
+    "C_dev": {
+      "questions": 15,
+      "hit1_count": 10,
+      "hit3_count": 13,
+      "hit1": 0.6666666666666666,
+      "hit3": 0.8666666666666667
+    },
+    "C_test": {
+      "questions": 5,
+      "hit1_count": 3,
+      "hit3_count": 5,
+      "hit1": 0.6,
+      "hit3": 1.0
+    }
+  }
+}

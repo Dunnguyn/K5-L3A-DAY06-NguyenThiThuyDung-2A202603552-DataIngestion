@@ -16,7 +16,7 @@ Với mỗi câu, mở đúng nguồn/trang, đọc toàn bộ ngữ cảnh và 
 
 ## 3. Retrieval — retrieval_review.csv
 
-Mỗi dòng là một chunk trong top-3 của một câu và cấu hình, tổng 180 dòng. Xem cả ba rank cho từng câu, so sánh chunk với gold và PDF. Điền `nhan_evidence_du` (có/không), lý do và người/ngày; một chunk chỉ được coi là hit nếu đúng nguồn/trang và chứa **đủ** bằng chứng, hoặc là bằng chứng tương đương được xác nhận. Nếu bằng chứng bị chia nhiều chunk, ghi rõ và không coi là hit đơn chunk. `cosine_distance` thấp hơn là gần hơn; không phải điểm đúng. Thứ tự rank được lấy từ danh sách trace cũ. Giữ lại nhãn và lý do; exact match trước đây chỉ là gợi ý máy, không thay nhận xét này.
+Mỗi dòng là một chunk trong top-3 của một câu và cấu hình, tổng 180 dòng. Xem cả ba rank cho từng câu, so sánh chunk với gold và PDF. `nhan_evidence_du` (có/không), lý do và người/ngày đã được Codex điền sau khi duyệt ngữ nghĩa; cột `khop_gold_nguyen_van_cu` giữ phép kiểm cũ. Một chunk chỉ được coi là hit nếu chứa **đủ** bằng chứng hoặc bằng chứng tương đương; không bắt buộc đúng trang gold nếu nguồn khác có đủ thông tin. Nếu bằng chứng bị chia nhiều chunk, ghi rõ và không coi là hit đơn chunk. `cosine_distance` thấp hơn là gần hơn; không phải điểm đúng. Thứ tự rank được lấy từ danh sách trace cũ. Giữ lại nhãn và lý do; exact match trước đây chỉ là gợi ý máy, không thay nhận xét này.
 
 Tính Hit@1 = số câu có rank 1 đủ evidence / số câu; Evidence Hit@3 = số câu có ít nhất một chunk đủ evidence trong ba rank / số câu. Báo tử số và mẫu riêng cho A/B/C và dev/test. Khi dùng nguồn tương đương, nêu cơ sở xác nhận. Không sửa điểm để tăng kết quả.
 

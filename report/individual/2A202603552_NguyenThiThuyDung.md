@@ -2,7 +2,7 @@
 
 **Học viên:** Nguyễn Thị Thùy Dung · **MSSV:** 2A202603552 · **Lớp:** L3A
 
-**Trạng thái:** Bản báo cáo theo chủ đề dữ liệu cảm biến, dựa trên lần chạy ngày 13/11/2026. Học viên cần kiểm tra các trang, bằng chứng và nhãn do Codex hỗ trợ; học viên xác nhận được phép công khai tài liệu; cách cung cấp minh chứng cần được chốt.
+**Trạng thái:** Bản báo cáo theo chủ đề dữ liệu cảm biến, dựa trên lần chạy ngày 13/11/2026. Học viên cần kiểm tra các trang, bằng chứng và nhãn do Codex hỗ trợ; học viên xác nhận được phép công khai tài liệu; minh chứng được cung cấp trong repo.
 
 ## 1. Dữ liệu và pipeline
 
@@ -10,7 +10,7 @@
 
 Nguồn `SENSOR001` là bài giảng **Chương II: Xử lý dữ liệu cảm biến**, trên trang đầu ghi Đại học Kinh tế Quốc dân, Khoa Công nghệ thông tin. Theo xác nhận của học viên, tài liệu do giảng viên cung cấp và được phép sử dụng cho bài học. Ngày 13/11/2026, học viên xác nhận đã được cấp toàn quyền công khai tài liệu. PDF, benchmark, trace và bảng review được cung cấp cùng repo để người chấm đối chiếu. Chưa xác định URL tải gốc hay ngày nhận tài liệu; không tự suy đoán. Manifest: `data/manifest.json`.
 
-PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn; Codex đã đối chiếu nội dung chữ của 31 trang; độ sâu nội dung hạn chế và trang 44 cần xem thêm phần hình.
+PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn; Codex đã đối chiếu nội dung chữ của 31 trang; độ sâu nội dung hạn chế. Đã xem trực tiếp trang 44: sơ đồ mũi tên gồm sáu bước thu thập, lọc, biến đổi, tổ chức và lưu trữ, phân tích, trình bày kết quả; section 2.4 được gán theo vị trí giữa các trang 40–46.
 
 ### Parse, clean và metadata
 
@@ -43,12 +43,12 @@ Trước khi truy vấn test, lựa chọn được ghi tại `starter/results/s
 
 ### Retrieval và tài nguyên
 
-Các điểm sau là **khớp gold nguyên văn bảo thủ**, không phải nhãn semantic đã được người học xác nhận: một chunk được tính trúng nếu ở đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa khoảng trắng. Bằng chứng diễn đạt khác hoặc bị chia giữa nhiều chunk có thể bị bỏ sót.
+Các điểm sau dựa trên **duyệt ngữ nghĩa của Codex** đối với 180 chunk: một chunk trúng nếu tự chứa đủ thông tin trả lời, kể cả diễn đạt tương đương, trong ngữ cảnh của nó. Không gộp nhiều chunk thành một hit; các nhãn, lý do và kết quả khớp nguyên văn cũ được lưu trong `review/retrieval_review.csv`. Đây là đánh giá AI hỗ trợ, không phải nhãn độc lập của học viên.
 
 | Cấu hình | Split | Top 1 (n/N) | Top 3 (n/N) | Chunk | Tạo chunk + embedding + lưu* | Chi phí API |
 |---|---|---:|---:|---:|---:|---:|
 | A | Dev | 10/15 | 12/15 | 43 | 3,607 giây | 0 |
-| A | Test | 3/5 | 3/5 | 43 | dùng lại collection | 0 |
+| A | Test | 3/5 | 4/5 | 43 | dùng lại collection | 0 |
 | B | Dev | 10/15 | 12/15 | 43 | 1,837 giây | 0 |
 | B | Test | 3/5 | 4/5 | 43 | dùng lại collection | 0 |
 | C | Dev | 10/15 | 13/15 | 43 | dùng chung B | 0 |
@@ -64,25 +64,25 @@ Các số dưới đây là nhận xét sơ bộ của Codex và kiểm tra tự
 
 | Cấu hình | Coherence trung bình /2 | Metadata khớp PDF và section được gán | Filter test tuân thủ | Grounding 0/1/2; trung bình /2 |
 |---|---:|---:|---:|---|
-| A | 1,9 (10 vị trí) | 15/15 | N/A | 1/1/3; 1,4 |
+| A | 1,9 (10 vị trí) | 15/15 | N/A | 1/0/4; 1,6 |
 | B | 2,0 (10 vị trí) | 15/15 | N/A | 1/0/4; 1,6 |
 | C | 2,0 (10 vị trí) | 15/15 | 2/2 câu có filter | 0/0/5; 2,0 |
 
 Mẫu coherence chọn 10 trang nội dung đầu tiên theo thứ tự vật lý: 5, 14, 19–26; với mỗi trang lấy chunk đầu tiên chứa offset 0. C dùng chung chunk B. Trợ lý Codex nhận xét thang 0–2, có lý do từng chunk; học viên cần đọc lại vì đây không phải người chấm độc lập và mẫu có thiên lệch về các slide đầu.
 
-Audit metadata đối chiếu 5 câu test × Top 3 cho từng cấu hình với văn bản trích xuất trực tiếp từ PDF, số trang, offset và section được gán theo nhóm trang. 15/15 là số bản ghi khớp trong phép kiểm tra này, không chứng minh tuyệt đối section luôn đúng ngữ nghĩa. Với C, cả 2 câu test có filter đều trả các chunk đúng giá trị section. Grounding do Codex nhận xét 0–2 cho từng câu theo độ đủ bằng chứng trong Top 3; không phải đánh giá độ chính xác câu trả lời LLM và cần học viên xác nhận.
+Audit metadata đối chiếu 5 câu test × Top 3 cho từng cấu hình với văn bản trích xuất trực tiếp từ PDF, số trang, offset và section được gán theo nhóm trang. 15/15 là số bản ghi khớp trong phép kiểm tra này, không chứng minh tuyệt đối section luôn đúng ngữ nghĩa. Với C, cả 2 câu test có filter đều trả các chunk đúng giá trị section. Grounding do Codex nhận xét 0–2 cho từng câu theo độ đủ bằng chứng trong Top 3; sau duyệt ngữ nghĩa, SQ17/A tăng từ 1 lên 2 vì chunk trang 36 đủ suy ra chiều ADC. Không phải đánh giá độ chính xác câu trả lời LLM và cần học viên xác nhận. Tổng mới ở `artifacts/sensor_review_summary_semantic.json`; các file review lịch sử được giữ nguyên.
 
 Minh chứng local: `starter/results/sensor_run/dev/traces_dev.jsonl`, `evaluation/traces_test.jsonl`, `dev_exact_review.jsonl`, `test_exact_review.jsonl`, `coherence_review.jsonl`, `metadata_audit.jsonl`, `grounding_review.jsonl` và `review_summary.json` dưới `starter/results/sensor_run/`. Các nhãn `*_exact_review` là so khớp tự động; coherence/grounding là nhận xét của Codex. Các file minh chứng được cung cấp trong repo theo xác nhận quyền công khai của học viên.
 
 ## 4. Phân tích và kết luận
 
-**A–B:** hai phương pháp đều tạo 43 chunk và cùng kết quả khớp nguyên văn trên dev. Trên test, B tìm được đủ gold trong Top 3 ở 4/5 câu so với 3/5 của A. SQ17, gold trang 36, là ví dụ: chunk A ở Top 3 bị cắt giữa câu mô tả ADC, còn B có một chunk đầy đủ ở Top 2. Đây là phép so sánh trên 5 câu, không đủ để suy rộng.
+**A–B:** hai phương pháp đều tạo 43 chunk, cùng Hit@3 ngữ nghĩa 12/15 dev và 4/5 test. Với SQ17, A có đoạn trang 36 ở Top 3 tuy câu gold bị cắt nhưng vẫn nêu tín hiệu analog chuyển sang số và mở rộng ADC là Analog-to-Digital Converter; B có đoạn định nghĩa trực tiếp ở Top 2. Phép khớp nguyên văn lịch sử cho A 3/5 test, thấp hơn đánh giá ngữ nghĩa 4/5. Mẫu năm câu không đủ để suy rộng.
 
-**B–C:** C chỉ khác B ở filter section. SQ20 yêu cầu phần giải thuật xử lý dữ liệu, gold ở trang 47; B trả các trang 40, 45, 46 và không khớp gold, còn C giới hạn đúng section và tìm được đoạn chuẩn hóa ở Top 2. Trên test, C tuân thủ filter 2/2 câu và khớp gold Top 3 là 5/5, so với 4/5 của B. Kết quả phụ thuộc phạm vi section được gán đúng và người hỏi cung cấp điều kiện trước truy xuất.
+**B–C:** C chỉ khác B ở filter section. SQ20 yêu cầu phần giải thuật xử lý dữ liệu, gold ở trang 47; B trả các trang 40, 45, 46 và không khớp gold, còn C giới hạn đúng section và tìm được đoạn chuẩn hóa ở Top 2. Trên test, C tuân thủ filter 2/2 câu và đạt Hit@3 ngữ nghĩa 5/5, so với 4/5 của B. Kết quả phụ thuộc phạm vi section được gán đúng và người hỏi cung cấp điều kiện trước truy xuất.
 
 **Các lỗi khác:** SQ02, gold trang 14, không xuất hiện trong Top 3 dev của A/B/C; SQ04, gold trang 20, cũng không xuất hiện trong Top 3. Cần xem query, các đoạn cạnh tranh và chất lượng embedding tiếng Việt; không thể khẳng định nguyên nhân chỉ từ thứ hạng. Phép khớp nguyên văn cũng có thể bỏ sót bằng chứng tương đương.
 
-**Lựa chọn:** C đã được chọn tạm từ dev trước test. Kết quả test phù hợp với giả thuyết filter hữu ích ở ví dụ SQ20, nhưng test nhỏ và chỉ 2 câu có filter; không kết luận C luôn tốt hơn. Hướng cải thiện: xác nhận quyền chia sẻ và 31 trang, nhờ người học chấm lại gold/coherence/grounding và audit section, tăng số câu hỏi đa dạng, kiểm tra những trang chứa sơ đồ, và ghi revision model chính xác.
+**Lựa chọn:** C đã được chọn tạm từ dev trước test. Kết quả test phù hợp với giả thuyết filter hữu ích ở ví dụ SQ20, nhưng test nhỏ và chỉ 2 câu có filter; không kết luận C luôn tốt hơn. Hướng cải thiện: nhờ người học duyệt độc lập nhãn và section, tăng số câu hỏi đa dạng, và ghi revision model chính xác cho các lần chạy mới.
 
 ## 5. Cách chạy và khai báo AI
 
@@ -99,8 +99,8 @@ Model cần tải trước nếu cache chưa có. Bộ test của lần chạy n
 
 ## 6. Kết quả đối chiếu ngày 13/11/2026
 
-Codex đã đọc văn bản trích xuất của 31 trang và đối chiếu các tiêu đề, thứ tự mục 2.1–2.5 cùng 20 câu hỏi, đáp án, trang gold và bốn filter. Trang 19 là danh sách ngắn; trang 44 là sơ đồ sáu bước và việc kiểm tra dựa vào chữ trích xuất, chưa xác minh độc lập toàn bộ hình. Bảng `review/page_review.csv` và `review/gold_review.csv` ghi cơ sở từng dòng. Đây là kiểm tra do AI hỗ trợ, không phải xác nhận của học viên hay giảng viên.
+Codex đã đọc văn bản trích xuất của 31 trang và đối chiếu các tiêu đề, thứ tự mục 2.1–2.5 cùng 20 câu hỏi, đáp án, trang gold và bốn filter. Trang 19 là danh sách ngắn; trang 44 đã được xem trực tiếp và là sơ đồ sáu bước nối bằng mũi tên, khớp thứ tự chữ trích xuất. Bảng `review/page_review.csv` và `review/gold_review.csv` ghi cơ sở từng dòng. Đây là kiểm tra do AI hỗ trợ, không phải xác nhận của học viên hay giảng viên.
 
-`review/retrieval_review.csv` chứa 180 nhãn so khớp nguyên văn tự động kèm lý do; không khẳng định các trường hợp không khớp là sai về ngữ nghĩa. `review/manual_scoring_review.csv` chứa 30 nhận xét coherence và 15 grounding sơ bộ của Codex cùng 45 kiểm tra metadata tự động, khớp với bảng tổng hợp ở mục 3. Các điểm này không phải nhãn của học viên hay đánh giá độc lập. Vì test đã được xem, không dùng kết quả này làm bằng chứng holdout độc lập sau tinh chỉnh.
+`review/retrieval_review.csv` chứa 180 nhãn ngữ nghĩa và lý do do Codex duyệt, đồng thời giữ kết quả khớp nguyên văn cũ. Ba chunk SQ17 trang 36 được tính đủ về ngữ nghĩa dù không chứa trọn gold; A test Hit@3 tăng từ 3/5 lên 4/5. Chỉ số mới được tổng hợp ở `artifacts/sensor_semantic_metrics.json`. `review/manual_scoring_review.csv` chứa 30 nhận xét coherence và 15 grounding của Codex cùng 45 kiểm tra metadata tự động; SQ17/A được sửa từ 1 lên 2 sau duyệt ngữ nghĩa và bảng mục 3 phản ánh kết quả mới. Các điểm này không phải nhãn của học viên hay đánh giá độc lập. Vì test đã được xem, không dùng kết quả này làm bằng chứng holdout độc lập sau tinh chỉnh.
 
 AI: Codex hỗ trợ kiểm tra văn bản, viết mã và ghi nhận nhận xét; học viên cần hiểu và tự kiểm tra các kết luận trước khi nộp.

@@ -8,7 +8,7 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 
 Kiểm tra cục bộ, không xuất văn bản nguồn: `.\starter\.venv\Scripts\python.exe -m starter.src.verify_sensor`. Báo cáo tại `starter/results/sensor_verification.json` ghi số ký tự và lựa chọn cũ cho từng trang; so khớp nguyên văn gold không chứng minh đáp án hay filter đúng. [Audit](AUDIT.md) ghi đối chiếu và các điểm còn thiếu.
 
-**Trạng thái: đã có bản duyệt do Codex hỗ trợ; cần học viên hiểu và kiểm tra độc lập trước khi nộp.** PDF có 49 trang vật lý và 31 trang được chọn, đã đối chiếu nội dung chữ và ranh giới section; trang 19 ngắn và trang 44 là sơ đồ. Học viên xác nhận đã được cấp toàn quyền công khai tài liệu. Benchmark và trace được cung cấp trong repo; học viên cần kiểm tra các nhãn do Codex hỗ trợ. Bộ test đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng để đánh giá độc lập.
+**Trạng thái: đã có bản duyệt do Codex hỗ trợ; cần học viên hiểu và kiểm tra độc lập trước khi nộp.** PDF có 49 trang vật lý và 31 trang được chọn, đã đối chiếu nội dung chữ và ranh giới section; trang 19 ngắn; trang 44 đã xem trực tiếp, là sơ đồ sáu bước. Học viên xác nhận đã được cấp toàn quyền công khai tài liệu. Benchmark và trace được cung cấp trong repo; học viên cần kiểm tra các nhãn do Codex hỗ trợ. Bộ test đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng để đánh giá độc lập.
 
 Mã hiện dùng ChromaDB và model `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. Tại PowerShell từ thư mục gốc, dùng Python tương thích và chạy:
 
@@ -81,4 +81,6 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 
 ## Minh chứng và giới hạn kiểm chứng
 
-PDF: `starter/data/documents.pdf`; câu hỏi: `starter/benchmark/sensor_questions.json`; trace và chunk: `starter/results/sensor_run/`; các bảng duyệt: `review/*.csv`. Các dòng retrieval là phép so khớp nguyên văn tự động, không phải nhãn semantic; coherence và grounding là nhận xét sơ bộ của Codex, metadata là kiểm tra tự động. 31 trang được Codex kiểm tra từ văn bản trích xuất, không phải xác nhận độc lập của người học hay giảng viên; trang 44 là sơ đồ và có thể thiếu thông tin hình ảnh. Test đã được xem và không còn là holdout độc lập. PostgreSQL và dotenv chỉ dùng trong starter tham khảo, không cần cho pipeline cảm biến; chúng vẫn được giữ trong requirements cho starter đó.
+PDF: `starter/data/documents.pdf`; câu hỏi: `starter/benchmark/sensor_questions.json`; trace và chunk: `starter/results/sensor_run/`; các bảng duyệt: `review/*.csv`. Các dòng retrieval là nhãn ngữ nghĩa do Codex duyệt; cột riêng giữ phép so khớp nguyên văn tự động trước đây; coherence và grounding là nhận xét sơ bộ của Codex, metadata là kiểm tra tự động. 31 trang được Codex kiểm tra từ văn bản trích xuất, riêng trang 44 được xem trực tiếp; đây không phải xác nhận độc lập của người học hay giảng viên. Test đã được xem và không còn là holdout độc lập. PostgreSQL và dotenv chỉ dùng trong starter tham khảo, không cần cho pipeline cảm biến; chúng vẫn được giữ trong requirements cho starter đó.
+
+Kết quả duyệt ngữ nghĩa được tổng hợp trong `artifacts/sensor_semantic_metrics.json`. Với test, Hit@3 của A/B/C lần lượt là 4/5, 4/5 và 5/5; phần chọn cấu hình lịch sử vẫn dùng kết quả khớp nguyên văn trên dev. Xem bảng retrieval để kiểm tra lý do từng chunk.

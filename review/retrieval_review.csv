@@ -1,4 +1,4 @@
-﻿id,split,cau_hoi,cau_hinh,rank,chunk_id,nguon,document_id,trang_pdf,section,offset_bat_dau,offset_ket_thuc,cosine_distance,filter_ap_dung,noi_dung_chunk,gold_evidence,trang_gold,trang_thai,nhan_evidence_du,ly_do,nguoi_duyet,ngay_duyet
+﻿id,split,cau_hoi,cau_hinh,rank,chunk_id,nguon,document_id,trang_pdf,section,offset_bat_dau,offset_ket_thuc,cosine_distance,filter_ap_dung,noi_dung_chunk,gold_evidence,trang_gold,trang_thai,nhan_evidence_du,ly_do,nguoi_duyet,ngay_duyet,khop_gold_nguyen_van_cu,ly_do_khop_nguyen_van_cu
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,A,1,SENSOR001_p5_fixed_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.1811046600341797,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -8,7 +8,7 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 5 nêu cảm biến chuyển thuộc tính vật lý thành thông tin; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,A,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_0_445,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,445,0.3123081922531128,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -18,7 +18,7 @@ số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
 nối thế giới vật lý với thế giới số. ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
-âm thanh, áp suất… – thành tín ",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+âm thanh, áp suất… – thành tín ",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ cảm biến chuyển thuộc tính vật lý thành thông tin; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,A,3,SENSOR001_p48_fixed_tokens_d83fe23d3c1c4e08_0_416,starter/data/documents.pdf,SENSOR001,48,2.5 Các giải thuật xử lý dữ liệu,0,416,0.42825889587402344,,"2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
  Phân tích dữ liệu cảm biến
  Các giải thuật phân tích dữ liệu giúp hệ thống IoT hiểu, dự
@@ -27,7 +27,7 @@ máy, học sâu, thống kê, chuỗi thời gian và xử lý tại biên.
  Học máy: Sử dụng các thuật toán như Decision Tree,
 Random Forest,… phân loại trạng thái thiết bị hoặc dự đoán
 sự cố. Ví dụ: dự đoán lỗi động cơ từ dữ liệu cảm biến rung.
- Học ",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+ Học ",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 48 không nêu đủ cảm biến chuyển thuộc tính vật lý thành thông tin; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,B,1,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.1811046600341797,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -37,7 +37,7 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 5 nêu cảm biến chuyển thuộc tính vật lý thành thông tin; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,B,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,342,0.29850292205810547,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -45,11 +45,11 @@ vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
 tích được, tín hiệu này cần được chuyển đổi sang dạng
 số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
-nối thế giới vật lý với thế giới số. ",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+nối thế giới vật lý với thế giới số. ",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ cảm biến chuyển thuộc tính vật lý thành thông tin; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,B,3,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_243_422,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",243,422,0.35536861419677734,,"Trong IoT, op-amp
 thường được dùng để khuếch đại tín hiệu từ các cảm biến như
 nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được xử lý bởi
-các vi điều khiển hoặc bộ xử lý khác.",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+các vi điều khiển hoặc bộ xử lý khác.",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 33 không nêu đủ cảm biến chuyển thuộc tính vật lý thành thông tin; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,C,1,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.1811046600341797,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -59,7 +59,7 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 5 nêu cảm biến chuyển thuộc tính vật lý thành thông tin; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,C,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,342,0.29850292205810547,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -67,11 +67,11 @@ vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
 tích được, tín hiệu này cần được chuyển đổi sang dạng
 số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
-nối thế giới vật lý với thế giới số. ",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+nối thế giới vật lý với thế giới số. ",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ cảm biến chuyển thuộc tính vật lý thành thông tin; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ01,dev,Cảm biến IoT chuyển đổi thuộc tính vật lý thành dạng gì?,C,3,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_243_422,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",243,422,0.35536861419677734,,"Trong IoT, op-amp
 thường được dùng để khuếch đại tín hiệu từ các cảm biến như
 nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được xử lý bởi
-các vi điều khiển hoặc bộ xử lý khác.",chuyển đổi các thuộc tính đó thành thông tin,5,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+các vi điều khiển hoặc bộ xử lý khác.",chuyển đổi các thuộc tính đó thành thông tin,5,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 33 không nêu đủ cảm biến chuyển thuộc tính vật lý thành thông tin; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,A,1,SENSOR001_p23_fixed_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.3207852244377136,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -81,11 +81,11 @@ SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,A,1
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,A,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",395,504,0.35441744327545166,,"hiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,A,3,SENSOR001_p22_fixed_tokens_3d9e79be4172c674_0_224,starter/data/documents.pdf,SENSOR001,22,2.1 Cảm biến và cơ cấu chấp hành,0,224,0.3660896420478821,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
  Độ nhạy của cảm biến
  Sai số và độ chính xác
@@ -94,7 +94,7 @@ SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,A,3
  Vùng làm việc danh định
  Vùng không gây nên hư hỏng
  Vùng không phá hủy
-22",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+22",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 22 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,B,1,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.3207852244377136,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -104,20 +104,20 @@ SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,B,1
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,B,2,SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_0_241,starter/data/documents.pdf,SENSOR001,47,2.5 Các giải thuật xử lý dữ liệu,0,241,0.3487114906311035,,"2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
  Tiền xử lý dữ liệu cảm biến
  Lọc nhiễu (Noise Filtering): Sử dụng các bộ lọc để loại bỏ
 nhiễu khỏi dữ liệu cảm biến.
  Chuẩn hóa dữ liệu (Normalization): Đưa dữ liệu về cùng
 một thang đo để dễ phân tích.
-",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 47 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,B,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_245_529,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",245,529,0.36287397146224976,," Mặt khác, các bộ xử lý dữ liệu điện tử tiêu chuẩn, chẳng
 hạn như bộ chuyển đổi tương tự - số (ADC), bộ điều chế
 tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
 có độ lớn khá lớn.
  Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
-để phù hợp với bộ xử lý tín hiệu.",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để phù hợp với bộ xử lý tín hiệu.",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,C,1,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.3207852244377136,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -127,25 +127,25 @@ SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,C,1
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,C,2,SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_0_241,starter/data/documents.pdf,SENSOR001,47,2.5 Các giải thuật xử lý dữ liệu,0,241,0.3487114906311035,,"2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
  Tiền xử lý dữ liệu cảm biến
  Lọc nhiễu (Noise Filtering): Sử dụng các bộ lọc để loại bỏ
 nhiễu khỏi dữ liệu cảm biến.
  Chuẩn hóa dữ liệu (Normalization): Đưa dữ liệu về cùng
 một thang đo để dễ phân tích.
-",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 47 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ02,dev,Tài liệu phân loại cảm biến theo những tiêu chí nào?,C,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_245_529,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",245,529,0.36287397146224976,," Mặt khác, các bộ xử lý dữ liệu điện tử tiêu chuẩn, chẳng
 hạn như bộ chuyển đổi tương tự - số (ADC), bộ điều chế
 tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
 có độ lớn khá lớn.
  Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
-để phù hợp với bộ xử lý tín hiệu.",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để phù hợp với bộ xử lý tín hiệu.",Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích  Theo dạng kích thích  Theo tính năng các bộ cảm biến  Theo phạm vi sử dụng các bộ cảm biến  Theo thông số của mô hình mạch thay thế,14,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ đủ năm tiêu chí phân loại cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",A,1,SENSOR001_p19_fixed_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,SENSOR001,19,2.1 Cảm biến và cơ cấu chấp hành,0,104,0.26943933963775635,,"PHÂN LOẠI CẢM BIẾN
  Theo thông số của mô hình mạch thay thế:
  Cảm biến tích cực
  Cảm biến thụ động
-19",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+19",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 19 nêu hai loại tích cực và thụ động theo mạch thay thế; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",A,2,SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_0_386,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,386,0.3520156741142273,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -155,26 +155,26 @@ cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
  Mặt khác, các bộ xử lý dữ liệu điện tử tiêu chuẩn, chẳng
 hạn như bộ chuyển đổi tương tự - số (ADC), bộ điều chế
-tần số, bộ ghi dữ liệu,... ",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+tần số, bộ ghi dữ liệu,... ",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ hai loại tích cực và thụ động theo mạch thay thế; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",A,3,SENSOR001_p14_fixed_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.35341089963912964,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ hai loại tích cực và thụ động theo mạch thay thế; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",B,1,SENSOR001_p19_paragraph_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,SENSOR001,19,2.1 Cảm biến và cơ cấu chấp hành,0,104,0.26943933963775635,,"PHÂN LOẠI CẢM BIẾN
  Theo thông số của mô hình mạch thay thế:
  Cảm biến tích cực
  Cảm biến thụ động
-19",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+19",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 19 nêu hai loại tích cực và thụ động theo mạch thay thế; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",B,2,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.35341089963912964,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ hai loại tích cực và thụ động theo mạch thay thế; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",B,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.3634498715400696,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -182,19 +182,19 @@ SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?"
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ hai loại tích cực và thụ động theo mạch thay thế; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",C,1,SENSOR001_p19_paragraph_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,SENSOR001,19,2.1 Cảm biến và cơ cấu chấp hành,0,104,0.26943933963775635,,"PHÂN LOẠI CẢM BIẾN
  Theo thông số của mô hình mạch thay thế:
  Cảm biến tích cực
  Cảm biến thụ động
-19",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+19",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 19 nêu hai loại tích cực và thụ động theo mạch thay thế; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",C,2,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.35341089963912964,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ hai loại tích cực và thụ động theo mạch thay thế; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?",C,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.3634498715400696,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -202,7 +202,7 @@ SQ03,dev,"Theo thông số mạch thay thế, có hai loại cảm biến nào?"
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",Cảm biến tích cực  Cảm biến thụ động,19,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Cảm biến tích cực  Cảm biến thụ động,19,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ hai loại tích cực và thụ động theo mạch thay thế; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,A,1,SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_0_386,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,386,0.3146342635154724,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -212,7 +212,7 @@ cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
  Mặt khác, các bộ xử lý dữ liệu điện tử tiêu chuẩn, chẳng
 hạn như bộ chuyển đổi tương tự - số (ADC), bộ điều chế
-tần số, bộ ghi dữ liệu,... ",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+tần số, bộ ghi dữ liệu,... ",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,A,2,SENSOR001_p5_fixed_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.3620653748512268,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -222,11 +222,11 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 5 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,A,3,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",395,504,0.36629652976989746,,"hiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,B,1,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.3197621703147888,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -234,7 +234,7 @@ SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,B,1,S
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,B,2,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.3620653748512268,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -244,14 +244,14 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 5 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,B,3,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.3755446672439575,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,C,1,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.3197621703147888,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -259,7 +259,7 @@ SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,C,1,S
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,C,2,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.3620653748512268,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -269,14 +269,14 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 5 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ04,dev,Hàm truyền cho biết mối quan hệ nào của cảm biến?,C,3,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.3755446672439575,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",Cho biết quan hệ giữa đáp ứng và kích thích,20,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",Cho biết quan hệ giữa đáp ứng và kích thích,20,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ hàm truyền cho biết quan hệ đáp ứng và kích thích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,A,1,SENSOR001_p20_fixed_tokens_bdafb7baa0a80aeb_0_297,starter/data/documents.pdf,SENSOR001,20,2.1 Cảm biến và cơ cấu chấp hành,0,297,0.445500910282135,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
  Hàm truyền
  Cho biết quan hệ giữa đáp ứng và kích thích
@@ -286,14 +286,14 @@ SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượ
  Là giá trị lớn nhất của tín hiệu đặt vào bộ cảm biến mà sai
 số không vượt quá ngưỡng cho phép
  Sai số và độ chính xác
-20",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+20",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 20 không nêu đủ đường cong chuẩn liên hệ đầu ra S với đầu vào M; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,A,2,SENSOR001_p14_fixed_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.4771890640258789,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ đường cong chuẩn liên hệ đầu ra S với đầu vào M; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,A,3,SENSOR001_p21_fixed_tokens_44887168b97df5af_0_386,starter/data/documents.pdf,SENSOR001,21,2.1 Cảm biến và cơ cấu chấp hành,0,386,0.4812248945236206,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
  Đường cong chuẩn cảm biến
  Là đường cong biểu diễu sự phụ thuộc của đại lượng (S) ở đầu ra của
@@ -302,7 +302,7 @@ cảm biến vào giá trị của đại lượng đo (M) ở đầu vào.
 bằng đồ thị.
  Dựa vào đường cong chuẩn cảm biến, có thể xác định giá trị Mi chưa
 biết của M thông qua giá trị đo được Si của S.
-21",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+21",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 21 nêu đường cong chuẩn liên hệ đầu ra S với đầu vào M; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,B,1,SENSOR001_p20_paragraph_tokens_bdafb7baa0a80aeb_0_297,starter/data/documents.pdf,SENSOR001,20,2.1 Cảm biến và cơ cấu chấp hành,0,297,0.44550085067749023,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
  Hàm truyền
  Cho biết quan hệ giữa đáp ứng và kích thích
@@ -312,14 +312,14 @@ SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượ
  Là giá trị lớn nhất của tín hiệu đặt vào bộ cảm biến mà sai
 số không vượt quá ngưỡng cho phép
  Sai số và độ chính xác
-20",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+20",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 20 không nêu đủ đường cong chuẩn liên hệ đầu ra S với đầu vào M; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,B,2,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.4771890640258789,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ đường cong chuẩn liên hệ đầu ra S với đầu vào M; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,B,3,SENSOR001_p21_paragraph_tokens_44887168b97df5af_0_386,starter/data/documents.pdf,SENSOR001,21,2.1 Cảm biến và cơ cấu chấp hành,0,386,0.4812249541282654,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
  Đường cong chuẩn cảm biến
  Là đường cong biểu diễu sự phụ thuộc của đại lượng (S) ở đầu ra của
@@ -328,7 +328,7 @@ cảm biến vào giá trị của đại lượng đo (M) ở đầu vào.
 bằng đồ thị.
  Dựa vào đường cong chuẩn cảm biến, có thể xác định giá trị Mi chưa
 biết của M thông qua giá trị đo được Si của S.
-21",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+21",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 21 nêu đường cong chuẩn liên hệ đầu ra S với đầu vào M; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,C,1,SENSOR001_p20_paragraph_tokens_bdafb7baa0a80aeb_0_297,starter/data/documents.pdf,SENSOR001,20,2.1 Cảm biến và cơ cấu chấp hành,0,297,0.44550085067749023,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
  Hàm truyền
  Cho biết quan hệ giữa đáp ứng và kích thích
@@ -338,14 +338,14 @@ SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượ
  Là giá trị lớn nhất của tín hiệu đặt vào bộ cảm biến mà sai
 số không vượt quá ngưỡng cho phép
  Sai số và độ chính xác
-20",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+20",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 20 không nêu đủ đường cong chuẩn liên hệ đầu ra S với đầu vào M; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,C,2,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.4771890640258789,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ đường cong chuẩn liên hệ đầu ra S với đầu vào M; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ05,dev,Đường cong chuẩn biểu diễn quan hệ giữa hai đại lượng nào?,C,3,SENSOR001_p21_paragraph_tokens_44887168b97df5af_0_386,starter/data/documents.pdf,SENSOR001,21,2.1 Cảm biến và cơ cấu chấp hành,0,386,0.4812249541282654,,"CÁC ĐẶC TRƯNG CƠ BẢN CỦA CẢM BIẾN
  Đường cong chuẩn cảm biến
  Là đường cong biểu diễu sự phụ thuộc của đại lượng (S) ở đầu ra của
@@ -354,11 +354,11 @@ cảm biến vào giá trị của đại lượng đo (M) ở đầu vào.
 bằng đồ thị.
  Dựa vào đường cong chuẩn cảm biến, có thể xác định giá trị Mi chưa
 biết của M thông qua giá trị đo được Si của S.
-21",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+21",sự phụ thuộc của đại lượng (S) ở đầu ra của cảm biến vào giá trị của đại lượng đo (M) ở đầu vào,21,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 21 nêu đường cong chuẩn liên hệ đầu ra S với đầu vào M; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",A,1,SENSOR001_p24_fixed_tokens_ef44a94c4843f56b_443_553,starter/data/documents.pdf,SENSOR001,24,2.1 Cảm biến và cơ cấu chấp hành,443,553,0.18108081817626953,,"ộ
 tối ưu của chúng. Các cảm biến nhiệt độ
 được sử dụng phổ biến nhất hoạt động
-trên nguyên tắc cặp nhiệt điện.",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+trên nguyên tắc cặp nhiệt điện.",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Không,Cùng trang gold nhưng đoạn này không nêu đủ cảm biến nhiệt độ phát hiện thay đổi nhiệt độ.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",A,2,SENSOR001_p24_fixed_tokens_ef44a94c4843f56b_0_493,starter/data/documents.pdf,SENSOR001,24,2.1 Cảm biến và cơ cấu chấp hành,0,493,0.21896696090698242,,"CẢM BIẾN NHIỆT ĐỘ
 24
 - Cảm biến nhiệt độ được sử dụng để
@@ -374,7 +374,7 @@ liệu nhiệt độ tại thời điểm đo của máy
 móc và môi trường tự nhiên, giúp máy
 móc thực hiện các hoạt động ở nhiệt độ
 tối ưu của chúng. Các cảm biến nhiệt độ
-được sử ",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+được sử ",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 24 nêu cảm biến nhiệt độ phát hiện thay đổi nhiệt độ; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",A,3,SENSOR001_p23_fixed_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.3328757882118225,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -384,10 +384,10 @@ SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhi�
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ cảm biến nhiệt độ phát hiện thay đổi nhiệt độ; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",B,1,SENSOR001_p24_paragraph_tokens_ef44a94c4843f56b_463_553,starter/data/documents.pdf,SENSOR001,24,2.1 Cảm biến và cơ cấu chấp hành,463,553,0.1805969476699829,,"Các cảm biến nhiệt độ
 được sử dụng phổ biến nhất hoạt động
-trên nguyên tắc cặp nhiệt điện.",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+trên nguyên tắc cặp nhiệt điện.",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Không,Cùng trang gold nhưng đoạn này không nêu đủ cảm biến nhiệt độ phát hiện thay đổi nhiệt độ.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",B,2,SENSOR001_p24_paragraph_tokens_ef44a94c4843f56b_0_463,starter/data/documents.pdf,SENSOR001,24,2.1 Cảm biến và cơ cấu chấp hành,0,463,0.22303491830825806,,"CẢM BIẾN NHIỆT ĐỘ
 24
 - Cảm biến nhiệt độ được sử dụng để
@@ -402,7 +402,7 @@ công nghiệp như sản xuất, nơi máy móc
 liệu nhiệt độ tại thời điểm đo của máy
 móc và môi trường tự nhiên, giúp máy
 móc thực hiện các hoạt động ở nhiệt độ
-tối ưu của chúng. ",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+tối ưu của chúng. ",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 24 nêu cảm biến nhiệt độ phát hiện thay đổi nhiệt độ; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",B,3,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.3328757882118225,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -412,10 +412,10 @@ SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhi�
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ cảm biến nhiệt độ phát hiện thay đổi nhiệt độ; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",C,1,SENSOR001_p24_paragraph_tokens_ef44a94c4843f56b_463_553,starter/data/documents.pdf,SENSOR001,24,2.1 Cảm biến và cơ cấu chấp hành,463,553,0.1805969476699829,"{""section"": ""2.1 Cảm biến và cơ cấu chấp hành""}","Các cảm biến nhiệt độ
 được sử dụng phổ biến nhất hoạt động
-trên nguyên tắc cặp nhiệt điện.",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+trên nguyên tắc cặp nhiệt điện.",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Không,Cùng trang gold nhưng đoạn này không nêu đủ cảm biến nhiệt độ phát hiện thay đổi nhiệt độ.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",C,2,SENSOR001_p24_paragraph_tokens_ef44a94c4843f56b_0_463,starter/data/documents.pdf,SENSOR001,24,2.1 Cảm biến và cơ cấu chấp hành,0,463,0.22303491830825806,"{""section"": ""2.1 Cảm biến và cơ cấu chấp hành""}","CẢM BIẾN NHIỆT ĐỘ
 24
 - Cảm biến nhiệt độ được sử dụng để
@@ -430,7 +430,7 @@ công nghiệp như sản xuất, nơi máy móc
 liệu nhiệt độ tại thời điểm đo của máy
 móc và môi trường tự nhiên, giúp máy
 móc thực hiện các hoạt động ở nhiệt độ
-tối ưu của chúng. ",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+tối ưu của chúng. ",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 24 nêu cảm biến nhiệt độ phát hiện thay đổi nhiệt độ; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhiệt độ dùng để phát hiện gì?",C,3,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.3328757882118225,"{""section"": ""2.1 Cảm biến và cơ cấu chấp hành""}","CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -440,7 +440,7 @@ SQ06,dev,"Trong mục cảm biến và cơ cấu chấp hành, cảm biến nhi�
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",phát hiện sự thay đổi của nhiệt độ,24,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",phát hiện sự thay đổi của nhiệt độ,24,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ cảm biến nhiệt độ phát hiện thay đổi nhiệt độ; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,A,1,SENSOR001_p25_fixed_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,SENSOR001,25,2.1 Cảm biến và cơ cấu chấp hành,0,414,0.29522985219955444,,"CẢM BIẾN HỒNG NGOẠI
 25
 - Cảm nhận các đặc điểm của môi trường
@@ -453,13 +453,13 @@ chăm sóc sức khỏe vì chúng đơn giản hóa
 việc theo dõi lưu lượng máu và huyết áp.
 TV sử dụng cảm biến hồng ngoại để giải
 mã các tín hiệu được gửi bởi điều khiển từ
-xa.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+xa.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 25 nêu cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,A,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",395,504,0.49074578285217285,,"hiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,A,3,SENSOR001_p33_fixed_tokens_32ad3e57d059ef63_325_422,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",325,422,0.49427491426467896,,"t độ, độ ẩm, ánh sáng, v.v., trước khi chúng được xử lý bởi
-các vi điều khiển hoặc bộ xử lý khác.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+các vi điều khiển hoặc bộ xử lý khác.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 33 không nêu đủ cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,B,1,SENSOR001_p25_paragraph_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,SENSOR001,25,2.1 Cảm biến và cơ cấu chấp hành,0,414,0.29522985219955444,,"CẢM BIẾN HỒNG NGOẠI
 25
 - Cảm nhận các đặc điểm của môi trường
@@ -472,12 +472,12 @@ chăm sóc sức khỏe vì chúng đơn giản hóa
 việc theo dõi lưu lượng máu và huyết áp.
 TV sử dụng cảm biến hồng ngoại để giải
 mã các tín hiệu được gửi bởi điều khiển từ
-xa.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+xa.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 25 nêu cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,B,2,SENSOR001_p27_paragraph_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.512366533279419,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 27 không nêu đủ cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,B,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.5243348479270935,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -485,7 +485,7 @@ SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách n�
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,C,1,SENSOR001_p25_paragraph_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,SENSOR001,25,2.1 Cảm biến và cơ cấu chấp hành,0,414,0.29522985219955444,,"CẢM BIẾN HỒNG NGOẠI
 25
 - Cảm nhận các đặc điểm của môi trường
@@ -498,12 +498,12 @@ chăm sóc sức khỏe vì chúng đơn giản hóa
 việc theo dõi lưu lượng máu và huyết áp.
 TV sử dụng cảm biến hồng ngoại để giải
 mã các tín hiệu được gửi bởi điều khiển từ
-xa.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+xa.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 25 nêu cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,C,2,SENSOR001_p27_paragraph_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.512366533279419,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 27 không nêu đủ cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách nào?,C,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.5243348479270935,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -511,7 +511,7 @@ SQ07,dev,Cảm biến hồng ngoại cảm nhận môi trường bằng cách n�
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",phát ra hoặc phát hiện bức xạ hồng ngoại,25,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",phát ra hoặc phát hiện bức xạ hồng ngoại,25,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ cảm biến hồng ngoại phát ra hoặc phát hiện bức xạ hồng ngoại; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,A,1,SENSOR001_p26_fixed_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,SENSOR001,26,2.1 Cảm biến và cơ cấu chấp hành,0,266,0.2834962010383606,,"CẢM BIẾN ĐỘ ẨM
 26
 - Cảm biến độ ẩm có thể đo thành phần
@@ -520,7 +520,7 @@ khí khác.
 - Cảm biến độ ẩm thường dùng trong các
 hệ thống sưởi ấm, thông gió và điều hòa
 không khí trong các lĩnh vực công nghiệp
-và dân dụng; dung trong dự báo thời tiết.",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+và dân dụng; dung trong dự báo thời tiết.",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 26 nêu cảm biến độ ẩm đo hơi nước; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,A,2,SENSOR001_p28_fixed_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.37682032585144043,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -529,7 +529,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 28 không nêu đủ cảm biến độ ẩm đo hơi nước; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,A,3,SENSOR001_p23_fixed_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.40194380283355713,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -539,7 +539,7 @@ SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,A,3,S
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ cảm biến độ ẩm đo hơi nước; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,B,1,SENSOR001_p26_paragraph_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,SENSOR001,26,2.1 Cảm biến và cơ cấu chấp hành,0,266,0.2834962010383606,,"CẢM BIẾN ĐỘ ẨM
 26
 - Cảm biến độ ẩm có thể đo thành phần
@@ -548,7 +548,7 @@ khí khác.
 - Cảm biến độ ẩm thường dùng trong các
 hệ thống sưởi ấm, thông gió và điều hòa
 không khí trong các lĩnh vực công nghiệp
-và dân dụng; dung trong dự báo thời tiết.",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+và dân dụng; dung trong dự báo thời tiết.",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 26 nêu cảm biến độ ẩm đo hơi nước; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,B,2,SENSOR001_p28_paragraph_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.37682032585144043,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -557,7 +557,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 28 không nêu đủ cảm biến độ ẩm đo hơi nước; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,B,3,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.40194380283355713,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -567,7 +567,7 @@ SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,B,3,S
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ cảm biến độ ẩm đo hơi nước; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,C,1,SENSOR001_p26_paragraph_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,SENSOR001,26,2.1 Cảm biến và cơ cấu chấp hành,0,266,0.2834962010383606,,"CẢM BIẾN ĐỘ ẨM
 26
 - Cảm biến độ ẩm có thể đo thành phần
@@ -576,7 +576,7 @@ khí khác.
 - Cảm biến độ ẩm thường dùng trong các
 hệ thống sưởi ấm, thông gió và điều hòa
 không khí trong các lĩnh vực công nghiệp
-và dân dụng; dung trong dự báo thời tiết.",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+và dân dụng; dung trong dự báo thời tiết.",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 26 nêu cảm biến độ ẩm đo hơi nước; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,C,2,SENSOR001_p28_paragraph_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.37682032585144043,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -585,7 +585,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 28 không nêu đủ cảm biến độ ẩm đo hơi nước; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,C,3,SENSOR001_p23_paragraph_tokens_942e8565d9fe5f59_0_191,starter/data/documents.pdf,SENSOR001,23,2.1 Cảm biến và cơ cấu chấp hành,0,191,0.40194380283355713,,"CÁC LOẠI CẢM BIẾN THÔNG DỤNG
  Cảm biến đo nhiệt độ
  Cảm biến hồng ngoại
@@ -595,12 +595,12 @@ SQ08,dev,Cảm biến độ ẩm đo thành phần nào trong không khí?,C,3,S
  Cảm biến khói
  Cảm biến áp suất
  Cảm biến gia tốc
-23",đo thành phần hơi nước trong không khí,26,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+23",đo thành phần hơi nước trong không khí,26,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 23 không nêu đủ cảm biến độ ẩm đo hơi nước; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",A,1,SENSOR001_p27_fixed_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.2840868830680847,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 27 nêu cảm biến chuyển động dùng vi sóng; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",A,2,SENSOR001_p31_fixed_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.35456812381744385,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -612,7 +612,7 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và xây dựng,",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 31 không nêu đủ cảm biến chuyển động dùng vi sóng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",A,3,SENSOR001_p5_fixed_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.4253159761428833,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -622,12 +622,12 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 5 không nêu đủ cảm biến chuyển động dùng vi sóng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",B,1,SENSOR001_p27_paragraph_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.2840868830680847,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 27 nêu cảm biến chuyển động dùng vi sóng; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",B,2,SENSOR001_p31_paragraph_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.35456812381744385,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -639,7 +639,7 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và xây dựng,",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 31 không nêu đủ cảm biến chuyển động dùng vi sóng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",B,3,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.4253159761428833,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -649,12 +649,12 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 5 không nêu đủ cảm biến chuyển động dùng vi sóng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",C,1,SENSOR001_p27_paragraph_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.2840868830680847,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 27 nêu cảm biến chuyển động dùng vi sóng; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",C,2,SENSOR001_p31_paragraph_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.35456812381744385,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -666,7 +666,7 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và xây dựng,",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 31 không nêu đủ cảm biến chuyển động dùng vi sóng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ09,dev,"Theo tài liệu, cảm biến chuyển động dùng gì để nhận biết thay đổi do vật thể di chuyển?",C,3,SENSOR001_p5_paragraph_tokens_4c8ce06015749755_0_410,starter/data/documents.pdf,SENSOR001,5,2.1 Cảm biến và cơ cấu chấp hành,0,410,0.4253159761428833,,"5
 2.1. CẢM BIẾN VÀ CƠ CẤU CHẤP HÀNH
  Cảm biến (Sensor) IoT là thiết bị quan sát một hoặc nhiều
@@ -676,7 +676,7 @@ tính đó thành thông tin.
 hiệu số
  Cơ cấu chấp hành (Actuator) (bộ truyền động) là thiết bị có
 thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý
-để đáp ứng với thông tin nhận được.",sử dụng các vi sóng để phát hiện sự thay đổi,27,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để đáp ứng với thông tin nhận được.",sử dụng các vi sóng để phát hiện sự thay đổi,27,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 5 không nêu đủ cảm biến chuyển động dùng vi sóng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,A,1,SENSOR001_p28_fixed_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.32180559635162354,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -685,13 +685,13 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 28 nêu cảm biến khí theo dõi chất lượng không khí và khí độc; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,A,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",395,504,0.3847864866256714,,"hiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ cảm biến khí theo dõi chất lượng không khí và khí độc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,A,3,SENSOR001_p33_fixed_tokens_32ad3e57d059ef63_325_422,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",325,422,0.40416961908340454,,"t độ, độ ẩm, ánh sáng, v.v., trước khi chúng được xử lý bởi
-các vi điều khiển hoặc bộ xử lý khác.",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+các vi điều khiển hoặc bộ xử lý khác.",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 33 không nêu đủ cảm biến khí theo dõi chất lượng không khí và khí độc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,B,1,SENSOR001_p28_paragraph_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.32180559635162354,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -700,7 +700,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 28 nêu cảm biến khí theo dõi chất lượng không khí và khí độc; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,B,2,SENSOR001_p25_paragraph_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,SENSOR001,25,2.1 Cảm biến và cơ cấu chấp hành,0,414,0.4042853116989136,,"CẢM BIẾN HỒNG NGOẠI
 25
 - Cảm nhận các đặc điểm của môi trường
@@ -713,7 +713,7 @@ chăm sóc sức khỏe vì chúng đơn giản hóa
 việc theo dõi lưu lượng máu và huyết áp.
 TV sử dụng cảm biến hồng ngoại để giải
 mã các tín hiệu được gửi bởi điều khiển từ
-xa.",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+xa.",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 25 không nêu đủ cảm biến khí theo dõi chất lượng không khí và khí độc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,B,3,SENSOR001_p31_paragraph_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.42448246479034424,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -725,7 +725,7 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và xây dựng,",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 31 không nêu đủ cảm biến khí theo dõi chất lượng không khí và khí độc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,C,1,SENSOR001_p28_paragraph_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.32180559635162354,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -734,7 +734,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 28 nêu cảm biến khí theo dõi chất lượng không khí và khí độc; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,C,2,SENSOR001_p25_paragraph_tokens_7ddd86bb7028d63e_0_414,starter/data/documents.pdf,SENSOR001,25,2.1 Cảm biến và cơ cấu chấp hành,0,414,0.4042853116989136,,"CẢM BIẾN HỒNG NGOẠI
 25
 - Cảm nhận các đặc điểm của môi trường
@@ -747,7 +747,7 @@ chăm sóc sức khỏe vì chúng đơn giản hóa
 việc theo dõi lưu lượng máu và huyết áp.
 TV sử dụng cảm biến hồng ngoại để giải
 mã các tín hiệu được gửi bởi điều khiển từ
-xa.",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+xa.",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 25 không nêu đủ cảm biến khí theo dõi chất lượng không khí và khí độc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ10,dev,Cảm biến khí giúp theo dõi điều gì?,C,3,SENSOR001_p31_paragraph_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.42448246479034424,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -759,7 +759,7 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và xây dựng,",theo dõi sự thay đổi chất lượng không khí và phát hiện sự hiện diện của khí độc hại,28,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 31 không nêu đủ cảm biến khí theo dõi chất lượng không khí và khí độc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,A,1,SENSOR001_p29_fixed_tokens_b355f3a2ef9159a4_0_433,starter/data/documents.pdf,SENSOR001,29,2.1 Cảm biến và cơ cấu chấp hành,0,433,0.20837974548339844,,"CẢM BIẾN KHÓI
 29
 - Cảm biến khói được sử dụng để phát hiện có
@@ -772,7 +772,7 @@ hưởng bởi nồng độ của khói để gửi tín hiệu
 tương tự về nồng độ khói đến máy chủ.
 - Còn gọi là thiết bị báo khói. Dễ dàng lắp đặt,
 được sử dụng rộng rãi trong các trung tâm mua
-sắm",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+sắm",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 29 nêu cảm biến khói phát hiện khói và nồng độ khói; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,A,2,SENSOR001_p28_fixed_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.35289329290390015,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -781,7 +781,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 28 không nêu đủ cảm biến khói phát hiện khói và nồng độ khói; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,A,3,SENSOR001_p26_fixed_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,SENSOR001,26,2.1 Cảm biến và cơ cấu chấp hành,0,266,0.43065404891967773,,"CẢM BIẾN ĐỘ ẨM
 26
 - Cảm biến độ ẩm có thể đo thành phần
@@ -790,7 +790,7 @@ khí khác.
 - Cảm biến độ ẩm thường dùng trong các
 hệ thống sưởi ấm, thông gió và điều hòa
 không khí trong các lĩnh vực công nghiệp
-và dân dụng; dung trong dự báo thời tiết.",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và dân dụng; dung trong dự báo thời tiết.",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 26 không nêu đủ cảm biến khói phát hiện khói và nồng độ khói; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,B,1,SENSOR001_p29_paragraph_tokens_b355f3a2ef9159a4_0_367,starter/data/documents.pdf,SENSOR001,29,2.1 Cảm biến và cơ cấu chấp hành,0,367,0.2204771637916565,,"CẢM BIẾN KHÓI
 29
 - Cảm biến khói được sử dụng để phát hiện có
@@ -801,7 +801,7 @@ hoạn.
 đổi điện trở của phần tử nhạy cảm với khói bị ảnh
 hưởng bởi nồng độ của khói để gửi tín hiệu
 tương tự về nồng độ khói đến máy chủ.
-- Còn gọi là thiết bị báo khói. ",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+- Còn gọi là thiết bị báo khói. ",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 29 nêu cảm biến khói phát hiện khói và nồng độ khói; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,B,2,SENSOR001_p28_paragraph_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.35289329290390015,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -810,7 +810,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 28 không nêu đủ cảm biến khói phát hiện khói và nồng độ khói; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,B,3,SENSOR001_p26_paragraph_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,SENSOR001,26,2.1 Cảm biến và cơ cấu chấp hành,0,266,0.43065404891967773,,"CẢM BIẾN ĐỘ ẨM
 26
 - Cảm biến độ ẩm có thể đo thành phần
@@ -819,7 +819,7 @@ khí khác.
 - Cảm biến độ ẩm thường dùng trong các
 hệ thống sưởi ấm, thông gió và điều hòa
 không khí trong các lĩnh vực công nghiệp
-và dân dụng; dung trong dự báo thời tiết.",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và dân dụng; dung trong dự báo thời tiết.",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 26 không nêu đủ cảm biến khói phát hiện khói và nồng độ khói; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,C,1,SENSOR001_p29_paragraph_tokens_b355f3a2ef9159a4_0_367,starter/data/documents.pdf,SENSOR001,29,2.1 Cảm biến và cơ cấu chấp hành,0,367,0.2204771637916565,,"CẢM BIẾN KHÓI
 29
 - Cảm biến khói được sử dụng để phát hiện có
@@ -830,7 +830,7 @@ hoạn.
 đổi điện trở của phần tử nhạy cảm với khói bị ảnh
 hưởng bởi nồng độ của khói để gửi tín hiệu
 tương tự về nồng độ khói đến máy chủ.
-- Còn gọi là thiết bị báo khói. ",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+- Còn gọi là thiết bị báo khói. ",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 29 nêu cảm biến khói phát hiện khói và nồng độ khói; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,C,2,SENSOR001_p28_paragraph_tokens_170b519fc325a55c_0_273,starter/data/documents.pdf,SENSOR001,28,2.1 Cảm biến và cơ cấu chấp hành,0,273,0.35289329290390015,,"CẢM BIẾN KHÍ
 28
 - Cảm biến khí được sử dụng để theo
@@ -839,7 +839,7 @@ phát hiện sự hiện diện của khí độc hại
 do rò rỉ hoặc các trường hợp khác.
 - Chủ yếu được sử dụng trong các
 ngành công nghiệp dầu khí, sản xuất và
-dược phẩm, nhà cao tầng, nhà máy, …",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+dược phẩm, nhà cao tầng, nhà máy, …",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 28 không nêu đủ cảm biến khói phát hiện khói và nồng độ khói; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ11,dev,Cảm biến khói phát hiện những thông tin nào trong môi trường?,C,3,SENSOR001_p26_paragraph_tokens_72fe9230df2f945b_0_266,starter/data/documents.pdf,SENSOR001,26,2.1 Cảm biến và cơ cấu chấp hành,0,266,0.43065404891967773,,"CẢM BIẾN ĐỘ ẨM
 26
 - Cảm biến độ ẩm có thể đo thành phần
@@ -848,7 +848,7 @@ khí khác.
 - Cảm biến độ ẩm thường dùng trong các
 hệ thống sưởi ấm, thông gió và điều hòa
 không khí trong các lĩnh vực công nghiệp
-và dân dụng; dung trong dự báo thời tiết.",phát hiện có khói và nồng độ khói trong môi trường,29,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+và dân dụng; dung trong dự báo thời tiết.",phát hiện có khói và nồng độ khói trong môi trường,29,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 26 không nêu đủ cảm biến khói phát hiện khói và nồng độ khói; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,A,1,SENSOR001_p30_fixed_tokens_eadefc7c2115dc68_0_405,starter/data/documents.pdf,SENSOR001,30,2.1 Cảm biến và cơ cấu chấp hành,0,405,0.2397822141647339,,"CẢM BIẾN ÁP SUẤT
 30
 Cảm biến áp suất cảm nhận những thay đổi trong chất khí và
@@ -857,16 +857,16 @@ thay đổi này và truyền chúng đến hệ thống được kết nối.
 Các trường hợp sử dụng phổ biến bao gồm kiểm tra rò rỉ, có
 thể là kết quả của sự suy giảm. Cảm biến áp suất cũng rất
 hữu ích trong sản xuất hệ thống nước vì dễ dàng phát hiện
-sự dao động hoặc sụt giảm áp suất.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+sự dao động hoặc sụt giảm áp suất.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 30 nêu cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,A,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",395,504,0.4549545645713806,,"hiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,A,3,SENSOR001_p27_fixed_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.5183343887329102,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 27 không nêu đủ cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,B,1,SENSOR001_p30_paragraph_tokens_eadefc7c2115dc68_0_405,starter/data/documents.pdf,SENSOR001,30,2.1 Cảm biến và cơ cấu chấp hành,0,405,0.2397822141647339,,"CẢM BIẾN ÁP SUẤT
 30
 Cảm biến áp suất cảm nhận những thay đổi trong chất khí và
@@ -875,12 +875,12 @@ thay đổi này và truyền chúng đến hệ thống được kết nối.
 Các trường hợp sử dụng phổ biến bao gồm kiểm tra rò rỉ, có
 thể là kết quả của sự suy giảm. Cảm biến áp suất cũng rất
 hữu ích trong sản xuất hệ thống nước vì dễ dàng phát hiện
-sự dao động hoặc sụt giảm áp suất.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+sự dao động hoặc sụt giảm áp suất.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 30 nêu cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,B,2,SENSOR001_p27_paragraph_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.5183343887329102,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 27 không nêu đủ cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,B,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.5210771560668945,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -888,7 +888,7 @@ SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những m�
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,C,1,SENSOR001_p30_paragraph_tokens_eadefc7c2115dc68_0_405,starter/data/documents.pdf,SENSOR001,30,2.1 Cảm biến và cơ cấu chấp hành,0,405,0.2397822141647339,,"CẢM BIẾN ÁP SUẤT
 30
 Cảm biến áp suất cảm nhận những thay đổi trong chất khí và
@@ -897,12 +897,12 @@ thay đổi này và truyền chúng đến hệ thống được kết nối.
 Các trường hợp sử dụng phổ biến bao gồm kiểm tra rò rỉ, có
 thể là kết quả của sự suy giảm. Cảm biến áp suất cũng rất
 hữu ích trong sản xuất hệ thống nước vì dễ dàng phát hiện
-sự dao động hoặc sụt giảm áp suất.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+sự dao động hoặc sụt giảm áp suất.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 30 nêu cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,C,2,SENSOR001_p27_paragraph_tokens_c5b11264a732fd75_0_179,starter/data/documents.pdf,SENSOR001,27,2.1 Cảm biến và cơ cấu chấp hành,0,179,0.5183343887329102,,"CẢM BIẾN CHUYỂN ĐỘNG
 27
 Cảm biến chuyển động rất nhạy và sử dụng các vi sóng
 để phát hiện sự thay đổi (dịch chuyển) trong môi trường
-xung quanh, do các vật thể chuyển động tạo ra.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+xung quanh, do các vật thể chuyển động tạo ra.",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 27 không nêu đủ cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những môi trường nào?,C,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.5210771560668945,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -910,7 +910,7 @@ SQ12,dev,Cảm biến áp suất nhận biết sự thay đổi trong những m�
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Cảm biến áp suất cảm nhận những thay đổi trong chất khí và chất lỏng,30,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ cảm biến áp suất cảm nhận thay đổi trong chất khí và chất lỏng; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,A,1,SENSOR001_p31_fixed_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.156741201877594,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -922,11 +922,11 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+và xây dựng,",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 31 nêu cảm biến gia tốc đo gia tốc; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,A,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",395,504,0.3326020836830139,,"hiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ cảm biến gia tốc đo gia tốc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,A,3,SENSOR001_p33_fixed_tokens_32ad3e57d059ef63_0_375,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,375,0.37221723794937134,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 33
  Khuếch đại thuật toán (Op-amp):
@@ -934,7 +934,7 @@ SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,A,3,SE
 trong nhiều ứng dụng khác nhau, bao gồm khuếch đại điện áp,
 khuếch đại dòng điện, và tạo ra các bộ lọc. Trong IoT, op-amp
 thường được dùng để khuếch đại tín hiệu từ các cảm biến như
-nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được ",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được ",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 33 không nêu đủ cảm biến gia tốc đo gia tốc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,B,1,SENSOR001_p31_paragraph_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.156741201877594,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -946,18 +946,18 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+và xây dựng,",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 31 nêu cảm biến gia tốc đo gia tốc; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,B,2,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_0_243,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,243,0.39445143938064575,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 33
  Khuếch đại thuật toán (Op-amp):
  Đây là một loại mạch khuếch đại đa năng, có thể được sử dụng
 trong nhiều ứng dụng khác nhau, bao gồm khuếch đại điện áp,
-khuếch đại dòng điện, và tạo ra các bộ lọc. ",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+khuếch đại dòng điện, và tạo ra các bộ lọc. ",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 33 không nêu đủ cảm biến gia tốc đo gia tốc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,B,3,SENSOR001_p19_paragraph_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,SENSOR001,19,2.1 Cảm biến và cơ cấu chấp hành,0,104,0.41044288873672485,,"PHÂN LOẠI CẢM BIẾN
  Theo thông số của mô hình mạch thay thế:
  Cảm biến tích cực
  Cảm biến thụ động
-19",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+19",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 19 không nêu đủ cảm biến gia tốc đo gia tốc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,C,1,SENSOR001_p31_paragraph_tokens_363e97318352be38_0_336,starter/data/documents.pdf,SENSOR001,31,2.1 Cảm biến và cơ cấu chấp hành,0,336,0.156741201877594,,"CẢM BIẾN GIA TỐC
 31
 - Cảm biến gia tốc là thiết bị có thể đo
@@ -969,18 +969,18 @@ rơi tự do, máy bay và ngành hàng
 không, phát hiện chuyển động, giám
 sát hành vi của vận động viên, điện tử
 tiêu dùng, công trường công nghiệp
-và xây dựng,",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+và xây dựng,",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 31 nêu cảm biến gia tốc đo gia tốc; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,C,2,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_0_243,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,243,0.39445143938064575,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 33
  Khuếch đại thuật toán (Op-amp):
  Đây là một loại mạch khuếch đại đa năng, có thể được sử dụng
 trong nhiều ứng dụng khác nhau, bao gồm khuếch đại điện áp,
-khuếch đại dòng điện, và tạo ra các bộ lọc. ",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+khuếch đại dòng điện, và tạo ra các bộ lọc. ",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 33 không nêu đủ cảm biến gia tốc đo gia tốc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ13,dev,Cảm biến gia tốc là thiết bị đo đại lượng gì?,C,3,SENSOR001_p19_paragraph_tokens_9000bdad21fd3cce_0_104,starter/data/documents.pdf,SENSOR001,19,2.1 Cảm biến và cơ cấu chấp hành,0,104,0.41044288873672485,,"PHÂN LOẠI CẢM BIẾN
  Theo thông số của mô hình mạch thay thế:
  Cảm biến tích cực
  Cảm biến thụ động
-19",thiết bị có thể đo gia tốc,31,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+19",thiết bị có thể đo gia tốc,31,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 19 không nêu đủ cảm biến gia tốc đo gia tốc; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",A,1,SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_0_386,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,386,0.29548072814941406,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -990,7 +990,7 @@ cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
  Mặt khác, các bộ xử lý dữ liệu điện tử tiêu chuẩn, chẳng
 hạn như bộ chuyển đổi tương tự - số (ADC), bộ điều chế
-tần số, bộ ghi dữ liệu,... ",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+tần số, bộ ghi dữ liệu,... ",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Chunk nói tín hiệu cảm biến yếu nhưng thiếu kết luận tín hiệu cần phù hợp yêu cầu đầu vào bộ xử lý.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",A,2,SENSOR001_p34_fixed_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.3303024172782898,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -999,14 +999,14 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 34 không nêu đủ khuếch đại tín hiệu để phù hợp bộ xử lý; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",A,3,SENSOR001_p14_fixed_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.383364737033844,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ khuếch đại tín hiệu để phù hợp bộ xử lý; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",B,1,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.28419190645217896,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -1014,7 +1014,7 @@ SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại t
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Chunk nói tín hiệu cảm biến yếu nhưng thiếu kết luận tín hiệu cần phù hợp yêu cầu đầu vào bộ xử lý.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",B,2,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.3303024172782898,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1023,14 +1023,14 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 34 không nêu đủ khuếch đại tín hiệu để phù hợp bộ xử lý; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",B,3,SENSOR001_p14_paragraph_tokens_0fd84f911bf6906f_0_213,starter/data/documents.pdf,SENSOR001,14,2.1 Cảm biến và cơ cấu chấp hành,0,213,0.383364737033844,,"PHÂN LOẠI CẢM BIẾN
  Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích
  Theo dạng kích thích
  Theo tính năng các bộ cảm biến
  Theo phạm vi sử dụng các bộ cảm biến
  Theo thông số của mô hình mạch thay thế
-14",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+14",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 14 không nêu đủ khuếch đại tín hiệu để phù hợp bộ xử lý; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",C,1,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_0_245,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,245,0.28419190645217896,"{""section"": ""2.2 Khuếch đại, lọc và xử lý tín hiệu""}","2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 32
  Khuếch đại
@@ -1038,7 +1038,7 @@ SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại t
 của những tín hiệu này có thể là microvon (μV) đối với
 cảm biến tạo điện áp hoặc microampe, mA đối với cảm
 biến tạo ra dòng điện.
-",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Chunk nói tín hiệu cảm biến yếu nhưng thiếu kết luận tín hiệu cần phù hợp yêu cầu đầu vào bộ xử lý.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",C,2,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.3303024172782898,"{""section"": ""2.2 Khuếch đại, lọc và xử lý tín hiệu""}","2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1047,13 +1047,13 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 34 không nêu đủ khuếch đại tín hiệu để phù hợp bộ xử lý; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ14,dev,"Trong mục khuếch đại và lọc, vì sao cần khuếch đại tín hiệu cảm biến?",C,3,SENSOR001_p32_paragraph_tokens_7c0be7de85eb8802_245_529,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",245,529,0.42019718885421753,"{""section"": ""2.2 Khuếch đại, lọc và xử lý tín hiệu""}"," Mặt khác, các bộ xử lý dữ liệu điện tử tiêu chuẩn, chẳng
 hạn như bộ chuyển đổi tương tự - số (ADC), bộ điều chế
 tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
 có độ lớn khá lớn.
  Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
-để phù hợp với bộ xử lý tín hiệu.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+để phù hợp với bộ xử lý tín hiệu.",cần phải khuếch đại tín hiệu đầu ra của cảm biến để phù hợp với bộ xử lý tín hiệu,32,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 32 nêu khuếch đại tín hiệu để phù hợp bộ xử lý; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,A,1,SENSOR001_p33_fixed_tokens_32ad3e57d059ef63_0_375,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,375,0.3058210015296936,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 33
  Khuếch đại thuật toán (Op-amp):
@@ -1061,9 +1061,9 @@ SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi v
 trong nhiều ứng dụng khác nhau, bao gồm khuếch đại điện áp,
 khuếch đại dòng điện, và tạo ra các bộ lọc. Trong IoT, op-amp
 thường được dùng để khuếch đại tín hiệu từ các cảm biến như
-nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được ",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được ",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 33 nêu op-amp khuếch đại tín hiệu cảm biến; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,A,2,SENSOR001_p33_fixed_tokens_32ad3e57d059ef63_325_422,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",325,422,0.3921945095062256,,"t độ, độ ẩm, ánh sáng, v.v., trước khi chúng được xử lý bởi
-các vi điều khiển hoặc bộ xử lý khác.",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+các vi điều khiển hoặc bộ xử lý khác.",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Không,Cùng trang gold nhưng đoạn này không nêu đủ op-amp khuếch đại tín hiệu cảm biến.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,A,3,SENSOR001_p34_fixed_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.40265989303588867,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1072,17 +1072,17 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 34 không nêu đủ op-amp khuếch đại tín hiệu cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,B,1,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_243_422,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",243,422,0.25893282890319824,,"Trong IoT, op-amp
 thường được dùng để khuếch đại tín hiệu từ các cảm biến như
 nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được xử lý bởi
-các vi điều khiển hoặc bộ xử lý khác.",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+các vi điều khiển hoặc bộ xử lý khác.",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 33 nêu op-amp khuếch đại tín hiệu cảm biến; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,B,2,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_0_243,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,243,0.387611985206604,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 33
  Khuếch đại thuật toán (Op-amp):
  Đây là một loại mạch khuếch đại đa năng, có thể được sử dụng
 trong nhiều ứng dụng khác nhau, bao gồm khuếch đại điện áp,
-khuếch đại dòng điện, và tạo ra các bộ lọc. ",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+khuếch đại dòng điện, và tạo ra các bộ lọc. ",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Không,Cùng trang gold nhưng đoạn này không nêu đủ op-amp khuếch đại tín hiệu cảm biến.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,B,3,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.40265989303588867,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1091,17 +1091,17 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 34 không nêu đủ op-amp khuếch đại tín hiệu cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,C,1,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_243_422,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",243,422,0.25893282890319824,,"Trong IoT, op-amp
 thường được dùng để khuếch đại tín hiệu từ các cảm biến như
 nhiệt độ, độ ẩm, ánh sáng, v.v., trước khi chúng được xử lý bởi
-các vi điều khiển hoặc bộ xử lý khác.",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+các vi điều khiển hoặc bộ xử lý khác.",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 33 nêu op-amp khuếch đại tín hiệu cảm biến; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,C,2,SENSOR001_p33_paragraph_tokens_32ad3e57d059ef63_0_243,starter/data/documents.pdf,SENSOR001,33,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,243,0.387611985206604,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 33
  Khuếch đại thuật toán (Op-amp):
  Đây là một loại mạch khuếch đại đa năng, có thể được sử dụng
 trong nhiều ứng dụng khác nhau, bao gồm khuếch đại điện áp,
-khuếch đại dòng điện, và tạo ra các bộ lọc. ",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+khuếch đại dòng điện, và tạo ra các bộ lọc. ",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Không,Cùng trang gold nhưng đoạn này không nêu đủ op-amp khuếch đại tín hiệu cảm biến.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ15,dev,Op-amp thường làm gì với tín hiệu cảm biến trước khi vi điều khiển xử lý?,C,3,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.40265989303588867,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1110,7 +1110,7 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.",khuếch đại tín hiệu từ các cảm biến,33,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.",khuếch đại tín hiệu từ các cảm biến,33,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 34 không nêu đủ op-amp khuếch đại tín hiệu cảm biến; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,A,1,SENSOR001_p34_fixed_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.20226991176605225,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1119,7 +1119,7 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 34 nêu lọc nhiễu giúp hệ thống ổn định và chính xác; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,A,2,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_0_445,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,445,0.3331354856491089,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -1129,11 +1129,11 @@ số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
 nối thế giới vật lý với thế giới số. ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
-âm thanh, áp suất… – thành tín ","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+âm thanh, áp suất… – thành tín ","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ lọc nhiễu giúp hệ thống ổn định và chính xác; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,A,3,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_395_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",395,504,0.34892725944519043,,"hiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ lọc nhiễu giúp hệ thống ổn định và chính xác; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,B,1,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.20226991176605225,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1142,7 +1142,7 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 34 nêu lọc nhiễu giúp hệ thống ổn định và chính xác; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,B,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,342,0.3394342064857483,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -1150,12 +1150,12 @@ vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
 tích được, tín hiệu này cần được chuyển đổi sang dạng
 số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
-nối thế giới vật lý với thế giới số. ","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+nối thế giới vật lý với thế giới số. ","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ lọc nhiễu giúp hệ thống ổn định và chính xác; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,B,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",342,504,0.35559558868408203,,"ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ lọc nhiễu giúp hệ thống ổn định và chính xác; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,C,1,SENSOR001_p34_paragraph_tokens_88af4db95038d4b2_0_345,starter/data/documents.pdf,SENSOR001,34,"2.2 Khuếch đại, lọc và xử lý tín hiệu",0,345,0.20226991176605225,,"2.2. KHUẾCH ĐẠI, LỌC VÀ XỬ LÝ TÍN HIỆU
 34
  Lọc nhiễu cho tín hiệu cảm biến
@@ -1164,7 +1164,7 @@ giám sát.
  Sử dụng bộ lọc nhiễu để khắc phục các nhiễu trong tín
 hiệu analog, giúp hệ thống chạy ổn định, chính xác.
  Các tín hiệu truyền về theo chuẩn công nghiệp hiện nay
-chủ yếu là dùng tín hiệu 4-20mA.","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+chủ yếu là dùng tín hiệu 4-20mA.","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 34 nêu lọc nhiễu giúp hệ thống ổn định và chính xác; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,C,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,342,0.3394342064857483,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -1172,24 +1172,24 @@ vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
 tích được, tín hiệu này cần được chuyển đổi sang dạng
 số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
-nối thế giới vật lý với thế giới số. ","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+nối thế giới vật lý với thế giới số. ","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ lọc nhiễu giúp hệ thống ổn định và chính xác; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ16,test,Lọc nhiễu tín hiệu analog nhằm giúp hệ thống hoạt động thế nào?,C,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",342,504,0.35559558868408203,,"ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36","giúp hệ thống chạy ổn định, chính xác",34,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36","giúp hệ thống chạy ổn định, chính xác",34,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 36 không nêu đủ lọc nhiễu giúp hệ thống ổn định và chính xác; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",A,1,SENSOR001_p39_fixed_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,SENSOR001,39,"2.3 Chuyển đổi ADC, DAC",0,272,0.14167487621307373,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
 ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
 lý để điều khiển cơ cấu chấp hành trong hệ thống tự
 động thông qua module của bộ điều khiển tương ứng.
 39
-Module Chuyển Đổi ADC DAC PCF8591","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+Module Chuyển Đổi ADC DAC PCF8591","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Không,"Trang 39 nêu cả hai chiều và cả ADC, DAC nhưng không gán rõ chiều nào cho ADC; không đủ bằng chứng riêng.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",A,2,SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_336_529,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",336,529,0.25637131929397583,," số (ADC), bộ điều chế
 tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
 có độ lớn khá lớn.
  Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
-để phù hợp với bộ xử lý tín hiệu.","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để phù hợp với bộ xử lý tín hiệu.","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 32 không nêu đủ ADC chuyển tín hiệu tương tự sang số; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",A,3,SENSOR001_p36_fixed_tokens_3d2493897d766e7a_0_445,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,445,0.28317683935165405,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -1199,19 +1199,19 @@ số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
 nối thế giới vật lý với thế giới số. ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
-âm thanh, áp suất… – thành tín ","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+âm thanh, áp suất… – thành tín ","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Có,Trang 36 nêu tín hiệu analog cần chuyển sang số và gọi ADC là Analog-to-Digital Converter; đủ suy ra chiều chuyển đổi dù câu gold đầy đủ không nằm trong chunk.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",B,1,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,SENSOR001,39,"2.3 Chuyển đổi ADC, DAC",0,272,0.14167487621307373,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
 ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
 lý để điều khiển cơ cấu chấp hành trong hệ thống tự
 động thông qua module của bộ điều khiển tương ứng.
 39
-Module Chuyển Đổi ADC DAC PCF8591","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+Module Chuyển Đổi ADC DAC PCF8591","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Không,"Trang 39 nêu cả hai chiều và cả ADC, DAC nhưng không gán rõ chiều nào cho ADC; không đủ bằng chứng riêng.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",B,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",342,504,0.1950952410697937,,"ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+36","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 36 nêu ADC chuyển tín hiệu tương tự sang số; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",B,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,342,0.315388560295105,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -1219,19 +1219,19 @@ vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
 tích được, tín hiệu này cần được chuyển đổi sang dạng
 số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
-nối thế giới vật lý với thế giới số. ","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+nối thế giới vật lý với thế giới số. ","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Có,Trang 36 nêu tín hiệu analog cần chuyển sang số và gọi ADC là Analog-to-Digital Converter; đủ suy ra chiều chuyển đổi dù câu gold đầy đủ không nằm trong chunk.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",C,1,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,SENSOR001,39,"2.3 Chuyển đổi ADC, DAC",0,272,0.14167487621307373,"{""section"": ""2.3 Chuyển đổi ADC, DAC""}","2.3. CHUYỂN ĐỔI ADC, DAC
  Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
 ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
 lý để điều khiển cơ cấu chấp hành trong hệ thống tự
 động thông qua module của bộ điều khiển tương ứng.
 39
-Module Chuyển Đổi ADC DAC PCF8591","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+Module Chuyển Đổi ADC DAC PCF8591","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Không,"Trang 39 nêu cả hai chiều và cả ADC, DAC nhưng không gán rõ chiều nào cho ADC; không đủ bằng chứng riêng.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",C,2,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",342,504,0.1950952410697937,"{""section"": ""2.3 Chuyển đổi ADC, DAC""}","ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+36","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 36 nêu ADC chuyển tín hiệu tương tự sang số; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ17,test,"Trong phần chuyển đổi ADC, DAC, ADC biến đổi tín hiệu theo chiều nào?",C,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_0_342,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",0,342,0.315388560295105,"{""section"": ""2.3 Chuyển đổi ADC, DAC""}","2.3. CHUYỂN ĐỔI ADC, DAC
  Nhiều cảm biến trong IoT tạo ra tín hiệu analog dưới
 dạng điện áp. Tuy nhiên, để các thiết bị kỹ thuật số như
@@ -1239,7 +1239,7 @@ vi điều khiển, máy tính hoặc hệ thống AI hiểu và phân
 tích được, tín hiệu này cần được chuyển đổi sang dạng
 số.
  Chuyển đổi ADC (Analog-to-Digital Converter) giúp kết
-nối thế giới vật lý với thế giới số. ","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+nối thế giới vật lý với thế giới số. ","chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng, âm thanh, áp suất… – thành tín hiệu số",36,DUYET_NGU_NGHIA_CODEX,Có,Trang 36 nêu tín hiệu analog cần chuyển sang số và gọi ADC là Analog-to-Digital Converter; đủ suy ra chiều chuyển đổi dù câu gold đầy đủ không nằm trong chunk.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ18,test,Ba bước chính của quá trình ADC là gì?,A,1,SENSOR001_p37_fixed_tokens_3d3e70d04289bb51_0_308,starter/data/documents.pdf,SENSOR001,37,"2.3 Chuyển đổi ADC, DAC",0,308,0.25632572174072266,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
 hóa, mã hóa.
@@ -1247,19 +1247,19 @@ hóa, mã hóa.
 nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
 giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
 ...
-37","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+37","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Có,"Đoạn ở trang 37 nêu ba bước lấy mẫu, lượng tử hóa và mã hóa; đủ trả lời theo ngữ cảnh của chunk.",Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ18,test,Ba bước chính của quá trình ADC là gì?,A,2,SENSOR001_p39_fixed_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,SENSOR001,39,"2.3 Chuyển đổi ADC, DAC",0,272,0.3893710970878601,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
 ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
 lý để điều khiển cơ cấu chấp hành trong hệ thống tự
 động thông qua module của bộ điều khiển tương ứng.
 39
-Module Chuyển Đổi ADC DAC PCF8591","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+Module Chuyển Đổi ADC DAC PCF8591","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 39 không nêu đủ ba bước lấy mẫu, lượng tử hóa và mã hóa; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ18,test,Ba bước chính của quá trình ADC là gì?,A,3,SENSOR001_p32_fixed_tokens_7c0be7de85eb8802_336_529,starter/data/documents.pdf,SENSOR001,32,"2.2 Khuếch đại, lọc và xử lý tín hiệu",336,529,0.42532962560653687,," số (ADC), bộ điều chế
 tần số, bộ ghi dữ liệu,... thường yêu cầu tín hiệu đầu vào
 có độ lớn khá lớn.
  Vì vậy, cần phải khuếch đại tín hiệu đầu ra của cảm biến
-để phù hợp với bộ xử lý tín hiệu.","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+để phù hợp với bộ xử lý tín hiệu.","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 32 không nêu đủ ba bước lấy mẫu, lượng tử hóa và mã hóa; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ18,test,Ba bước chính của quá trình ADC là gì?,B,1,SENSOR001_p37_paragraph_tokens_3d3e70d04289bb51_0_308,starter/data/documents.pdf,SENSOR001,37,"2.3 Chuyển đổi ADC, DAC",0,308,0.25632554292678833,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
 hóa, mã hóa.
@@ -1267,19 +1267,19 @@ hóa, mã hóa.
 nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
 giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
 ...
-37","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+37","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Có,"Đoạn ở trang 37 nêu ba bước lấy mẫu, lượng tử hóa và mã hóa; đủ trả lời theo ngữ cảnh của chunk.",Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ18,test,Ba bước chính của quá trình ADC là gì?,B,2,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,SENSOR001,39,"2.3 Chuyển đổi ADC, DAC",0,272,0.3893710970878601,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
 ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
 lý để điều khiển cơ cấu chấp hành trong hệ thống tự
 động thông qua module của bộ điều khiển tương ứng.
 39
-Module Chuyển Đổi ADC DAC PCF8591","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+Module Chuyển Đổi ADC DAC PCF8591","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 39 không nêu đủ ba bước lấy mẫu, lượng tử hóa và mã hóa; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ18,test,Ba bước chính của quá trình ADC là gì?,B,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",342,504,0.4361646771430969,,"ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 36 không nêu đủ ba bước lấy mẫu, lượng tử hóa và mã hóa; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ18,test,Ba bước chính của quá trình ADC là gì?,C,1,SENSOR001_p37_paragraph_tokens_3d3e70d04289bb51_0_308,starter/data/documents.pdf,SENSOR001,37,"2.3 Chuyển đổi ADC, DAC",0,308,0.25632554292678833,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Quá trình chuyển đổi ADC gồm ba bước chính: lấy mẫu, lượng tử
 hóa, mã hóa.
@@ -1287,19 +1287,19 @@ hóa, mã hóa.
 nhiệt độ, độ ẩm, ánh sáng trong nông nghiệp thông minh; hệ thống
 giám sát môi trường; thiết bị y tế như máy đo nhịp tim, điện tâm đồ,
 ...
-37","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+37","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Có,"Đoạn ở trang 37 nêu ba bước lấy mẫu, lượng tử hóa và mã hóa; đủ trả lời theo ngữ cảnh của chunk.",Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ18,test,Ba bước chính của quá trình ADC là gì?,C,2,SENSOR001_p39_paragraph_tokens_1393ec75cf0b4ee8_0_272,starter/data/documents.pdf,SENSOR001,39,"2.3 Chuyển đổi ADC, DAC",0,272,0.3893710970878601,,"2.3. CHUYỂN ĐỔI ADC, DAC
  Việc chuyển đổi tín hiệu tương tự sang tín hiệu số và
 ngược lại dùng ADC và DAC. Hai tín hiệu này được xử
 lý để điều khiển cơ cấu chấp hành trong hệ thống tự
 động thông qua module của bộ điều khiển tương ứng.
 39
-Module Chuyển Đổi ADC DAC PCF8591","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+Module Chuyển Đổi ADC DAC PCF8591","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 39 không nêu đủ ba bước lấy mẫu, lượng tử hóa và mã hóa; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ18,test,Ba bước chính của quá trình ADC là gì?,C,3,SENSOR001_p36_paragraph_tokens_3d2493897d766e7a_342_504,starter/data/documents.pdf,SENSOR001,36,"2.3 Chuyển đổi ADC, DAC",342,504,0.4361646771430969,,"ADC có chức năng
 chuyển đổi tín hiệu tương tự – như nhiệt độ, ánh sáng,
 âm thanh, áp suất… – thành tín hiệu số để các vi điều
 khiển hoặc máy tính có thể xử lý.
-36","lấy mẫu, lượng tử hóa, mã hóa",37,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+36","lấy mẫu, lượng tử hóa, mã hóa",37,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 36 không nêu đủ ba bước lấy mẫu, lượng tử hóa và mã hóa; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,A,1,SENSOR001_p45_fixed_tokens_20738e278468fd5c_0_452,starter/data/documents.pdf,SENSOR001,45,2.4 Thu thập và xử lý dữ liệu cảm biến,0,452,0.3240746855735779,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 45
 1. Thu thập dữ liệu:
@@ -1311,7 +1311,7 @@ Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp l�
 3. Biến đổi dữ liệu:
 Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
 phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo,
-mã hóa dữ liệu, hoặc làm phẳng ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+mã hóa dữ liệu, hoặc làm phẳng ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Có,"Đoạn ở trang 45 nêu loại dữ liệu không chính xác, không cần thiết hoặc lặp; đủ trả lời theo ngữ cảnh của chunk.",Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,A,2,SENSOR001_p44_fixed_tokens_9d14322380b1164e_0_146,starter/data/documents.pdf,SENSOR001,44,2.4 Thu thập và xử lý dữ liệu cảm biến,0,146,0.3375353217124939,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 44
 1. Thu thập
@@ -1325,7 +1325,7 @@ và lưu trữ
 5. Phân tích
 dữ liệu
 6. Trình bày
-kết quả","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+kết quả","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Không,"Sơ đồ trang 44 chỉ nêu bước lọc dữ liệu, không nêu ba loại dữ liệu cần loại bỏ.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,A,3,SENSOR001_p41_fixed_tokens_461a6689b5076010_0_427,starter/data/documents.pdf,SENSOR001,41,2.4 Thu thập và xử lý dữ liệu cảm biến,0,427,0.33775967359542847,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
 Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
 dưới dạng không cấu trúc và không thể hiện thông tin hữu
@@ -1334,7 +1334,7 @@ quả sau:
 1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
 được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
 thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
-2. Khó khăn ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+2. Khó khăn ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 41 không nêu đủ loại dữ liệu không chính xác, không cần thiết hoặc lặp; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,B,1,SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366,starter/data/documents.pdf,SENSOR001,45,2.4 Thu thập và xử lý dữ liệu cảm biến,0,366,0.31230050325393677,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 45
 1. Thu thập dữ liệu:
@@ -1345,7 +1345,7 @@ nguồn dữ liệu khác.
 Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
 3. Biến đổi dữ liệu:
 Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
-phân tích. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+phân tích. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Có,"Đoạn ở trang 45 nêu loại dữ liệu không chính xác, không cần thiết hoặc lặp; đủ trả lời theo ngữ cảnh của chunk.",Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,B,2,SENSOR001_p41_paragraph_tokens_461a6689b5076010_0_418,starter/data/documents.pdf,SENSOR001,41,2.4 Thu thập và xử lý dữ liệu cảm biến,0,418,0.3338277339935303,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
 Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
 dưới dạng không cấu trúc và không thể hiện thông tin hữu
@@ -1354,7 +1354,7 @@ quả sau:
 1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
 được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
 thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
-2. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+2. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 41 không nêu đủ loại dữ liệu không chính xác, không cần thiết hoặc lặp; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,B,3,SENSOR001_p44_paragraph_tokens_9d14322380b1164e_0_146,starter/data/documents.pdf,SENSOR001,44,2.4 Thu thập và xử lý dữ liệu cảm biến,0,146,0.3375353217124939,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 44
 1. Thu thập
@@ -1368,7 +1368,7 @@ và lưu trữ
 5. Phân tích
 dữ liệu
 6. Trình bày
-kết quả","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+kết quả","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Không,"Sơ đồ trang 44 chỉ nêu bước lọc dữ liệu, không nêu ba loại dữ liệu cần loại bỏ.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,C,1,SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366,starter/data/documents.pdf,SENSOR001,45,2.4 Thu thập và xử lý dữ liệu cảm biến,0,366,0.31230050325393677,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 45
 1. Thu thập dữ liệu:
@@ -1379,7 +1379,7 @@ nguồn dữ liệu khác.
 Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
 3. Biến đổi dữ liệu:
 Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
-phân tích. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+phân tích. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Có,"Đoạn ở trang 45 nêu loại dữ liệu không chính xác, không cần thiết hoặc lặp; đủ trả lời theo ngữ cảnh của chunk.",Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,C,2,SENSOR001_p41_paragraph_tokens_461a6689b5076010_0_418,starter/data/documents.pdf,SENSOR001,41,2.4 Thu thập và xử lý dữ liệu cảm biến,0,418,0.3338277339935303,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
 Nếu không có quá trình xử lý dữ liệu, dữ liệu sẽ tồn tại
 dưới dạng không cấu trúc và không thể hiện thông tin hữu
@@ -1388,7 +1388,7 @@ quả sau:
 1. Thất thoát thông tin: Dữ liệu không xử lý thường không thể
 được tận dụng để trích xuất thông tin quan trọng. Thông tin cần
 thiết có thể bị che khuất hoặc mất đi, làm giảm giá trị của dữ liệu.
-2. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+2. ","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Không,"Đoạn trang 41 không nêu đủ loại dữ liệu không chính xác, không cần thiết hoặc lặp; không chứng minh đáp án yêu cầu.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ19,test,Lọc dữ liệu loại bỏ những dữ liệu nào?,C,3,SENSOR001_p44_paragraph_tokens_9d14322380b1164e_0_146,starter/data/documents.pdf,SENSOR001,44,2.4 Thu thập và xử lý dữ liệu cảm biến,0,146,0.3375353217124939,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 44
 1. Thu thập
@@ -1402,7 +1402,7 @@ và lưu trữ
 5. Phân tích
 dữ liệu
 6. Trình bày
-kết quả","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+kết quả","Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại",45,DUYET_NGU_NGHIA_CODEX,Không,"Sơ đồ trang 44 chỉ nêu bước lọc dữ liệu, không nêu ba loại dữ liệu cần loại bỏ.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",A,1,SENSOR001_p40_fixed_tokens_48ab432c8ce49b25_0_330,starter/data/documents.pdf,SENSOR001,40,2.4 Thu thập và xử lý dữ liệu cảm biến,0,330,0.15924978256225586,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
  Xử lý dữ liệu (data processing) là quá trình tiếp nhận,
 biến đổi và tổ chức dữ liệu thành thông tin hữu ích để
@@ -1410,9 +1410,9 @@ thực hiện các tác vụ hoặc ra quyết định.
  Quá trình này có thể bao gồm một loạt các bước và
 phương pháp để làm cho dữ liệu trở nên có ý nghĩa và
 hữu ích cho mục đích cụ thể.
-40",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+40",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 40 không nêu đủ chuẩn hóa đưa dữ liệu về cùng thang đo để dễ phân tích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",A,2,SENSOR001_p45_fixed_tokens_20738e278468fd5c_402_469,starter/data/documents.pdf,SENSOR001,45,2.4 Thu thập và xử lý dữ liệu cảm biến,402,469,0.2591959238052368,,"yển đổi đơn vị đo,
-mã hóa dữ liệu, hoặc làm phẳng cấu trúc dữ liệu.",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+mã hóa dữ liệu, hoặc làm phẳng cấu trúc dữ liệu.",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,"Trang 45 nói biến đổi dữ liệu nói chung, không định nghĩa chuẩn hóa về cùng thang đo.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",A,3,SENSOR001_p45_fixed_tokens_20738e278468fd5c_0_452,starter/data/documents.pdf,SENSOR001,45,2.4 Thu thập và xử lý dữ liệu cảm biến,0,452,0.2777859568595886,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 45
 1. Thu thập dữ liệu:
@@ -1424,7 +1424,7 @@ Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp l�
 3. Biến đổi dữ liệu:
 Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
 phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo,
-mã hóa dữ liệu, hoặc làm phẳng ",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+mã hóa dữ liệu, hoặc làm phẳng ",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,"Trang 45 nói biến đổi dữ liệu nói chung, không định nghĩa chuẩn hóa về cùng thang đo.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",B,1,SENSOR001_p40_paragraph_tokens_48ab432c8ce49b25_0_330,starter/data/documents.pdf,SENSOR001,40,2.4 Thu thập và xử lý dữ liệu cảm biến,0,330,0.1592499017715454,,"2.4. THU THẬP VÀ XỬ LÝ DỮ LIỆU CẢM BIẾN
  Xử lý dữ liệu (data processing) là quá trình tiếp nhận,
 biến đổi và tổ chức dữ liệu thành thông tin hữu ích để
@@ -1432,7 +1432,7 @@ thực hiện các tác vụ hoặc ra quyết định.
  Quá trình này có thể bao gồm một loạt các bước và
 phương pháp để làm cho dữ liệu trở nên có ý nghĩa và
 hữu ích cho mục đích cụ thể.
-40",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+40",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 40 không nêu đủ chuẩn hóa đưa dữ liệu về cùng thang đo để dễ phân tích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",B,2,SENSOR001_p45_paragraph_tokens_20738e278468fd5c_0_366,starter/data/documents.pdf,SENSOR001,45,2.4 Thu thập và xử lý dữ liệu cảm biến,0,366,0.30234789848327637,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 45
 1. Thu thập dữ liệu:
@@ -1443,7 +1443,7 @@ nguồn dữ liệu khác.
 Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại.
 3. Biến đổi dữ liệu:
 Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng
-phân tích. ",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+phân tích. ",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,"Trang 45 nói biến đổi dữ liệu nói chung, không định nghĩa chuẩn hóa về cùng thang đo.",Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",B,3,SENSOR001_p46_paragraph_tokens_402b8910e8bd4779_0_421,starter/data/documents.pdf,SENSOR001,46,2.4 Thu thập và xử lý dữ liệu cảm biến,0,421,0.30787932872772217,,"QUÁ TRÌNH XỬ LÝ DỮ LIỆU
 46
 4. Tổ chức và lưu trữ:
@@ -1454,7 +1454,7 @@ thống tập tin hoặc lưu trữ đám mây.
 Áp dụng các kỹ thuật và công cụ phân tích để tìm kiếm mẫu, xu
 hướng và thông tin hữu ích từ dữ liệu. Phân tích dữ liệu có thể bao
 gồm thống kê, khai phá dữ liệu, học máy...
-6. ",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+6. ",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 46 không nêu đủ chuẩn hóa đưa dữ liệu về cùng thang đo để dễ phân tích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",C,1,SENSOR001_p48_paragraph_tokens_d83fe23d3c1c4e08_0_410,starter/data/documents.pdf,SENSOR001,48,2.5 Các giải thuật xử lý dữ liệu,0,410,0.3616989850997925,"{""section"": ""2.5 Các giải thuật xử lý dữ liệu""}","2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
  Phân tích dữ liệu cảm biến
  Các giải thuật phân tích dữ liệu giúp hệ thống IoT hiểu, dự
@@ -1463,14 +1463,14 @@ máy, học sâu, thống kê, chuỗi thời gian và xử lý tại biên.
  Học máy: Sử dụng các thuật toán như Decision Tree,
 Random Forest,… phân loại trạng thái thiết bị hoặc dự đoán
 sự cố. Ví dụ: dự đoán lỗi động cơ từ dữ liệu cảm biến rung.
-",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,Đoạn trang 48 không nêu đủ chuẩn hóa đưa dữ liệu về cùng thang đo để dễ phân tích; không chứng minh đáp án yêu cầu.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",C,2,SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_0_241,starter/data/documents.pdf,SENSOR001,47,2.5 Các giải thuật xử lý dữ liệu,0,241,0.3747321367263794,"{""section"": ""2.5 Các giải thuật xử lý dữ liệu""}","2.5. CÁC GIẢI THUẬT XỬ LÝ DỮ LIỆU
  Tiền xử lý dữ liệu cảm biến
  Lọc nhiễu (Noise Filtering): Sử dụng các bộ lọc để loại bỏ
 nhiễu khỏi dữ liệu cảm biến.
  Chuẩn hóa dữ liệu (Normalization): Đưa dữ liệu về cùng
 một thang đo để dễ phân tích.
-",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.,Kiểm tra tự động,2026-11-13
+",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Có,Đoạn ở trang 47 nêu chuẩn hóa đưa dữ liệu về cùng thang đo để dễ phân tích; đủ trả lời theo ngữ cảnh của chunk.,Codex,2026-11-13,Khớp gold nguyên văn,Đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa; cần ngữ cảnh để kiểm tra chủ thể.
 SQ20,test,"Trong phần các giải thuật xử lý dữ liệu, chuẩn hóa dữ liệu là gì?",C,3,SENSOR001_p47_paragraph_tokens_fddaca6d6ecdf06e_241_598,starter/data/documents.pdf,SENSOR001,47,2.5 Các giải thuật xử lý dữ liệu,241,598,0.42685627937316895,"{""section"": ""2.5 Các giải thuật xử lý dữ liệu""}"," Phát hiện và xử lý dữ liệu thiếu (Missing Data Handling):
 Dùng kỹ thuật nội suy hoặc thay thế bằng giá trị trung bình
 hoặc Nhân tố ma trận xác suất (PMF) để xử lý dữ liệu
@@ -1478,4 +1478,4 @@ khuyết thiếu.
  Xử lý dữ liệu ngoại lệ (Data Outlier Detection): Phát hiện
 và xử lý các giá trị cảm biến bất thường – những giá trị
 khác biệt rõ rệt so với phần lớn dữ liệu còn lại.
-47",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,AUTO_EXACT_PROXY,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương.",Kiểm tra tự động,2026-11-13
+47",Đưa dữ liệu về cùng một thang đo để dễ phân tích,47,DUYET_NGU_NGHIA_CODEX,Không,Cùng trang gold nhưng đoạn này không nêu đủ chuẩn hóa đưa dữ liệu về cùng thang đo để dễ phân tích.,Codex,2026-11-13,Không khớp gold nguyên văn,"Không đồng thời thỏa nguồn, trang và đoạn gold nguyên văn; chưa loại trừ bằng chứng tương đương."
