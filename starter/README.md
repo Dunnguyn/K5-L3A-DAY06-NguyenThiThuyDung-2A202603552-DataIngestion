@@ -1,6 +1,6 @@
 # Starter · PostgreSQL + pgvector
 
-**Lựa chọn cho bài hiện tại:** bước 7 dùng ChromaDB thay cho PostgreSQL; xem [hướng dẫn ChromaDB](BUOC_7_CHROMA.md). Các phần PostgreSQL bên dưới là starter tùy chọn của đề bài.
+**Lựa chọn cho bài hiện tại:** dùng ChromaDB thay cho PostgreSQL; xem [hướng dẫn bài cảm biến](../README.md#bài-làm-cá-nhân-trạng-thái-và-cách-chạy) và [báo cáo cá nhân](../report/individual/2A202603552_NguyenThiThuyDung.md). Các phần PostgreSQL bên dưới là starter tùy chọn của đề bài.
 
 Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
 

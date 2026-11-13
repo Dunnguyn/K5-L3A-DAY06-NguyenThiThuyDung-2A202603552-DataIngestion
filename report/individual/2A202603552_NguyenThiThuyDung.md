@@ -1,117 +1,98 @@
 # Báo cáo cá nhân — Day 06: Data Ingestion Engineering
 
-**Học viên:** Nguyễn Thị Thùy Dung
+**Học viên:** Nguyễn Thị Thùy Dung · **MSSV:** 2A202603552 · **Lớp:** L3A
 
-**MSSV:** 2A202603552
-
-**Lớp:** L3A
-
-**Trạng thái:** Bản nháp dựa trên lần chạy thử ngày 13/11/2026, chưa đủ điều kiện nộp chính thức.
-
-> **Việc cần hoàn tất:** xác nhận corpus có ít nhất 30 trang nội dung hợp lệ và quyền sử dụng/chia sẻ; hoàn thiện manifest; người học kiểm tra lại các nhãn và phân tích; chạy lại trên corpus đã chốt. Tập test của lần thử này đã được xem kết quả, nên cần tập test mới chưa dùng nếu thay đổi hoặc điều chỉnh dựa trên kết quả đó.
+**Trạng thái:** Bản báo cáo theo chủ đề dữ liệu cảm biến, dựa trên lần chạy ngày 13/11/2026. Học viên cần kiểm tra các trang, bằng chứng và nhãn do Codex hỗ trợ; quyền chia sẻ công khai tài liệu và minh chứng chưa được xác nhận.
 
 ## 1. Dữ liệu và pipeline
 
-### Nguồn, quyền và phạm vi
+### Corpus và quyền sử dụng
 
-Corpus thử gồm một PDF, mã nguồn `DOC001`: Patrício và cộng sự, *Leveraging Service Design for Healthcare Transformation: Toward People-Centered, Integrated, and Technology-Enabled Healthcare Systems*, Journal of Service Management (2020), DOI [10.1108/JOSM-11-2019-0332](https://doi.org/10.1108/JOSM-11-2019-0332). Tên, thông tin xuất bản và DOI được đối chiếu với trang đầu của PDF. File dùng trong lần chạy là `starter/data/documents.pdf`.
+Nguồn `SENSOR001` là bài giảng **Chương II: Xử lý dữ liệu cảm biến**, trên trang đầu ghi Đại học Kinh tế Quốc dân, Khoa Công nghệ thông tin. Theo xác nhận của học viên, tài liệu do giảng viên cung cấp và được phép sử dụng cho bài học. Chưa có xác nhận cho phép đăng công khai hoặc tái phân phối; vì vậy PDF, benchmark và trace có trích văn bản được giữ trên máy. Chưa xác định URL tải gốc hay ngày nhận tài liệu; không tự suy đoán. Manifest: `data/manifest.json`.
 
-Trang đầu PDF ghi bản tài liệu được bảo vệ bản quyền, cho phép sao chép cho mục đích nghiên cứu hoặc giáo dục theo điều kiện nêu trong tài liệu; các mục đích khác cần xin phép. **Chưa xác minh đầy đủ quyền tái phân phối PDF hoặc các file trace có chứa trích đoạn.** Không mặc định tài liệu công khai là được phép đưa lên GitHub. File mô tả nguồn hiện tại `starter/data/format-example.json` còn thiếu giấy phép đã kiểm chứng và danh sách trang hợp lệ; đây chưa phải manifest hoàn chỉnh. Cần xác nhận nguồn tải, quyền chia sẻ và cách cung cấp bằng chứng được phép trước khi nộp.
-
-PDF có **54 trang vật lý**, tính từ trang đầu trong trình đọc PDF. Chương trình trích xuất được văn bản ở **53 trang** và ghi cảnh báo trang 54 chỉ còn chân trang/số dòng sau làm sạch. Đây **không phải** số trang nội dung hợp lệ. Dữ liệu thử còn bao gồm bìa, tài liệu tham khảo, hình/bảng và phần trả lời phản biện. Theo đề, phải loại trang bìa, trang trống, mục lục và trang chỉ có tài liệu tham khảo; cần kiểm tra phần còn lại có liên quan và lập danh sách trang được tính. Hiện **chưa chứng minh đạt tối thiểu 30 trang hữu ích**.
+PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn; số trang đủ theo cách tính nêu trên nhưng độ sâu nội dung hạn chế.
 
 ### Parse, clean và metadata
 
-Sử dụng `pypdf` để trích xuất theo trang vật lý; chuẩn hóa Unicode NFC, khoảng trắng, xuống dòng và bỏ soft hyphen. Với PDF này, mã còn loại một số header/footer và số dòng nhận diện được. Một trang chứa ranh giới section được tách thành nhiều đoạn, nhưng các đoạn vẫn mang số trang gốc. Cảnh báo được lưu tại `starter/data/parsed_pages.log`.
+PDF được đọc bằng `pypdf`; chuẩn hóa Unicode NFC, khoảng trắng và xuống dòng, bỏ soft hyphen. Mỗi trang được giữ tách biệt để truy nguồn. Các trang hình vẽ không trích xuất được chữ có ý nghĩa đã được loại khỏi corpus chữ; không có OCR. Một số dấu đầu dòng là ký tự đặc biệt và còn số trang trong văn bản, nên dữ liệu chưa hoàn toàn sạch.
 
-Mỗi chunk giữ `document_id`, `source`, `page`, vị trí `start_char`/`end_char` trong đoạn đã trích xuất và `section` khi xác định được. `section` được lấy từ các tiêu đề hoặc vị trí hình/bảng đã xác định riêng trong tài liệu; cần kiểm tra lại với PDF gốc, nhất là trang có ranh giới. Trường `section` giúp giới hạn phạm vi tìm kiếm theo yêu cầu câu hỏi. Hạn chế: PDF có thể xuống dòng giữa từ hoặc bắt đầu trang giữa câu; không phải mọi ranh giới đoạn văn đều khôi phục được và một số đoạn không có section.
+Mỗi chunk giữ `document_id`, `source`, `page`, offset ký tự trong trang và `section`. Giá trị section được gán theo các nhóm trang của các mục 2.1–2.5 trong tài liệu; với trang không lặp tiêu đề, section dựa vào vị trí trong nhóm và cần được học viên đối chiếu. Trường `section` có ích khi người hỏi chỉ định phần, còn `page` và `source` hỗ trợ truy vết. Hạn chế là nhãn section theo phạm vi trang có thể sai nếu tài liệu được sắp xếp lại.
 
-### Embedding, lưu trữ và cách chạy
+### Embedding và lưu trữ
 
-- Model local: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`; thư viện Sentence Transformers **6.3.0**; vector **384 chiều**, chuẩn hóa. Lần chạy lưu tên model nhưng chưa ghi được mã revision cụ thể (`model_revision: null`), nên cần bổ sung trước khi tái lập chính thức.
-- Bộ lưu: ChromaDB **1.5.9**, lưu bền vững tại `starter/storage/chroma/`; metric cosine distance. A có collection riêng; B và C dùng chung collection. Chưa xác nhận loại tìm kiếm exact/approximate trong bản báo cáo này.
-- Giới hạn model: **128 token** gồm token đặc biệt. Các chunk A và B được kiểm tra không vượt giới hạn; C dùng cùng chunk B.
-- Chạy local, không dùng dịch vụ embedding trả phí: chi phí API **0**; tiền điện và chi phí máy chưa đo.
+- Model local: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, Sentence Transformers **6.3.0**, 384 chiều, chuẩn hóa vector. Lần chạy ghi model nhưng revision trong report là `null`; cache hiện tại trỏ tới `e8f8c211226b894fcb81acc59f3b34ba3efd5f42`. Cần khóa revision khi tái lập chính thức.
+- ChromaDB **1.5.9** với cosine distance, lưu bền vững tại `starter/storage/chroma/`; A có collection riêng, B/C chung collection. Index HNSW là tìm kiếm xấp xỉ; cấu hình thực tế cần giữ khi chạy lại.
+- Giới hạn **128 token** bao gồm token đặc biệt; trong lần chạy này A và B không có chunk vượt giới hạn.
+- Chi phí dịch vụ embedding: **0**, chạy local; tiền điện và tài nguyên máy chưa đo.
 
-Từ thư mục gốc dự án, sau khi cài `starter/requirements.txt` và có model trong cache:
+## 2. Thiết kế thí nghiệm
+
+| Cấu hình | Chia văn bản | Truy xuất |
+|---|---|---|
+| A | Tối đa 500 ký tự, overlap tối đa 50; rút ngắn để vừa 128 token | Top 3, không filter |
+| B | Ưu tiên ranh giới đoạn/câu, tối đa 800 ký tự và 128 token | Top 3, không filter |
+| C | Dùng chung chunk, vector và collection với B | Top 3, lọc `section` nếu câu hỏi chỉ rõ |
+
+Các cấu hình dùng cùng 31 trang, model và câu hỏi. A–B thay chiến lược chunking; B–C chỉ thay filter. Không đưa gold source hay đáp án vào truy vấn hoặc filter.
+
+Benchmark `starter/benchmark/sensor_questions.json` có **20 câu**, gồm **15 dev và 5 test**; 4 câu có filter, trong đó 2 câu test. Câu hỏi, đáp án và gold evidence được tạo từ tài liệu cảm biến, và đoạn evidence đã kiểm tra xuất hiện tại trang được ghi sau chuẩn hóa khoảng trắng. Benchmark được tạo trước khi chạy experiment này. Bộ câu hỏi và kết quả của thí nghiệm y tế trước đây không được sử dụng để tính kết quả bên dưới.
+
+Trước khi truy vấn test, lựa chọn được ghi tại `starter/results/sensor_run/evaluation/selection.json`: ưu tiên tỷ lệ khớp gold Top 3 trên dev, sau đó Top 1, sau đó ít chunk hơn. **C được chọn tạm** vì đạt 13/15 Top 3 trên dev, so với 12/15 của A/B. Đây là quy tắc dựa trên khớp nguyên văn; chưa chứng minh C tốt nhất trong mọi tình huống.
+
+## 3. Kết quả
+
+### Retrieval và tài nguyên
+
+Các điểm sau là **khớp gold nguyên văn bảo thủ**, không phải nhãn semantic đã được người học xác nhận: một chunk được tính trúng nếu ở đúng nguồn/trang và chứa nguyên văn gold sau chuẩn hóa khoảng trắng. Bằng chứng diễn đạt khác hoặc bị chia giữa nhiều chunk có thể bị bỏ sót.
+
+| Cấu hình | Split | Top 1 (n/N) | Top 3 (n/N) | Chunk | Tạo chunk + embedding + lưu* | Chi phí API |
+|---|---|---:|---:|---:|---:|---:|
+| A | Dev | 10/15 | 12/15 | 43 | 3,607 giây | 0 |
+| A | Test | 3/5 | 3/5 | 43 | dùng lại collection | 0 |
+| B | Dev | 10/15 | 12/15 | 43 | 1,837 giây | 0 |
+| B | Test | 3/5 | 4/5 | 43 | dùng lại collection | 0 |
+| C | Dev | 10/15 | 13/15 | 43 | dùng chung B | 0 |
+| C | Test | 3/5 | 5/5 | 43 | dùng chung B | 0 |
+
+\* A: 0,578 + 2,448 + 0,581 giây; B: 0,150 + 1,387 + 0,300 giây. Không gồm tải model 40,912 giây hoặc tìm kiếm. Một lần đo local không đủ để kết luận hiệu năng tổng quát. Thời gian tạo vector cho 15 câu dev là 0,113 giây; tổng thời gian tìm dev của A/B/C là 0,099/0,096/0,089 giây.
+
+A có độ dài 67–493 ký tự, trung bình 296,33; B có 90–463 ký tự, trung bình 282,37. Tổng ký tự A là 12.742, gồm phần lặp do overlap; B là 12.142. C dùng cùng chunk B. Số chunk của A và B bằng nhau trong corpus slide này, nhưng ranh giới văn bản không nhất thiết giống nhau.
+
+### Coherence, metadata và grounding
+
+| Cấu hình | Coherence trung bình /2 | Metadata khớp PDF và section được gán | Filter test tuân thủ | Grounding 0/1/2; trung bình /2 |
+|---|---:|---:|---:|---|
+| A | 1,9 (10 vị trí) | 15/15 | N/A | 1/1/3; 1,4 |
+| B | 2,0 (10 vị trí) | 15/15 | N/A | 1/0/4; 1,6 |
+| C | 2,0 (10 vị trí) | 15/15 | 2/2 câu có filter | 0/0/5; 2,0 |
+
+Mẫu coherence chọn 10 trang nội dung đầu tiên theo thứ tự vật lý: 5, 14, 19–26; với mỗi trang lấy chunk đầu tiên chứa offset 0. C dùng chung chunk B. Trợ lý Codex nhận xét thang 0–2, có lý do từng chunk; học viên cần đọc lại vì đây không phải người chấm độc lập và mẫu có thiên lệch về các slide đầu.
+
+Audit metadata đối chiếu 5 câu test × Top 3 cho từng cấu hình với văn bản trích xuất trực tiếp từ PDF, số trang, offset và section được gán theo nhóm trang. 15/15 là số bản ghi khớp trong phép kiểm tra này, không chứng minh tuyệt đối section luôn đúng ngữ nghĩa. Với C, cả 2 câu test có filter đều trả các chunk đúng giá trị section. Grounding do Codex nhận xét 0–2 cho từng câu theo độ đủ bằng chứng trong Top 3; không phải đánh giá độ chính xác câu trả lời LLM và cần học viên xác nhận.
+
+Minh chứng local: `starter/results/sensor_run/dev/traces_dev.jsonl`, `evaluation/traces_test.jsonl`, `dev_exact_review.jsonl`, `test_exact_review.jsonl`, `coherence_review.jsonl`, `metadata_audit.jsonl`, `grounding_review.jsonl` và `review_summary.json` dưới `starter/results/sensor_run/`. Các nhãn `*_exact_review` là so khớp tự động; coherence/grounding là nhận xét của Codex. Do chưa rõ quyền tái phân phối, các file có nội dung trích dẫn chưa được đưa lên Git; cần thống nhất cách người chấm được phép truy cập.
+
+## 4. Phân tích và kết luận
+
+**A–B:** hai phương pháp đều tạo 43 chunk và cùng kết quả khớp nguyên văn trên dev. Trên test, B tìm được đủ gold trong Top 3 ở 4/5 câu so với 3/5 của A. SQ17, gold trang 36, là ví dụ: chunk A ở Top 3 bị cắt giữa câu mô tả ADC, còn B có một chunk đầy đủ ở Top 2. Đây là phép so sánh trên 5 câu, không đủ để suy rộng.
+
+**B–C:** C chỉ khác B ở filter section. SQ20 yêu cầu phần giải thuật xử lý dữ liệu, gold ở trang 47; B trả các trang 40, 45, 46 và không khớp gold, còn C giới hạn đúng section và tìm được đoạn chuẩn hóa ở Top 2. Trên test, C tuân thủ filter 2/2 câu và khớp gold Top 3 là 5/5, so với 4/5 của B. Kết quả phụ thuộc phạm vi section được gán đúng và người hỏi cung cấp điều kiện trước truy xuất.
+
+**Các lỗi khác:** SQ02, gold trang 14, không xuất hiện trong Top 3 dev của A/B/C; SQ04, gold trang 20, cũng không xuất hiện trong Top 3. Cần xem query, các đoạn cạnh tranh và chất lượng embedding tiếng Việt; không thể khẳng định nguyên nhân chỉ từ thứ hạng. Phép khớp nguyên văn cũng có thể bỏ sót bằng chứng tương đương.
+
+**Lựa chọn:** C đã được chọn tạm từ dev trước test. Kết quả test phù hợp với giả thuyết filter hữu ích ở ví dụ SQ20, nhưng test nhỏ và chỉ 2 câu có filter; không kết luận C luôn tốt hơn. Hướng cải thiện: xác nhận quyền chia sẻ và 31 trang, nhờ người học chấm lại gold/coherence/grounding và audit section, tăng số câu hỏi đa dạng, kiểm tra những trang chứa sơ đồ, và ghi revision model chính xác.
+
+## 5. Cách chạy và khai báo AI
+
+Từ thư mục gốc dự án, sau khi cài `starter/requirements.txt`, đặt PDF của giảng viên đúng vị trí và có benchmark được phép truy cập:
 
 ```powershell
 $env:HF_HOME = Join-Path (Get-Location) 'starter\.cache\huggingface'
 $env:HF_HUB_OFFLINE = '1'
-.\starter\.venv\Scripts\python.exe -m starter.src.run
+.\starter\.venv\Scripts\python.exe -m starter.src.sensor_prepare
+.\starter\.venv\Scripts\python.exe -m starter.src.sensor_experiment retrieve-dev
 ```
 
-Lệnh trên tạo lại thí nghiệm **dev**, đồng bộ hai collection A/B và ghi đè log, trace dev. Không chạy lại để thay đổi quyết định sau khi đã xem test mà vẫn coi bộ test cũ là độc lập. Hướng dẫn chi tiết ở `starter/BUOC_8_THI_NGHIEM.md` và `starter/BUOC_9_DANH_GIA.md`.
+Model cần tải trước nếu cache chưa có. Bộ test của lần chạy này đã được xem; không dùng lại để điều chỉnh rồi coi là đánh giá độc lập. Muốn chạy thử nghiệm mới sau điều chỉnh, tạo tập test mới chưa dùng và một thư mục kết quả mới. Chương trình có cơ chế ngăn ghi đè lựa chọn dev khi trace test đã tồn tại.
 
-## 2. Cấu hình và benchmark
-
-| Cấu hình | Chunking | Retrieval |
-|---|---|---|
-| A | Cửa sổ tối đa 500 ký tự, chồng lấn tối đa 50; rút ngắn khi vượt 128 token | Top 3, không filter |
-| B | Ưu tiên đoạn/câu, tối đa 800 ký tự và 128 token; không overlap | Top 3, không filter |
-| C | Cùng chunk, embedding và collection với B | Top 3, filter `section` khi câu hỏi cung cấp |
-
-So sánh A–B khảo sát thay đổi chunking; B–C chỉ thay việc dùng filter. Cả ba dùng cùng dữ liệu đầu vào, embedding model và benchmark. Filter chỉ lấy từ yêu cầu phạm vi trong câu hỏi; không đưa gold source hay đáp án vào truy vấn.
-
-Bộ câu hỏi `starter/benchmark/questions.json` có **20 câu**, chia trước **15 dev và 5 test**. Có 4 câu có filter, gồm 2 dev và 2 test. Mỗi câu có ID, đáp án dự kiến, mã nguồn, số trang PDF, trích đoạn evidence và filter nếu cần. Các đoạn gold đã được đối chiếu với PDF/trích xuất ở đúng trang; các trường hợp trả về bằng chứng tương đương vẫn cần người học xem lại.
-
-Trước khi truy vấn test trong lần thử này, quy tắc chọn tạm thời được lưu tại `starter/results/evaluation/selection.json`: ưu tiên tỷ lệ trúng bằng chứng nguyên văn ở Top 3 trên dev, sau đó Top 1, sau đó ít chunk hơn, cuối cùng theo thứ tự chữ cái. Cả ba hòa về hai chỉ số dev; **A được chọn tạm** vì có 267 chunk, so với 301 của B/C. Quy tắc dựa trên phép khớp nguyên văn và số chunk; không kết luận A tốt hơn tổng thể.
-
-## 3. Kết quả lần chạy thử
-
-### Retrieval và tài nguyên
-
-Bảng dưới đây là **số lần khớp nguyên văn bảo thủ**, chưa phải kết quả semantic đã được người chấm độc lập xác nhận. Một chunk được tính trúng nếu chứa toàn bộ gold quote sau chuẩn hóa khoảng trắng và đúng nguồn/trang. Bằng chứng tương đương không nguyên văn có thể bị bỏ sót; nếu bằng chứng bị chia qua nhiều chunk thì không tính là một hit đơn theo định nghĩa chính.
-
-| Chiến lược | Split | Top 1 (n/N) | Top 3 (n/N) | Số chunk | Thời gian tạo chunk + embedding + lưu* | Chi phí API |
-|---|---|---:|---:|---:|---:|---:|
-| A | Dev | 10/15 | 13/15 | 267 | 13,92 giây | 0 |
-| A | Test | 2/5 | 2/5 | 267 | dùng lại collection | 0 |
-| B | Dev | 10/15 | 13/15 | 301 | 13,25 giây | 0 |
-| B | Test | 3/5 | 4/5 | 301 | dùng lại collection | 0 |
-| C | Dev | 10/15 | 13/15 | 301 | dùng chung B | 0 |
-| C | Test | 3/5 | 4/5 | 301 | dùng chung B | 0 |
-
-\* Tổng các thời gian đã làm tròn trong `summary.json`: A = 3,170 + 10,053 + 0,698; B = 2,019 + 10,448 + 0,778 giây. Không gồm tải model 26,723 giây hoặc thời gian truy vấn; đây là một lần đo trên máy hiện tại, không phải benchmark hiệu năng tổng quát. Tổng thời gian tìm 15 câu dev tương ứng A/B/C là 0,127/0,126/0,138 giây; thời gian tạo vector cho 15 câu là 0,181 giây dùng chung. C không tạo lại embedding riêng.
-
-Phân bố chunk: A dài 52–500 ký tự, trung bình 436,02; B dài 15–688 ký tự, trung bình 352,05. Tổng ký tự của A là 116.417, gồm nội dung lặp do overlap; B là 105.967. C dùng cùng thống kê B. Cả hai có tối đa 128 token/chunk, không có chunk vượt giới hạn.
-
-### Coherence, metadata và grounding
-
-| Chiến lược | Coherence trung bình /2 | Metadata khớp dữ liệu đã trích xuất | Filter tuân thủ | Grounding 0/1/2; trung bình /2 |
-|---|---:|---:|---:|---|
-| A | 1,0 (10 vị trí) | 15/15 | N/A | 0/3/2; **1,4** |
-| B | 1,4 (10 vị trí) | 15/15 | N/A | 1/0/4; **1,6** |
-| C | 1,4 (10 vị trí) | 15/15 | 2/2 câu test có filter | 1/0/4; **1,6** |
-
-Mẫu coherence chọn cùng 10 vị trí: offset 100 trong đoạn trích xuất đầu tiên của các trang vật lý 3–12, sau đó lấy chunk đầu tiên bao phủ vị trí. Thang: 0 không hiểu do thiếu ngữ cảnh; 1 hiểu một phần/thiếu ngữ cảnh; 2 tự hiểu và giữ trọn ý. Điểm do **trợ lý Codex nhận xét**, chưa được người chấm độc lập xác nhận. C dùng cùng chunk B nên cùng điểm coherence.
-
-Audit metadata tự động đối chiếu 5 câu test × Top 3 cho mỗi cấu hình với `source`, trang, section, text và offset trong dữ liệu đã trích xuất; 15/15 không có nghĩa đã kiểm tra độc lập đầy đủ với PDF gốc. Filter được tính tuân thủ nếu tất cả kết quả Top 3 của câu có filter nằm trong section yêu cầu; A/B không dùng filter nên N/A. Grounding do Codex chấm thủ công 0–2 cho mỗi câu test: đo mức đủ và khả năng truy nguồn của Top 3, **không** đo độ chính xác câu trả lời LLM.
-
-Minh chứng: `starter/results/experiment_dev/traces_dev.jsonl`, `starter/results/evaluation/traces_test.jsonl`, `dev_exact_review.jsonl`, `test_exact_review.jsonl`, `coherence_review.jsonl`, `metadata_audit.jsonl`, `grounding_review.jsonl` và `manual_review_summary.json` trong `starter/results/evaluation/`. Các file `*_exact_review.jsonl` là nhãn so khớp tự động; các nhãn coherence/grounding là nhận xét của Codex, không phải đánh giá độc lập của học viên.
-
-## 4. Phân tích và kết luận
-
-### A–B: tác động của chunking
-
-Trên dev, cả hai có cùng số lần khớp nguyên văn Top 1/Top 3, nhưng mẫu coherence của B cao hơn và B tạo nhiều hơn 34 chunk. Trên test thử, B có 4/5 lần khớp Top 3 so với 2/5 của A; mẫu 5 câu quá nhỏ để kết luận tổng quát.
-
-- **Q16 — gold trang 23:** A trả trang 15 ở Top 1, chỉ nêu cách tiếp cận trực quan nói chung, không nêu đủ design probes và design games; B trả nguyên bằng chứng ở Top 1.
-- **Q18 — gold trang 24:** A tìm đúng trang ở Top 2 nhưng chunk bị cắt trước thông tin về social determinants; B trả đủ các nguồn dữ liệu ở Top 2. Đây là ví dụ ranh giới chunk có thể làm mất bằng chứng cần thiết.
-- **Q12 — dev, gold trang 19:** đoạn B/C tìm được bị cắt gần cuối evidence, nên phép khớp nguyên văn không tính trúng; cần người học kiểm tra liệu nội dung còn lại đã đủ đáp án theo tiêu chí chấm hay chưa.
-
-### B–C: tác động của metadata filter
-
-C dùng đúng chunk và vector của B, chỉ lọc khi có `section`. Trong hai câu test có filter, kết quả C tuân thủ phạm vi 2/2; số lần khớp evidence của B và C bằng nhau trên cả dev lẫn test. Ở Q18, filter không đổi thứ hạng đoạn đủ bằng chứng. Với dữ liệu ít câu và chỉ hai điều kiện filter ở test, không thể kết luận filter luôn cải thiện retrieval.
-
-Q19 yêu cầu Table 1 ở trang 41: A trả nội dung tương tự trên trang 21 nhưng không trả bảng được chỉ định. Theo gold hiện có, phép đo nguyên văn tính là không trúng; nhận xét grounding tạm cho A là 1/2 vì có thông tin gần đúng nhưng thiếu bảng cần truy nguồn. Cần kiểm tra trường hợp này khi chấm thủ công.
-
-### Lựa chọn và hướng cải thiện
-
-A là lựa chọn **đã khóa tạm thời trước test** theo quy tắc đã nêu, không thay đổi quyết định chỉ vì thấy B/C có điểm test thử cao hơn. Nếu chọn cho ứng dụng thật, cần xem thêm coherence, grounding, khả năng lọc và yêu cầu truy nguồn; số chunk ít không tự chứng minh chất lượng tốt hơn.
-
-Các giới hạn chính: corpus và quyền chưa chốt; PDF có lỗi tách dòng/trang; số trang hữu ích chưa chứng minh; nhãn retrieval chủ yếu là khớp nguyên văn, còn coherence/grounding do AI nhận xét; audit metadata mới đối chiếu dữ liệu trích xuất; test chỉ có 5 câu và đã được xem; thời gian là một lần đo, chi phí điện chưa tính. Bước tiếp theo là kiểm tra nguồn và quyền, chọn đủ corpus hợp lệ, cải thiện phân đoạn theo token và ngữ cảnh, kiểm tra nhãn bằng người học, chuẩn bị test mới chưa dùng nếu điều chỉnh, rồi chạy lại và cập nhật báo cáo.
-
-## 5. Khai báo sử dụng AI
-
-Sử dụng Codex để hỗ trợ viết và giải thích pipeline, xây benchmark, chạy kiểm tra, phân tích kết quả và soạn báo cáo; Codex cũng đưa ra các nhãn coherence/grounding tạm. Các số trong báo cáo được lấy từ file kết quả đã chạy, không tự giả định. Người học cần tự đọc tài liệu nguồn, kiểm tra quyền, kiểm chứng nhãn và hiểu cách làm trước khi nộp; không xem nhận xét AI là đánh giá độc lập.
+Codex hỗ trợ kiểm tra PDF, viết code, tạo câu hỏi, chạy thí nghiệm, chấm mẫu và soạn báo cáo. Học viên xác nhận tài liệu do giảng viên cung cấp và được phép sử dụng; học viên cần tự hiểu và kiểm chứng dữ liệu, quyền chia sẻ, câu hỏi và các nhãn trước khi nộp. Các số liệu trên lấy từ file kết quả đã chạy, không phải số liệu giả định.

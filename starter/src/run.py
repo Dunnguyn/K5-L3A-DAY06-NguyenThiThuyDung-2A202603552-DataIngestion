@@ -25,6 +25,8 @@ from .token_chunking import token_bounded
 DATA = Path("starter/data/parsed_pages.jsonl")
 BENCHMARK = Path("starter/benchmark/questions.json")
 OUT = Path("starter/results/experiment_dev")
+COLLECTION_PREFIX = "day06_experiment"
+LOG_PATH = Path("artifacts/experiment_log.csv")
 
 
 def fixed_token_safe(page, tokenizer, max_tokens, size=500, overlap=50):
@@ -94,7 +96,7 @@ def main():
         if len(chunks) != len(vectors):
             raise RuntimeError("Chunk/vector count mismatch")
         rows = [{**asdict(c), "embedding": v} for c, v in zip(chunks, vectors)]
-        store = ChromaStore(DEFAULT_PATH, f"day06_experiment_{key.lower()}", DEFAULT_MODEL, embedder.dimensions)
+        store = ChromaStore(DEFAULT_PATH, f"{COLLECTION_PREFIX}_{key.lower()}", DEFAULT_MODEL, embedder.dimensions)
         begin = time.perf_counter()
         stored, stale = store.sync(rows)
         store_time = time.perf_counter() - begin
@@ -150,14 +152,15 @@ def main():
         "B": ("paragraph/sentence, token safe", "max 800 characters; max 128 tokens", "0", "none", "Structure-aware chunks may preserve context better."),
         "C": ("same chunks as B", "same as B", "0", "question section when supplied", "Section filtering may improve retrieval for scoped questions."),
     }
-    with Path("artifacts/experiment_log.csv").open("w", encoding="utf-8", newline="") as f:
+    LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with LOG_PATH.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         for strategy, (chunking, size, overlap, filt, hypothesis) in descriptions.items():
             writer.writerow(dict(strategy=strategy, chunking=chunking, chunk_size=size, overlap=overlap,
                                  metadata="document_id, source, page, section when known", filter=filt,
                                  vectorizer=DEFAULT_MODEL, hypothesis=hypothesis,
-                                 notes="Provisional corpus; manual evidence scoring pending; see starter/results/experiment_dev/summary.json"))
+                                 notes=f"Provisional corpus; manual evidence scoring pending; see {OUT / 'summary.json'}"))
     print(f"Completed {len(traces)} dev traces; test not queried. See {OUT / 'summary.json'}")
 
 

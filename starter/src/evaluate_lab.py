@@ -14,6 +14,7 @@ from .evaluation import evaluate_query, evidence_candidate, load_jsonl, summariz
 from .run import BENCHMARK, DATA, OUT, write_jsonl
 
 EVAL = Path("starter/results/evaluation")
+COLLECTION_PREFIX = 'day06_experiment'
 
 
 def load_questions(split):
@@ -75,7 +76,7 @@ def test():
     model = MyEmbedder(DEFAULT_MODEL)
     if any(len(model.model.tokenizer.encode(q['question'], add_special_tokens=True, truncation=False)) > model.model.max_seq_length for q in questions.values()):
         raise SystemExit('A test question exceeds the model token limit')
-    stores = {s: ChromaStore(DEFAULT_PATH, f'day06_experiment_{s.lower()}', DEFAULT_MODEL, model.dimensions) for s in 'AB'}
+    stores = {s: ChromaStore(DEFAULT_PATH, f'{COLLECTION_PREFIX}_{s.lower()}', DEFAULT_MODEL, model.dimensions) for s in 'AB'}
     for s, store in stores.items():
         if store.collection.count() != selection['chunks'][s]:
             raise SystemExit(f'Collection {s} changed since selection')

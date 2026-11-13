@@ -6,7 +6,7 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 
 ## Bài làm cá nhân: trạng thái và cách chạy
 
-**Trạng thái: bản thử, chưa sẵn sàng nộp.** Cần xác nhận tối thiểu 30 trang hữu ích, quyền sử dụng/chia sẻ nguồn, hoàn thiện manifest và người học kiểm tra lại các nhãn. Bộ test của lần thử đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng nếu có thể. Kết quả trong báo cáo không phải số liệu cuối.
+**Trạng thái:** corpus bài giảng cảm biến đã chọn 31 trang nội dung; học viên xác nhận tài liệu do giảng viên cung cấp và được phép sử dụng. Cần học viên kiểm tra nhãn và xác nhận cách chia sẻ minh chứng với người chấm; chưa xác nhận quyền chia sẻ công khai. Bộ test đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng nếu có thể.
 
 Mã hiện dùng ChromaDB và model `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. Tại PowerShell từ thư mục gốc, dùng Python tương thích và chạy:
 
@@ -16,14 +16,14 @@ py -m venv starter\.venv
 $env:HF_HOME = Join-Path (Get-Location) 'starter\.cache\huggingface'
 ```
 
-Đặt tài liệu có quyền sử dụng tại `starter/data/documents.pdf` và bộ câu hỏi đã kiểm chứng tại `starter/benchmark/questions.json`. Các file này và các trace/chunk chứa văn bản nguồn được giữ ở máy, chưa đưa lên Git vì quyền chia sẻ chưa xác nhận. DOI trong [manifest tạm](data/manifest.json) nhận diện bài báo, không tự đảm bảo URL tải PDF hoặc quyền tái phân phối. Sau khi cung cấp dữ liệu hợp lệ, chạy:
+Đặt bài giảng cảm biến 49 trang tại `starter/data/documents.pdf` và benchmark đã kiểm chứng tại `starter/benchmark/sensor_questions.json`. Các file này và trace/chunk chứa văn bản nguồn được giữ ở máy vì quyền chia sẻ công khai chưa xác nhận. [Manifest](data/manifest.json) ghi trang được chọn và thông tin sử dụng. Người chấm cần được cung cấp quyền truy cập phù hợp để kiểm chứng. Sau khi có dữ liệu, chạy:
 
 ```powershell
-.\starter\.venv\Scripts\python.exe -m starter.src.ingestion starter/data/documents.pdf --output starter/data/parsed_pages.jsonl
-.\starter\.venv\Scripts\python.exe -m starter.src.run
+.\starter\.venv\Scripts\python.exe -m starter.src.sensor_prepare
+.\starter\.venv\Scripts\python.exe -m starter.src.sensor_experiment retrieve-dev
 ```
 
-Model cần được tải lần đầu. Lệnh thí nghiệm tạo lại dữ liệu, đồng bộ collection A/B và ghi đè log/trace dev; test cần lựa chọn đã khóa và không được điều chỉnh theo kết quả test. Xem [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md), [bước 8](starter/BUOC_8_THI_NGHIEM.md) và [bước 9](starter/BUOC_9_DANH_GIA.md) để hiểu đầu vào, giới hạn và cách đánh giá. Để nộp, cần cung cấp benchmark và minh chứng có quyền chia sẻ hoặc cách người chấm được phép truy cập; các file bỏ qua hiện khiến repo chưa tái lập đầy đủ nếu thiếu dữ liệu này.
+Model cần được tải lần đầu. Lệnh thí nghiệm dùng collection riêng của corpus cảm biến và không chạy khi trace test của lần này đã tồn tại; không sử dụng test đã xem để điều chỉnh rồi coi là độc lập. Xem [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md) để hiểu cấu hình, kết quả và giới hạn. Các file bỏ qua hiện khiến repo chưa tái lập đầy đủ nếu người chấm chưa có dữ liệu và benchmark.
 
 | 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
 |---|---|---|
@@ -50,7 +50,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 ## 3. Chuẩn bị bài nộp
 
 1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và bản sao [mẫu báo cáo cá nhân](report/individual/MSSV_HoTen.md).
+2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md); mẫu chung nằm ở [REPORT_TEMPLATE.md](REPORT_TEMPLATE.md).
 3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
 
 ## Tài liệu hướng dẫn
@@ -65,4 +65,4 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
-[data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+[Manifest cảm biến](data/manifest.json) mô tả nguồn và các trang được chọn. Phần xử lý và benchmark do người học kiểm tra; không bắt buộc xây chatbot.
