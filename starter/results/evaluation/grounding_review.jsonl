@@ -1,0 +1,15 @@
+{"question_id": "Q16", "strategy": "A", "score": 1, "reason": "Visual approaches discussed, but neither design probes nor games identified.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q16", "strategy": "B", "score": 2, "reason": "Top 1 explicitly identifies design probes and games.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q16", "strategy": "C", "score": 2, "reason": "Same evidence as B.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q17", "strategy": "A", "score": 2, "reason": "Top 1 covers framing, participatory envisioning, and iterative testing.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q17", "strategy": "B", "score": 2, "reason": "Top 1 covers framing, participatory envisioning, and iterative testing.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q17", "strategy": "C", "score": 2, "reason": "Top 1 covers framing, participatory envisioning, and iterative testing.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q18", "strategy": "A", "score": 1, "reason": "Top 2 lists clinical, self-reported, and wellness data but cuts off before social determinants.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q18", "strategy": "B", "score": 2, "reason": "Top 2 lists all requested data sources and social determinants.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q18", "strategy": "C", "score": 2, "reason": "Same complete evidence as B.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q19", "strategy": "A", "score": 1, "reason": "Top 1 states the objective on page 21, but does not retrieve the requested Table 1 on page 41.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q19", "strategy": "B", "score": 0, "reason": "No retrieved passage states the requested objective in Table 1.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q19", "strategy": "C", "score": 0, "reason": "No retrieved passage states the requested objective in Table 1.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q20", "strategy": "A", "score": 2, "reason": "Top 1 gives 30 to 26 pages, shorter sections, and reduced repetition.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q20", "strategy": "B", "score": 2, "reason": "Top 1 gives 30 to 26 pages, shorter sections, and reduced repetition.", "reviewer": "Codex assistant; provisional and not independent"}
+{"question_id": "Q20", "strategy": "C", "score": 2, "reason": "Top 1 gives 30 to 26 pages, shorter sections, and reduced repetition.", "reviewer": "Codex assistant; provisional and not independent"}

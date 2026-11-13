@@ -1,0 +1,15 @@
+
+{
+  "documents": [
+    {
+      "source_id": "DOC001",
+      "title": "Leveraging Service Design for Healthcare Transformation",
+      "source_path_or_url": "starter/data/documents.pdf",
+      "license_or_permission": "Điền giấy phép đã kiểm chứng",
+      "accessed_at": "2026-11-13",
+      "physical_pages": null,
+      "valid_pages": [],
+      "normalized_char_count": null
+    }
+  ]
+}

@@ -8,3 +8,17 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+.cache/
+starter/storage/
+
+# Tài liệu và bản trích xuất có quyền chia sẻ chưa được xác nhận.
+starter/data/documents.pdf
+starter/data/parsed_pages.jsonl
+starter/benchmark/questions.json
+starter/results/chunks_*.jsonl
+starter/results/embeddings_*.jsonl
+starter/results/experiment_dev/*.jsonl
+starter/results/evaluation/dev_exact_review.jsonl
+starter/results/evaluation/test_exact_review.jsonl
+starter/results/evaluation/traces_test.jsonl
+starter/results/evaluation/coherence_review.jsonl

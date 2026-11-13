@@ -4,6 +4,27 @@
 
 Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
 
+## Bài làm cá nhân: trạng thái và cách chạy
+
+**Trạng thái: bản thử, chưa sẵn sàng nộp.** Cần xác nhận tối thiểu 30 trang hữu ích, quyền sử dụng/chia sẻ nguồn, hoàn thiện manifest và người học kiểm tra lại các nhãn. Bộ test của lần thử đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng nếu có thể. Kết quả trong báo cáo không phải số liệu cuối.
+
+Mã hiện dùng ChromaDB và model `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. Tại PowerShell từ thư mục gốc, dùng Python tương thích và chạy:
+
+```powershell
+py -m venv starter\.venv
+.\starter\.venv\Scripts\python.exe -m pip install -r starter\requirements.txt
+$env:HF_HOME = Join-Path (Get-Location) 'starter\.cache\huggingface'
+```
+
+Đặt tài liệu có quyền sử dụng tại `starter/data/documents.pdf` và bộ câu hỏi đã kiểm chứng tại `starter/benchmark/questions.json`. Các file này và các trace/chunk chứa văn bản nguồn được giữ ở máy, chưa đưa lên Git vì quyền chia sẻ chưa xác nhận. DOI trong [manifest tạm](data/manifest.json) nhận diện bài báo, không tự đảm bảo URL tải PDF hoặc quyền tái phân phối. Sau khi cung cấp dữ liệu hợp lệ, chạy:
+
+```powershell
+.\starter\.venv\Scripts\python.exe -m starter.src.ingestion starter/data/documents.pdf --output starter/data/parsed_pages.jsonl
+.\starter\.venv\Scripts\python.exe -m starter.src.run
+```
+
+Model cần được tải lần đầu. Lệnh thí nghiệm tạo lại dữ liệu, đồng bộ collection A/B và ghi đè log/trace dev; test cần lựa chọn đã khóa và không được điều chỉnh theo kết quả test. Xem [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md), [bước 8](starter/BUOC_8_THI_NGHIEM.md) và [bước 9](starter/BUOC_9_DANH_GIA.md) để hiểu đầu vào, giới hạn và cách đánh giá. Để nộp, cần cung cấp benchmark và minh chứng có quyền chia sẻ hoặc cách người chấm được phép truy cập; các file bỏ qua hiện khiến repo chưa tái lập đầy đủ nếu thiếu dữ liệu này.
+
 | 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
 |---|---|---|
 | Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |

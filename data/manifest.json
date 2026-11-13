@@ -1,0 +1,22 @@
+{
+  "status": "provisional; valid page count and redistribution permission not confirmed",
+  "documents": [
+    {
+      "source_id": "DOC001",
+      "title": "Leveraging Service Design for Healthcare Transformation: Toward People-Centered, Integrated, and Technology-Enabled Healthcare Systems",
+      "source_path_or_url": "starter/data/documents.pdf",
+      "publication_doi": "https://doi.org/10.1108/JOSM-11-2019-0332",
+      "source_download_url": null,
+      "license_or_permission": "Trang đầu PDF cho phép sao chép cho mục đích nghiên cứu hoặc giáo dục theo điều kiện nêu tại đó; quyền chia sẻ lại trên repository chưa được xác nhận.",
+      "accessed_at": null,
+      "physical_pages": 54,
+      "pages_with_extracted_text": 53,
+      "valid_pages": null,
+      "valid_page_count": null,
+      "valid_page_policy": "Loại bìa, mục lục, trang trống và trang chỉ có tài liệu tham khảo; kiểm tra tính liên quan của các trang còn lại trước khi chốt.",
+      "normalized_char_count_all_extracted_segments": 105967,
+      "normalized_char_count_valid_pages": null,
+      "notes": "Trang 54 không có nội dung sau khi bỏ chân trang. Tổng ký tự bao gồm toàn bộ đoạn trích xuất, không chỉ các trang hợp lệ. Ngày truy cập và URL tải gốc chưa xác minh."
+    }
+  ]
+}

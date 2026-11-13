@@ -1,0 +1,11 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "sentence_transformers_version": "6.3.0",
+  "dimensions": 384,
+  "normalized": true,
+  "batch_size": 16,
+  "chunks": 176,
+  "max_sequence_tokens": 128,
+  "chunks_exceeding_token_limit": 118,
+  "elapsed_seconds_including_model_load": 206.54
+}
