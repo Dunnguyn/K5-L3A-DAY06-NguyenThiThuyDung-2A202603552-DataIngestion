@@ -32,15 +32,13 @@ starter/data/sensor_pages.jsonl
 starter/benchmark/sensor_questions.json
 starter/results/sensor_run/
 
-# Tệp phát sinh từ lần thử y tế cũ, giữ tại máy để đối chiếu khi cần.
+# Tệp phát sinh cục bộ từ pipeline chung.
 starter/data/format-example.json
 starter/data/parsed_pages.log
 starter/results/embeddings_paragraph.report.json
 starter/results/embeddings_paragraph_tokens.report.json
 starter/results/evaluation/
 starter/results/experiment_dev/
-starter/src/review_lab.py
-data/KIEM_TRA_CORPUS.md
 
 # Local verification may describe restricted materials.
 starter/results/sensor_verification.json

@@ -35,7 +35,7 @@ Mỗi chunk giữ `document_id`, `source`, `page`, offset ký tự trong trang v
 
 Các cấu hình dùng cùng 31 trang, model và câu hỏi. A–B thay chiến lược chunking; B–C chỉ thay filter. Không đưa gold source hay đáp án vào truy vấn hoặc filter.
 
-Benchmark `starter/benchmark/sensor_questions.json` có **20 câu**, gồm **15 dev và 5 test**; 4 câu có filter, trong đó 2 câu test. Câu hỏi, đáp án và gold evidence được tạo từ tài liệu cảm biến, và đoạn evidence đã kiểm tra xuất hiện tại trang được ghi sau chuẩn hóa khoảng trắng. Benchmark được tạo trước khi chạy experiment này. Bộ câu hỏi và kết quả của thí nghiệm y tế trước đây không được sử dụng để tính kết quả bên dưới.
+Benchmark `starter/benchmark/sensor_questions.json` có **20 câu**, gồm **15 dev và 5 test**; 4 câu có filter, trong đó 2 câu test. Câu hỏi, đáp án và gold evidence được tạo từ tài liệu cảm biến, và đoạn evidence đã kiểm tra xuất hiện tại trang được ghi sau chuẩn hóa khoảng trắng. Benchmark được tạo trước khi chạy experiment này.
 
 Trước khi truy vấn test, lựa chọn được ghi tại `starter/results/sensor_run/evaluation/selection.json`: ưu tiên tỷ lệ khớp gold Top 3 trên dev, sau đó Top 1, sau đó ít chunk hơn. **C được chọn tạm** vì đạt 13/15 Top 3 trên dev, so với 12/15 của A/B. Đây là quy tắc dựa trên khớp nguyên văn; chưa chứng minh C tốt nhất trong mọi tình huống.
 
@@ -102,5 +102,3 @@ Model cần tải trước nếu cache chưa có. Bộ test của lần chạy n
 Codex đã đọc văn bản trích xuất của 31 trang và đối chiếu các tiêu đề, thứ tự mục 2.1–2.5 cùng 20 câu hỏi, đáp án, trang gold và bốn filter. Trang 19 là danh sách ngắn; trang 44 đã được xem trực tiếp và là sơ đồ sáu bước nối bằng mũi tên, khớp thứ tự chữ trích xuất. Bảng `review/page_review.csv` và `review/gold_review.csv` ghi cơ sở từng dòng. Đây là kiểm tra do AI hỗ trợ, không phải xác nhận của học viên hay giảng viên.
 
 `review/retrieval_review.csv` chứa 180 nhãn ngữ nghĩa và lý do do Codex duyệt, đồng thời giữ kết quả khớp nguyên văn cũ. Ba chunk SQ17 trang 36 được tính đủ về ngữ nghĩa dù không chứa trọn gold; A test Hit@3 tăng từ 3/5 lên 4/5. Chỉ số mới được tổng hợp ở `artifacts/sensor_semantic_metrics.json`. `review/manual_scoring_review.csv` chứa 30 nhận xét coherence và 15 grounding của Codex cùng 45 kiểm tra metadata tự động; SQ17/A được sửa từ 1 lên 2 sau duyệt ngữ nghĩa và bảng mục 3 phản ánh kết quả mới. Các điểm này không phải nhãn của học viên hay đánh giá độc lập. Vì test đã được xem, không dùng kết quả này làm bằng chứng holdout độc lập sau tinh chỉnh.
-
-AI: Codex hỗ trợ kiểm tra văn bản, viết mã và ghi nhận nhận xét; học viên cần hiểu và tự kiểm tra các kết luận trước khi nộp.
