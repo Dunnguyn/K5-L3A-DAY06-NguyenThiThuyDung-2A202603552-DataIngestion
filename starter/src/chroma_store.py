@@ -72,9 +72,9 @@ class ChromaStore:
         if section:
             kwargs["where"] = {"section": section}
         result = self.collection.query(**kwargs)
-        return [dict(chunk_id=key, text=text, metadata=metadata, cosine_distance=distance)
-                for key, text, metadata, distance in zip(result["ids"][0], result["documents"][0],
-                                                         result["metadatas"][0], result["distances"][0])]
+        return [dict(rank=rank, chunk_id=key, text=text, metadata=metadata, cosine_distance=distance)
+                for rank, (key, text, metadata, distance) in enumerate(zip(result["ids"][0], result["documents"][0],
+                                                         result["metadatas"][0], result["distances"][0]), 1)]
 
 
 def main():

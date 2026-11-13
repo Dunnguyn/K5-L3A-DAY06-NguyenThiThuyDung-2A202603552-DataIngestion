@@ -59,6 +59,8 @@ def write_jsonl(path, records):
 
 
 def main():
+    if (OUT / "traces_dev.jsonl").exists() or LOG_PATH.exists():
+        raise SystemExit("Existing run or log found; choose a new versioned output and log path to preserve history")
     OUT.mkdir(parents=True, exist_ok=True)
     pages = [DocumentPage(**row) for row in read_jsonl(DATA)]
     if not pages:

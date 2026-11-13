@@ -41,3 +41,9 @@ starter/results/evaluation/
 starter/results/experiment_dev/
 starter/src/review_lab.py
 data/KIEM_TRA_CORPUS.md
+
+# Local verification may describe restricted materials.
+starter/results/sensor_verification.json
+
+# Review tables contain restricted source text, benchmark and traces.
+/review/*.csv

@@ -8,6 +8,8 @@ from .ingestion import normalize_text
 PAGES = [5, 14] + list(range(19, 35)) + list(range(36, 49))
 
 def main():
+    if Path('starter/data/sensor_pages.jsonl').exists():
+        raise SystemExit('Existing parsed corpus found; preserve it before preparing a new experiment version.')
     source = Path('starter/data/documents.pdf')
     manifest = json.loads(Path('data/manifest.json').read_text(encoding='utf-8'))
     expected = next(d['sha256'] for d in manifest['documents'] if d['source_id'] == 'SENSOR001')

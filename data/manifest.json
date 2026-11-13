@@ -1,5 +1,5 @@
 {
-  "status": "31 content pages selected; usage permission reported by student; public redistribution not confirmed; page selection needs learner review",
+  "status": "NEEDS_VERIFICATION: page validity, section mapping and sharing permissions require learner review",
   "documents": [
     {
       "source_id": "SENSOR001",
@@ -46,7 +46,9 @@
       "normalized_char_count": 12142,
       "page_selection": "Chọn trang có nội dung chữ về định nghĩa, phân loại, đặc trưng, các cảm biến, xử lý tín hiệu và dữ liệu. Loại bìa, mục tiêu/mục lục, trang chủ yếu hình ảnh không trích được, và trang thuật ngữ cuối.",
       "sha256": "44105d2a54ceb32a9f9b1179f4490e75a0cfca353aa99f300d795f9397a80919",
-      "page_numbering": "physical PDF pages, 1-based"
+      "page_numbering": "physical PDF pages, 1-based",
+      "valid_pages_status": "NEEDS_VERIFICATION: historical selection, not confirmed valid pages",
+      "section_mapping_status": "NEEDS_VERIFICATION"
     }
   ]
 }

@@ -10,7 +10,7 @@
 
 Nguồn `SENSOR001` là bài giảng **Chương II: Xử lý dữ liệu cảm biến**, trên trang đầu ghi Đại học Kinh tế Quốc dân, Khoa Công nghệ thông tin. Theo xác nhận của học viên, tài liệu do giảng viên cung cấp và được phép sử dụng cho bài học. Chưa có xác nhận cho phép đăng công khai hoặc tái phân phối; vì vậy PDF, benchmark và trace có trích văn bản được giữ trên máy. Chưa xác định URL tải gốc hay ngày nhận tài liệu; không tự suy đoán. Manifest: `data/manifest.json`.
 
-PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn; số trang đủ theo cách tính nêu trên nhưng độ sâu nội dung hạn chế.
+PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn; số trang chỉ là lựa chọn ban đầu, chưa đủ căn cứ kết luận đạt yêu cầu nhưng độ sâu nội dung hạn chế.
 
 ### Parse, clean và metadata
 

@@ -38,6 +38,8 @@ def label_rows(traces, questions):
 
 def dev():
     EVAL.mkdir(parents=True, exist_ok=True)
+    if (EVAL / 'selection.json').exists():
+        raise SystemExit('Existing selection must be preserved; use a new experiment directory')
     if (EVAL / 'traces_test.jsonl').exists():
         raise SystemExit('Test results already exist; do not reselect using this test set. Use a new, untouched test set for a new experiment.')
     traces = load_jsonl(OUT / 'traces_dev.jsonl')
@@ -66,6 +68,8 @@ def dev():
 
 
 def test():
+    if (EVAL / 'traces_test.jsonl').exists():
+        raise SystemExit('Existing test traces must be preserved; use a new experiment directory')
     selection = json.loads((EVAL / 'selection.json').read_text(encoding='utf-8'))
     for path, field in ((DATA, 'data_sha256'), (BENCHMARK, 'benchmark_sha256'), (OUT / 'traces_dev.jsonl', 'dev_trace_sha256')):
         if hashlib.sha256(path.read_bytes()).hexdigest() != selection[field]:

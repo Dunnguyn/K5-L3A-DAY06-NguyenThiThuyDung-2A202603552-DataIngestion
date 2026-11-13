@@ -66,4 +66,4 @@ def main():
     print(json.dumps(summary,ensure_ascii=False,indent=2))
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit('PENDING_MANUAL_REVIEW: historical assistant scores must not be regenerated as human labels; review source and traces manually.')

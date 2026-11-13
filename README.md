@@ -6,7 +6,9 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 
 ## Bài làm cá nhân: trạng thái và cách chạy
 
-**Trạng thái:** corpus bài giảng cảm biến đã chọn 31 trang nội dung; học viên xác nhận tài liệu do giảng viên cung cấp và được phép sử dụng. Cần học viên kiểm tra nhãn và xác nhận cách chia sẻ minh chứng với người chấm; chưa xác nhận quyền chia sẻ công khai. Bộ test đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng nếu có thể.
+Kiểm tra cục bộ, không xuất văn bản nguồn: `.\starter\.venv\Scripts\python.exe -m starter.src.verify_sensor`. Báo cáo tại `starter/results/sensor_verification.json` ghi số ký tự, lựa chọn cũ và trạng thái cần duyệt cho từng trang; so khớp nguyên văn gold không chứng minh đáp án hay filter đúng. [Audit](AUDIT.md) ghi đối chiếu và các điểm còn thiếu.
+
+**Trạng thái: NOT_READY.** PDF có 49 trang vật lý và 31 trang được chọn trước đây; tính hợp lệ của từng trang cần người học xác nhận. Quyền sử dụng trong bài học đã được báo cáo trước đây nhưng cần học viên xác nhận lại. Cần học viên kiểm tra nhãn và xác nhận cách chia sẻ minh chứng với người chấm; chưa xác nhận quyền chia sẻ công khai. Bộ test đã được xem; nếu điều chỉnh theo test, cần chuẩn bị test mới chưa dùng nếu có thể.
 
 Mã hiện dùng ChromaDB và model `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. Tại PowerShell từ thư mục gốc, dùng Python tương thích và chạy:
 
@@ -23,7 +25,7 @@ $env:HF_HOME = Join-Path (Get-Location) 'starter\.cache\huggingface'
 .\starter\.venv\Scripts\python.exe -m starter.src.sensor_experiment retrieve-dev
 ```
 
-Model cần được tải lần đầu. Lệnh thí nghiệm dùng collection riêng của corpus cảm biến và không chạy khi trace test của lần này đã tồn tại; không sử dụng test đã xem để điều chỉnh rồi coi là độc lập. Xem [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md) để hiểu cấu hình, kết quả và giới hạn. Các file bỏ qua hiện khiến repo chưa tái lập đầy đủ nếu người chấm chưa có dữ liệu và benchmark.
+Model cần được tải lần đầu. Lịch sử kết quả hiện có được bảo vệ khỏi ghi đè; để chạy thí nghiệm mới cần cấu hình thư mục kết quả, log và collection version mới, cùng test chưa dùng. Các lệnh `select-dev` và `retrieve-test` chạy tương tự bằng cách thay tên phase; chúng sẽ dừng nếu output đã tồn tại. Lệnh thí nghiệm dùng collection riêng của corpus cảm biến và không chạy khi trace test của lần này đã tồn tại; không sử dụng test đã xem để điều chỉnh rồi coi là độc lập. Xem [báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md) để hiểu cấu hình, kết quả và giới hạn. Các file bỏ qua hiện khiến repo chưa tái lập đầy đủ nếu người chấm chưa có dữ liệu và benchmark.
 
 | 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
 |---|---|---|
@@ -66,3 +68,13 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [Manifest cảm biến](data/manifest.json) mô tả nguồn và các trang được chọn. Phần xử lý và benchmark do người học kiểm tra; không bắt buộc xây chatbot.
+
+## Minh chứng và việc cần người học xác nhận
+
+- `starter/results/sensor_verification.json` là báo cáo cục bộ: 49 dòng trang, số ký tự, lựa chọn cũ và `NEEDS_VERIFICATION`; không coi text ngắn hoặc có chữ là tự động hợp lệ. Đối chiếu từng slide, nhất là trang 19 và 44, với quy tắc nội dung của GUIDE.
+- Section 2.2, 2.3, 2.4 và 2.5 xuất hiện trên các trang bắt đầu 32, 36, 40 và 47; các trang 14, 19–31 và 44–46 không tự ghi số section. Mapping cũ theo khoảng trang cần kiểm tra, đặc biệt ranh giới và slide sơ đồ; filter cũng cần được xác nhận là có thể suy ra từ câu hỏi trước truy xuất. Không thay đổi mapping của thí nghiệm cũ.
+- Người học kiểm tra đáp án, đủ evidence và các nhãn coherence (10 vị trí), metadata (5 câu × top-3 mỗi cấu hình) và grounding (5 câu mỗi cấu hình), kèm lý do. Nhận xét của Codex là `PENDING_MANUAL_REVIEW`, không phải nhãn do người học chấm.
+- PDF, benchmark, parsed pages, trace và nhãn nằm trong các đường dẫn local bị ignore; thống nhất cung cấp riêng cho giảng viên theo quyền được phép. Không đưa dữ liệu chưa rõ quyền lên repo.
+- Model revision của lần cũ là null; revision cache được báo cáo không chứng minh revision đã dùng. Tái lập chính xác bị hạn chế. Test đã được xem; không dùng nó để điều chỉnh rồi tuyên bố độc lập. Cần test mới chưa sử dụng nếu điều chỉnh.
+- Chạy mới cần phiên bản riêng của output, log và Chroma collection (các hằng `OUT`, `LOG_PATH`, `COLLECTION_PREFIX`, `EVAL` trong các module tương ứng); không ghi đè dữ liệu cũ. `sensor_prepare` cũng từ chối ghi đè corpus đã parse. Giữ cùng cấu hình A/B/C, model và revision đã xác nhận, lưu hash corpus/benchmark và version dependencies.
+- PostgreSQL/pgvector, Docker, `store.py` và `check_setup.py` là starter tham khảo của đề, không được pipeline cảm biến gọi; giữ lại để đối chiếu. Không xóa dữ liệu hoặc lịch sử cũ.
