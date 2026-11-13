@@ -10,6 +10,11 @@ __pycache__/
 *.sqlite
 .cache/
 starter/storage/
+.vscode/
+.idea/
+.ipynb_checkpoints/
+*.tmp
+*.bak
 
 # Tài liệu và bản trích xuất có quyền chia sẻ chưa được xác nhận.
 starter/data/documents.pdf
@@ -22,3 +27,17 @@ starter/results/evaluation/dev_exact_review.jsonl
 starter/results/evaluation/test_exact_review.jsonl
 starter/results/evaluation/traces_test.jsonl
 starter/results/evaluation/coherence_review.jsonl
+# Dữ liệu và minh chứng của bài cảm biến, chờ xác nhận quyền chia sẻ.
+starter/data/sensor_pages.jsonl
+starter/benchmark/sensor_questions.json
+starter/results/sensor_run/
+
+# Tệp phát sinh từ lần thử y tế cũ, giữ tại máy để đối chiếu khi cần.
+starter/data/format-example.json
+starter/data/parsed_pages.log
+starter/results/embeddings_paragraph.report.json
+starter/results/embeddings_paragraph_tokens.report.json
+starter/results/evaluation/
+starter/results/experiment_dev/
+starter/src/review_lab.py
+data/KIEM_TRA_CORPUS.md
