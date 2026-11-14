@@ -1,6 +1,6 @@
 {
   "A": {
-    "coherence_mean": 1.9,
+    "coherence_mean": 1.7,
     "coherence_n": 10,
     "grounding_mean": 1.6,
     "grounding_0_1_2": [
@@ -14,7 +14,7 @@
     "filter_questions_n": 0
   },
   "B": {
-    "coherence_mean": 2.0,
+    "coherence_mean": 1.8,
     "coherence_n": 10,
     "grounding_mean": 1.6,
     "grounding_0_1_2": [
@@ -28,7 +28,7 @@
     "filter_questions_n": 0
   },
   "C": {
-    "coherence_mean": 2.0,
+    "coherence_mean": 1.8,
     "coherence_n": 10,
     "grounding_mean": 2.0,
     "grounding_0_1_2": [

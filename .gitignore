@@ -36,6 +36,3 @@ starter/results/experiment_dev/
 
 # Local verification may describe restricted materials.
 starter/results/sensor_verification.json
-
-# Review tables contain restricted source text, benchmark and traces.
-/review/*.csv

@@ -33,15 +33,15 @@ Prepare yêu cầu thư mục mới. Dev tạo hai collection và trace, sau đ�
 
 ## Benchmark và kết quả lịch sử
 
-[Bộ câu hỏi](starter/benchmark/sensor_questions.json) gồm 15 dev và 5 test, có 4 câu chỉ định section (2 câu test). Hit@1 tính câu có bằng chứng ở hạng đầu, Hit@3 tính câu có ít nhất một chunk đủ bằng chứng trong ba hạng đầu. Proxy tự động yêu cầu đúng nguồn, trang và đoạn trích sau chuẩn hóa.
+[Bộ câu hỏi](starter/benchmark/sensor_questions.json) gồm 15 dev và 5 test, có 4 câu chỉ định section (2 câu test). Hit@1 tính câu có bằng chứng ở hạng đầu, Hit@3 tính câu có ít nhất một chunk đủ bằng chứng trong ba hạng đầu. Bảng sau dùng nhãn evidence ngữ nghĩa đã được học viên xác nhận theo bảng tổng hợp. Proxy tự động yêu cầu đúng nguồn, trang và đoạn trích sau chuẩn hóa.
 
 | Cấu hình | Dev Hit@1 | Dev Hit@3 | Test Hit@1 | Test Hit@3 |
 |---|---:|---:|---:|---:|
-| A | 10/15 (66,7%) | 12/15 (80%) | 3/5 (60%) | 3/5 (60%) |
+| A | 10/15 (66,7%) | 12/15 (80%) | 3/5 (60%) | 4/5 (80%) |
 | B | 10/15 (66,7%) | 12/15 (80%) | 3/5 (60%) | 4/5 (80%) |
 | C | 10/15 (66,7%) | 13/15 (86,7%) | 3/5 (60%) | 5/5 (100%) |
 
-Dev chọn C. Với SQ17, nhãn ngữ nghĩa do AI đề xuất tính thêm một hit cho A, đưa Hit@3 test lên 4/5. Học viên chưa xác nhận các nhãn. Test đã được xem, và lần chạy lịch sử không ghi revision model. Lần mới khóa revision e8f8c211226b894fcb81acc59f3b34ba3efd5f42.
+Dev chọn C. Với SQ17/A, phép khớp nguyên văn cho Hit@3 test 3/5, còn nhãn ngữ nghĩa đã xác nhận cho 4/5. Học viên xác nhận các nhãn đề xuất theo bảng tổng hợp ngày 14/11/2026. Test đã được xem, và lần chạy lịch sử không ghi revision model. Lần mới khóa revision e8f8c211226b894fcb81acc59f3b34ba3efd5f42.
 
 [Báo cáo cá nhân](report/individual/2A202603552_NguyenThiThuyDung.md) trình bày năm khía cạnh đánh giá, chi phí, lỗi và đánh đổi. Xem [nhật ký thí nghiệm](artifacts/experiment_log.csv), [trace dev đã gắn nhãn](starter/results/sensor_run/evaluation/dev_exact_review.jsonl), [trace test](starter/results/sensor_run/evaluation/traces_test.jsonl) và [bảng đánh giá](review/manual_scoring_review.csv).
 

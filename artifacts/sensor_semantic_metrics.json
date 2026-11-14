@@ -1,6 +1,6 @@
 {
-  "method": "single chunk sufficient; semantic equivalence accepted; test previously viewed",
-  "review_date": "2026-11-13",
+  "method": "Học viên xác nhận nhãn đề xuất; một chunk đủ bằng chứng; chấp nhận tương đương ngữ nghĩa; test đã xem",
+  "review_date": "2026-11-14",
   "metrics": {
     "A_dev": {
       "questions": 15,

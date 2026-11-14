@@ -9,13 +9,13 @@
 
 Nguồn `SENSOR001` là bài giảng **Chương II: Xử lý dữ liệu cảm biến**, trên trang đầu ghi Đại học Kinh tế Quốc dân, Khoa Công nghệ thông tin. Theo xác nhận của học viên, tài liệu do giảng viên cung cấp và được phép sử dụng cho bài học. Ngày 13/11/2026, học viên xác nhận đã được cấp toàn quyền công khai tài liệu. PDF, benchmark, trace và bảng review được cung cấp cùng repo để người chấm đối chiếu. Chưa xác định URL tải gốc hay ngày nhận tài liệu; không tự suy đoán. Manifest: `data/manifest.json`.
 
-PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; cách chọn cần học viên đối chiếu PDF và xác nhận với giảng viên nếu cần. Trang được đánh số vật lý từ 1. Đây là một bài giảng dạng slide, nhiều trang ngắn;
+PDF có **49 trang vật lý**. Chọn **31 trang** có nội dung chữ liên quan: trang 5, 14, 19–34 và 36–48, tổng **12.142 ký tự đã chuẩn hóa**. Không tính trang bìa, mục tiêu/mục lục, trang chủ yếu là hình không trích được nội dung chữ và trang thuật ngữ cuối. Các trang dạng liệt kê được tính khi chúng cung cấp phân loại, đặc trưng hoặc bước xử lý liên quan; học viên đã xác nhận theo bảng tổng hợp ngày 14/11/2026. Trang được đánh số vật lý từ 1. Đây là bài giảng dạng slide, nhiều trang ngắn.
 
 ### Parse, clean và metadata
 
 PDF được đọc bằng `pypdf`; chuẩn hóa Unicode NFC, khoảng trắng và xuống dòng, bỏ soft hyphen. Mỗi trang được giữ tách biệt để truy nguồn. Các trang hình vẽ không trích xuất được chữ có ý nghĩa đã được loại khỏi corpus chữ; không có OCR. Một số dấu đầu dòng là ký tự đặc biệt và còn số trang trong văn bản, nên dữ liệu chưa hoàn toàn sạch.
 
-Mỗi chunk giữ `document_id`, `source`, `page`, offset ký tự trong trang và `section`. Giá trị section được gán theo các nhóm trang của các mục 2.1–2.5 trong tài liệu; với trang không lặp tiêu đề, section dựa vào vị trí trong nhóm và cần được học viên đối chiếu. Trường `section` có ích khi người hỏi chỉ định phần, còn `page` và `source` hỗ trợ truy vết. Hạn chế là nhãn section theo phạm vi trang có thể sai nếu tài liệu được sắp xếp lại.
+Mỗi chunk giữ `document_id`, `source`, `page`, offset ký tự trong trang và `section`. Giá trị section được gán theo các nhóm trang của các mục 2.1–2.5 trong tài liệu; với trang không lặp tiêu đề, section dựa vào vị trí trong nhóm và đã được học viên xác nhận theo bảng tổng hợp. Trường `section` có ích khi người hỏi chỉ định phần, còn `page` và `source` hỗ trợ truy vết. Hạn chế là nhãn section theo phạm vi trang có thể sai nếu tài liệu được sắp xếp lại.
 
 ### Embedding và lưu trữ
 
@@ -42,7 +42,7 @@ Trước khi truy vấn test, lựa chọn được ghi tại `artifacts/sensor_
 
 ### Retrieval và tài nguyên
 
-Các điểm sau dựa trên **duyệt ngữ nghĩa** đối với 180 chunk: một chunk trúng nếu tự chứa đủ thông tin trả lời, kể cả diễn đạt tương đương, trong ngữ cảnh của nó. Không gộp nhiều chunk thành một hit; các nhãn, lý do và kết quả khớp nguyên văn cũ được lưu trong `review/retrieval_review.csv`. Đây là đánh giá AI hỗ trợ, không phải nhãn độc lập của học viên.
+Các điểm sau dựa trên **duyệt ngữ nghĩa** đối với 180 chunk: một chunk trúng nếu tự chứa đủ thông tin trả lời, kể cả diễn đạt tương đương, trong ngữ cảnh của nó. Không gộp nhiều chunk thành một hit; các nhãn, lý do và kết quả khớp nguyên văn cũ được lưu trong `review/retrieval_review.csv`. Các nhãn do AI hỗ trợ đề xuất, được học viên xác nhận theo bảng tổng hợp ngày 14/11/2026. Việc xác nhận theo bảng tổng hợp không tương đương chấm độc lập từng chunk.
 
 | Cấu hình | Split | Top 1 (n/N) | Top 3 (n/N) | Chunk | Tạo chunk + embedding + lưu* | Chi phí API |
 |---|---|---:|---:|---:|---:|---:|
@@ -62,13 +62,13 @@ A có độ dài 67–493 ký tự, trung bình 296,33; B có 90–463 ký tự,
 
 | Cấu hình | Coherence trung bình /2 | Metadata khớp PDF và section được gán | Filter test tuân thủ | Grounding 0/1/2; trung bình /2 |
 |---|---:|---:|---:|---|
-| A | 1,9 (10 vị trí) | 15/15 | 0/2 | 1/0/4; 1,6 |
-| B | 2,0 (10 vị trí) | 15/15 | 1/2 | 1/0/4; 1,6 |
-| C | 2,0 (10 vị trí) | 15/15 | 2/2 câu có filter | 0/0/5; 2,0 |
+| A | 1,7 (10 vị trí) | 15/15 | 0/2 | 1/0/4; 1,6 |
+| B | 1,8 (10 vị trí) | 15/15 | 1/2 | 1/0/4; 1,6 |
+| C | 1,8 (10 vị trí) | 15/15 | 2/2 câu có filter | 0/0/5; 2,0 |
 
-Mẫu coherence chọn 10 trang nội dung đầu tiên theo thứ tự vật lý: 5, 14, 19–26; với mỗi trang lấy chunk đầu tiên chứa offset 0. C dùng chung chunk B. 
+Mẫu coherence chọn 10 trang nội dung đầu tiên theo thứ tự vật lý: 5, 14, 19–26; với mỗi trang lấy chunk đầu tiên chứa offset 0. C dùng chung chunk B. Học viên chấm A và B từng mẫu, sau đó xác nhận 10 mẫu C theo bảng vì nội dung chunk trùng B.
 
-Audit metadata đối chiếu 5 câu test × Top 3 cho từng cấu hình với văn bản trích xuất trực tiếp từ PDF, số trang, offset và section được gán theo nhóm trang. 15/15 là số bản ghi khớp trong phép kiểm tra này, không chứng minh tuyệt đối section luôn đúng ngữ nghĩa. Mẫu số tuân thủ là hai câu test có yêu cầu section (SQ17, SQ20) cho cả ba cấu hình. A khớp 0/2, B khớp 1/2 dù không áp dụng bộ lọc. Với C, cả 2 câu test có filter đều trả các chunk đúng giá trị section. Grounding nhận xét 0–2 cho từng câu theo độ đủ bằng chứng trong Top 3; sau duyệt ngữ nghĩa, SQ17/A tăng từ 1 lên 2 vì chunk trang 36 đủ suy ra chiều ADC. Không phải đánh giá độ chính xác câu trả lời LLM và cần học viên xác nhận. Tổng mới ở `artifacts/sensor_review_summary_semantic.json`; các file review lịch sử được giữ nguyên.
+Audit metadata đối chiếu 5 câu test × Top 3 cho từng cấu hình với văn bản trích xuất trực tiếp từ PDF, số trang, offset và section được gán theo nhóm trang. 15/15 là số bản ghi khớp trong phép kiểm tra này, không chứng minh tuyệt đối section luôn đúng ngữ nghĩa. Mẫu số đối chiếu phạm vi là hai câu test có yêu cầu section (SQ17, SQ20) cho cả ba cấu hình. A khớp 0/2, B khớp 1/2 dù không áp dụng bộ lọc. Với C, cả 2 câu test có filter đều trả các chunk đúng giá trị section. Grounding nhận xét 0–2 cho từng câu theo độ đủ bằng chứng trong Top 3; sau duyệt ngữ nghĩa, SQ17/A tăng từ 1 lên 2 vì chunk trang 36 đủ suy ra chiều ADC. Grounding đánh giá bằng chứng truy xuất, được học viên chấm từng câu và cấu hình. Tổng mới ở `artifacts/sensor_review_summary_semantic.json`; các file review lịch sử được giữ nguyên.
 
 Trace dev kèm nhãn nguyên văn và trace test ở `starter/results/sensor_run/evaluation/dev_exact_review.jsonl` và `traces_test.jsonl` trong cùng thư mục. Bảng đối chiếu trang, gold, 180 kết quả retrieval và 90 dòng chấm coherence/grounding/metadata nằm trong `review/`. Các tỷ lệ ngữ nghĩa được tổng hợp trong `artifacts/sensor_semantic_metrics.json` và `artifacts/sensor_review_summary_semantic.json`.
 
@@ -80,8 +80,10 @@ Trace dev kèm nhãn nguyên văn và trace test ở `starter/results/sensor_run
 
 **Các lỗi khác:** SQ02, gold trang 14, không xuất hiện trong Top 3 dev của A/B/C; SQ04, gold trang 20, cũng không xuất hiện trong Top 3. Cần xem query, các đoạn cạnh tranh và chất lượng embedding tiếng Việt; không thể khẳng định nguyên nhân chỉ từ thứ hạng. Phép khớp nguyên văn cũng có thể bỏ sót bằng chứng tương đương.
 
-**Lựa chọn:** C đã được chọn tạm từ dev trước test. Kết quả test phù hợp với giả thuyết filter hữu ích ở ví dụ SQ20, nhưng test nhỏ và chỉ 2 câu có filter; không kết luận C luôn tốt hơn. Hướng cải thiện: nhờ người học duyệt độc lập nhãn và section, tăng số câu hỏi đa dạng, và ghi revision model chính xác cho các lần chạy mới.
+**Lựa chọn:** C đã được chọn tạm từ dev trước test. Kết quả test phù hợp với giả thuyết filter hữu ích ở ví dụ SQ20, nhưng test nhỏ và chỉ 2 câu có filter; không kết luận C luôn tốt hơn. Hướng cải thiện: mở rộng bộ câu hỏi, kiểm tra độc lập từng nhãn và ghi revision model cho các lần chạy mới.
 
 ## 5. Tái lập và sử dụng AI
 
 Lệnh cài đặt, chạy bốn giai đoạn và đọc kết quả nằm trong [README](../../README.md). Test lịch sử đã được xem. Nếu tinh chỉnh tiếp, cần một tập mới để đo độc lập.
+
+Đã xác nhận 31 trang, 20 gold và các nhãn evidence theo bảng tổng hợp. Grounding được chấm từng câu, coherence A và B được chấm từng mẫu, coherence C được xác nhận theo các mẫu B tương ứng. Metadata được xác nhận theo phép đối chiếu tự động. 
